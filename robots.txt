@@ -1,0 +1,6 @@
+# robots.txt for Dinesh M Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap placeholder (update with your actual production domain upon deployment)
+Sitemap: https://[your-domain.com]/sitemap.xml

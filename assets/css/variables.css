@@ -1,0 +1,115 @@
+:root {
+  /* ==========================================================================
+     Typography
+     ========================================================================== */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-heading: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, monospace;
+
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);      /* 12px - 13px */
+  --font-size-sm: clamp(0.875rem, 0.825rem + 0.25vw, 0.9375rem);   /* 14px - 15px */
+  --font-size-base: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);      /* 16px - 17px */
+  --font-size-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);      /* 18px - 20px */
+  --font-size-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);         /* 20px - 24px */
+  --font-size-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);      /* 24px - 30px */
+  --font-size-3xl: clamp(1.875rem, 1.65rem + 1.1vw, 2.375rem);     /* 30px - 38px */
+  --font-size-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.25rem);       /* 36px - 52px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.15;
+  --line-height-snug: 1.35;
+  --line-height-base: 1.6;
+  --line-height-relaxed: 1.75;
+
+  /* ==========================================================================
+     Spacing System (8pt scale)
+     ========================================================================== */
+  --space-1: 0.25rem;    /* 4px */
+  --space-2: 0.5rem;     /* 8px */
+  --space-3: 0.75rem;    /* 12px */
+  --space-4: 1rem;       /* 16px */
+  --space-5: 1.25rem;    /* 20px */
+  --space-6: 1.5rem;     /* 24px */
+  --space-8: 2rem;       /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+
+  /* ==========================================================================
+     Border Radius
+     ========================================================================== */
+  --radius-xs: 0.25rem;   /* 4px */
+  --radius-sm: 0.375rem;  /* 6px */
+  --radius-md: 0.5rem;    /* 8px */
+  --radius-lg: 0.75rem;   /* 12px */
+  --radius-xl: 1rem;      /* 16px */
+  --radius-2xl: 1.5rem;   /* 24px */
+  --radius-full: 9999px;
+
+  /* ==========================================================================
+     Layout & Container Sizes
+     ========================================================================== */
+  --container-max-width: 1200px;
+  --container-narrow-width: 800px;
+  --container-padding: clamp(1rem, 4vw, 2.5rem);
+  --header-height: 4.5rem; /* 72px */
+
+  /* ==========================================================================
+     Transitions & Motion
+     ========================================================================== */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ==========================================================================
+     Z-Index Scale
+     ========================================================================== */
+  --z-negative: -1;
+  --z-base: 1;
+  --z-sticky: 100;
+  --z-drawer: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+
+  /* ==========================================================================
+     Light Color Palette (Refined Boutique Studio / Professional Agency)
+     ========================================================================== */
+  --color-bg: #f8fafc;                  /* Subtle soft off-white background */
+  --color-bg-alt: #f1f5f9;              /* Secondary section / surface tint */
+  --color-surface: #ffffff;             /* Crisp card surface */
+  --color-surface-hover: #f8fafc;
+  --color-surface-glass: rgba(248, 250, 252, 0.88);
+
+  --color-border: #e2e8f0;              /* Light understated border */
+  --color-border-hover: #cbd5e1;
+  --color-divider: #f1f5f9;
+
+  --color-text-main: #0f172a;           /* Deep Slate for high-contrast readability */
+  --color-text-muted: #475569;          /* Balanced secondary text */
+  --color-text-subtle: #94a3b8;         /* Subdued metadata text */
+
+  --color-primary: #0f172a;             /* Authoritative deep slate for main buttons */
+  --color-primary-hover: #1e293b;
+  --color-primary-text: #ffffff;
+
+  --color-accent: #2563eb;              /* Restrained royal blue for links and active states */
+  --color-accent-hover: #1d4ed8;
+  --color-accent-light: rgba(37, 99, 235, 0.08);
+
+  --color-success: #10b981;             /* Calm Emerald for status indicator */
+  --color-success-light: rgba(16, 185, 129, 0.1);
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+
+  /* Natural, restrained elevation shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+}

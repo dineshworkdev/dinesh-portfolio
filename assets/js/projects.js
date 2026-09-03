@@ -8,16 +8,16 @@ export const projects = [
     id: "dinesh-fabrications",
     title: "Dinesh Fabrications",
     category: "Industrial & Business Website",
-    description: "A modern, mobile-responsive business website built for an MS fabrication and welding workshop in Coimbatore, showcasing their custom fabrication catalog, work gallery, and customer inquiry channels.",
-    statusBadge: "Frontend Live Preview",
-    statusNote: "Live preview of the frontend interface; backend and database integration are currently being deployed.",
+    description: "Dinesh Fabrications is a fully deployed, mobile-responsive full-stack business website built for an MS fabrication and welding workshop in Coimbatore, with service/catalog pages, project gallery, contact channels, quote requests, backend API, and database integration.",
+    statusBadge: "Live Production Website",
+    statusNote: "Fully deployed full-stack website with live backend and database integration.",
     deliverables: [
       "Structured product catalog for fabrication & welding services",
       "Mobile-first responsive layout across all devices",
       "Direct customer inquiry & quote request channels"
     ],
-    tags: ["HTML5", "Modern CSS", "JavaScript", "GitHub Pages"],
-    liveUrl: "https://dineshfabrications.github.io/DineshFabrications/"
+    tags: ["React", "Vite", "Node.js", "Express", "MongoDB", "Vercel"],
+    liveUrl: "https://dineshfabrications.vercel.app/"
   }
 ];
 

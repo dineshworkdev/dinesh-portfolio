@@ -6,9 +6,10 @@
 export function initNavigation() {
   const header = document.querySelector('.site-header');
   const navToggle = document.querySelector('.nav-toggle');
-  const navMenu = document.querySelector('.nav-menu');
-  const navBackdrop = document.querySelector('.nav-backdrop');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const drawer = document.getElementById('mobile-drawer');
+  const backdrop = document.getElementById('nav-backdrop');
+  const closeBtn = document.querySelector('.drawer-close-btn');
+  const drawerLinks = document.querySelectorAll('.drawer-link, .drawer-cta');
 
   // ==========================================================================
   // Sticky Header Scroll Effect
@@ -28,70 +29,69 @@ export function initNavigation() {
   // ==========================================================================
   // Mobile Drawer Toggle & Accessibility
   // ==========================================================================
-  if (!navToggle || !navMenu) return;
+  if (!navToggle || !drawer) return;
 
-  const closeBtn = document.querySelector('.nav-close-btn');
-
-  const openMobileMenu = () => {
+  const openDrawer = () => {
     navToggle.setAttribute('aria-expanded', 'true');
-    navMenu.setAttribute('aria-hidden', 'false');
-    navMenu.classList.add('is-open');
-    if (navBackdrop) navBackdrop.classList.add('is-active');
+    drawer.setAttribute('aria-hidden', 'false');
+    drawer.classList.add('is-open');
+    if (backdrop) backdrop.classList.add('is-active');
     document.body.classList.add('menu-open');
-    document.body.style.overflow = 'hidden'; // Prevent background scroll
-    // Focus close button or first link inside drawer
+    document.body.style.overflow = 'hidden';
+
+    // Focus close button inside drawer for accessibility
     if (closeBtn) {
       setTimeout(() => closeBtn.focus(), 50);
     }
   };
 
-  const closeMobileMenu = () => {
+  const closeDrawer = () => {
     navToggle.setAttribute('aria-expanded', 'false');
-    navMenu.setAttribute('aria-hidden', 'true');
-    navMenu.classList.remove('is-open');
-    if (navBackdrop) navBackdrop.classList.remove('is-active');
+    drawer.setAttribute('aria-hidden', 'true');
+    drawer.classList.remove('is-open');
+    if (backdrop) backdrop.classList.remove('is-active');
     document.body.classList.remove('menu-open');
     document.body.style.overflow = '';
     navToggle.focus();
   };
 
-  const toggleMobileMenu = () => {
+  const toggleDrawer = () => {
     const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
     if (isExpanded) {
-      closeMobileMenu();
+      closeDrawer();
     } else {
-      openMobileMenu();
+      openDrawer();
     }
   };
 
-  navToggle.addEventListener('click', toggleMobileMenu);
+  navToggle.addEventListener('click', toggleDrawer);
 
   if (closeBtn) {
-    closeBtn.addEventListener('click', closeMobileMenu);
+    closeBtn.addEventListener('click', closeDrawer);
   }
 
-  if (navBackdrop) {
-    navBackdrop.addEventListener('click', closeMobileMenu);
+  if (backdrop) {
+    backdrop.addEventListener('click', closeDrawer);
   }
 
-  // Close mobile menu on Escape key press
+  // Close mobile drawer on Escape key press
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
-      closeMobileMenu();
+    if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
+      closeDrawer();
     }
   });
 
-  // Close mobile menu when a nav link is clicked
-  navLinks.forEach((link) => {
+  // Close mobile drawer when any navigation link or CTA is clicked
+  drawerLinks.forEach((link) => {
     link.addEventListener('click', () => {
-      closeMobileMenu();
+      closeDrawer();
     });
   });
 
-  // Close mobile menu if window resized to desktop
+  // Close mobile drawer if window resized to desktop
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 768 && navToggle.getAttribute('aria-expanded') === 'true') {
-      closeMobileMenu();
+    if (window.innerWidth > 768 && drawer.classList.contains('is-open')) {
+      closeDrawer();
     }
   });
 }

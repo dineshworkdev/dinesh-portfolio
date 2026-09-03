@@ -54,36 +54,13 @@
         Dineshwork<span class="brand-accent">.dev</span>
       </a>
 
-      <!-- Desktop & Mobile Navigation Links -->
-      <nav id="primary-navigation" class="nav-menu" aria-label="Main Navigation" aria-hidden="true">
-        <!-- Drawer Header (Mobile Only) -->
-        <div class="nav-drawer-header">
-          <span class="nav-drawer-brand">Dineshwork<span class="brand-accent">.dev</span></span>
-          <button type="button" class="nav-close-btn" aria-label="Close navigation menu">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-          </button>
-        </div>
-
-        <div class="nav-links-list">
-          <a href="#services" class="nav-link">Services</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#process" class="nav-link">Process</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
-
-        <!-- Drawer Footer (Mobile Only) -->
-        <div class="nav-drawer-footer">
-          <a href="#contact" class="btn btn-primary btn-block">Hire Me</a>
-          <div class="nav-drawer-status">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span>Available for new projects</span>
-          </div>
-        </div>
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu desktop-nav" aria-label="Main Navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
       <!-- Navigation Actions -->
@@ -92,7 +69,7 @@
         <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
 
         <!-- Mobile Menu Toggle Button (Hamburger) -->
-        <button type="button" class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false"
+        <button type="button" class="nav-toggle" aria-controls="mobile-drawer" aria-expanded="false"
           aria-label="Toggle navigation menu">
           <span class="nav-toggle-bar"></span>
           <span class="nav-toggle-bar"></span>
@@ -100,10 +77,46 @@
         </button>
       </div>
     </div>
-
-    <!-- Mobile Drawer Overlay Backdrop -->
-    <div class="nav-backdrop" aria-hidden="true"></div>
   </header>
+
+  <!-- ==========================================================================
+       Mobile Navigation Drawer & Backdrop (Direct children of body - viewport fixed)
+       ========================================================================== -->
+  <!-- Fullscreen Backdrop -->
+  <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- Mobile Drawer Panel (Anchored to Right Viewport Edge) -->
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <!-- Drawer Header -->
+    <div class="drawer-header">
+      <span class="drawer-brand">Dineshwork<span class="brand-accent">.dev</span></span>
+      <button type="button" class="drawer-close-btn" aria-label="Close navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Drawer Navigation Links -->
+    <nav class="drawer-links" aria-label="Mobile Navigation Links">
+      <a href="#services" class="drawer-link">Services</a>
+      <a href="#projects" class="drawer-link">Projects</a>
+      <a href="#process" class="drawer-link">Process</a>
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+    </nav>
+
+    <!-- Drawer Footer -->
+    <div class="drawer-footer">
+      <a href="#contact" class="btn btn-primary btn-block drawer-cta">Hire Me</a>
+      <div class="drawer-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>Available for new projects</span>
+      </div>
+    </div>
+  </aside>
 
   <!-- ==========================================================================
        Main Content Area

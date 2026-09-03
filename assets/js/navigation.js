@@ -30,18 +30,29 @@ export function initNavigation() {
   // ==========================================================================
   if (!navToggle || !navMenu) return;
 
+  const closeBtn = document.querySelector('.nav-close-btn');
+
   const openMobileMenu = () => {
     navToggle.setAttribute('aria-expanded', 'true');
+    navMenu.setAttribute('aria-hidden', 'false');
     navMenu.classList.add('is-open');
     if (navBackdrop) navBackdrop.classList.add('is-active');
+    document.body.classList.add('menu-open');
     document.body.style.overflow = 'hidden'; // Prevent background scroll
+    // Focus close button or first link inside drawer
+    if (closeBtn) {
+      setTimeout(() => closeBtn.focus(), 50);
+    }
   };
 
   const closeMobileMenu = () => {
     navToggle.setAttribute('aria-expanded', 'false');
+    navMenu.setAttribute('aria-hidden', 'true');
     navMenu.classList.remove('is-open');
     if (navBackdrop) navBackdrop.classList.remove('is-active');
+    document.body.classList.remove('menu-open');
     document.body.style.overflow = '';
+    navToggle.focus();
   };
 
   const toggleMobileMenu = () => {
@@ -55,6 +66,10 @@ export function initNavigation() {
 
   navToggle.addEventListener('click', toggleMobileMenu);
 
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeMobileMenu);
+  }
+
   if (navBackdrop) {
     navBackdrop.addEventListener('click', closeMobileMenu);
   }
@@ -63,7 +78,6 @@ export function initNavigation() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
       closeMobileMenu();
-      navToggle.focus(); // Return focus to toggle button for accessibility
     }
   });
 

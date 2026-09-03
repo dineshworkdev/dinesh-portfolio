@@ -55,12 +55,35 @@
       </a>
 
       <!-- Desktop & Mobile Navigation Links -->
-      <nav id="primary-navigation" class="nav-menu" aria-label="Main Navigation">
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#process" class="nav-link">Process</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#contact" class="nav-link">Contact</a>
+      <nav id="primary-navigation" class="nav-menu" aria-label="Main Navigation" aria-hidden="true">
+        <!-- Drawer Header (Mobile Only) -->
+        <div class="nav-drawer-header">
+          <span class="nav-drawer-brand">Dineshwork<span class="brand-accent">.dev</span></span>
+          <button type="button" class="nav-close-btn" aria-label="Close navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="nav-links-list">
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#process" class="nav-link">Process</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Drawer Footer (Mobile Only) -->
+        <div class="nav-drawer-footer">
+          <a href="#contact" class="btn btn-primary btn-block">Hire Me</a>
+          <div class="nav-drawer-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for new projects</span>
+          </div>
+        </div>
       </nav>
 
       <!-- Navigation Actions -->
@@ -97,27 +120,27 @@
             <!-- Availability & Brand Metadata Pill -->
             <div class="hero-brand-pill">
               <span class="status-dot" aria-hidden="true"></span>
-              <span>Available for projects</span>
+              <span>Available for new projects</span>
               <span class="pill-separator" aria-hidden="true">•</span>
               <span>Dineshwork<span class="brand-accent">.dev</span></span>
             </div>
 
             <!-- Hero Headline -->
             <h1 id="hero-title" class="hero-title">
-              Freelance Web Developer Building Fast, Purpose-Built Websites for Growing Businesses.
+              Building Fast, Purpose-Built Websites That Help Growing Businesses Succeed.
             </h1>
 
             <!-- Specialization Capability Tags -->
             <div class="tag-list" aria-label="Core Capabilities">
               <span class="tag-pill">Full-Stack Websites</span>
-              <span class="tag-pill">React &amp; Vite</span>
-              <span class="tag-pill">Node.js &amp; Express</span>
-              <span class="tag-pill">Mobile-First UI</span>
+              <span class="tag-pill">Custom Architecture</span>
+              <span class="tag-pill">Mobile-First Responsive</span>
+              <span class="tag-pill">Direct Collaboration</span>
             </div>
 
             <!-- Value Proposition Description -->
             <p class="hero-description">
-              I collaborate directly with founders, small businesses, and startups to design and build clean, reliable websites and web applications with modern architecture and direct communication.
+              I work directly with founders, small businesses, and startups to turn business requirements into clean, high-performing websites and web applications—crafted around your goals, delivered without agency overhead.
             </p>
 
             <!-- Call-to-Action Action Buttons -->
@@ -131,139 +154,111 @@
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>
               </a>
-              <a href="#projects" class="btn btn-secondary btn-lg">View Selected Work</a>
-            </div>
-
-            <!-- Hero Quick Connect Social Strip -->
-            <div class="hero-social-strip" aria-label="Social and direct contact profiles">
-              <span class="hero-social-label">Connect:</span>
-              <a href="https://github.com/dineshworkdev" target="_blank" rel="noopener noreferrer"
-                class="social-icon-btn" aria-label="GitHub Profile (dineshworkdev)">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
-                  </path>
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/dinnnnesh/" target="_blank" rel="noopener noreferrer"
-                class="social-icon-btn" aria-label="Instagram Profile (@dinnnnesh)">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-                </svg>
-              </a>
-              <a href="mailto:dineshwork.dev@gmail.com" class="social-icon-btn" aria-label="Send direct email to dineshwork.dev@gmail.com">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                </svg>
-              </a>
+              <a href="#projects" class="btn btn-secondary btn-lg">View My Work</a>
             </div>
           </div>
 
-          <!-- Right Column: Editorial Developer Interface Window -->
-          <div class="hero-visual" aria-label="Featured project specification: Dinesh Fabrications">
-            <div class="craft-window">
+          <!-- Right Column: Developer Workspace / Build Process Visual -->
+          <div class="hero-visual" aria-label="Developer Workspace: Client Delivery Process">
+            <div class="workspace-board">
               <!-- Window Chrome Header -->
-              <div class="craft-window-header">
+              <div class="workspace-board-header">
                 <div class="window-dots" aria-hidden="true">
                   <span class="window-dot"></span>
                   <span class="window-dot"></span>
                   <span class="window-dot"></span>
                 </div>
-                <div class="craft-window-tab">
+                <div class="workspace-tab">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <polyline points="16 18 22 12 16 6"></polyline>
-                    <polyline points="8 6 2 12 8 18"></polyline>
+                    <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                    <path d="m9 8 4 4-4 4"></path>
                   </svg>
-                  <span>dinesh-fabrications.config.js</span>
+                  <span>delivery-process // concept-to-launch</span>
                 </div>
-                <div class="craft-status-pill">
-                  <span class="craft-status-dot" aria-hidden="true"></span>
-                  <span>Production Live</span>
+                <span class="workspace-badge">Crafted Workflow</span>
+              </div>
+
+              <!-- Pipeline Stepper Track -->
+              <div class="workspace-stepper" aria-label="Delivery Stages: Plan, Design, Build, Launch">
+                <span class="stepper-item">01. PLAN</span>
+                <span class="stepper-arrow" aria-hidden="true">→</span>
+                <span class="stepper-item">02. DESIGN</span>
+                <span class="stepper-arrow" aria-hidden="true">→</span>
+                <span class="stepper-item">03. BUILD</span>
+                <span class="stepper-arrow" aria-hidden="true">→</span>
+                <span class="stepper-item">04. LAUNCH</span>
+              </div>
+
+              <!-- Four Editorial Process Stages -->
+              <div class="workspace-stages">
+                <!-- Stage 01: Plan -->
+                <div class="workspace-stage-card">
+                  <div class="stage-num-badge" aria-hidden="true">01</div>
+                  <div class="stage-content">
+                    <div class="stage-header-row">
+                      <span class="stage-name">Plan &amp; Architecture</span>
+                      <span class="stage-pill">Phase 01</span>
+                    </div>
+                    <p class="stage-detail">
+                      Understand business goals, define content hierarchy, and establish the technical scope.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Stage 02: Design -->
+                <div class="workspace-stage-card">
+                  <div class="stage-num-badge" aria-hidden="true">02</div>
+                  <div class="stage-content">
+                    <div class="stage-header-row">
+                      <span class="stage-name">Design &amp; Interface</span>
+                      <span class="stage-pill">Phase 02</span>
+                    </div>
+                    <p class="stage-detail">
+                      Structure responsive, accessible layouts with clear visual hierarchy and typography.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Stage 03: Build -->
+                <div class="workspace-stage-card">
+                  <div class="stage-num-badge" aria-hidden="true">03</div>
+                  <div class="stage-content">
+                    <div class="stage-header-row">
+                      <span class="stage-name">Build &amp; Integrate</span>
+                      <span class="stage-pill">Phase 03</span>
+                    </div>
+                    <p class="stage-detail">
+                      Write clean semantic code, integrate APIs and databases, and optimize performance.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Stage 04: Launch -->
+                <div class="workspace-stage-card">
+                  <div class="stage-num-badge" aria-hidden="true">04</div>
+                  <div class="stage-content">
+                    <div class="stage-header-row">
+                      <span class="stage-name">Launch &amp; Handover</span>
+                      <span class="stage-pill">Phase 04</span>
+                    </div>
+                    <p class="stage-detail">
+                      Deploy to production hosting, verify cross-browser quality, and provide seamless handover.
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <!-- Window Content Body -->
-              <div class="craft-window-body">
-                <div class="craft-project-header">
-                  <span class="craft-project-badge">Featured Full-Stack Project</span>
-                  <h2 class="craft-project-title">Dinesh Fabrications</h2>
-                  <p class="craft-project-desc">
-                    MS fabrication &amp; welding workshop website with structured service catalog, project gallery, and quote inquiry backend.
-                  </p>
-                </div>
-
-                <!-- Verified Architecture Specification -->
-                <div class="craft-spec-grid">
-                  <div class="craft-spec-item">
-                    <span class="craft-spec-label">Frontend</span>
-                    <span class="craft-spec-val">React + Vite</span>
-                  </div>
-                  <div class="craft-spec-item">
-                    <span class="craft-spec-label">Backend</span>
-                    <span class="craft-spec-val">Node.js + Express</span>
-                  </div>
-                  <div class="craft-spec-item">
-                    <span class="craft-spec-label">Database</span>
-                    <span class="craft-spec-val">MongoDB</span>
-                  </div>
-                  <div class="craft-spec-item">
-                    <span class="craft-spec-label">Deployment</span>
-                    <span class="craft-spec-val">Vercel</span>
-                  </div>
-                </div>
-
-                <!-- Real Implemented Features -->
-                <div class="craft-features-list">
-                  <div class="craft-feature-item">
-                    <svg class="craft-feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Structured product catalog for fabrication services</span>
-                  </div>
-                  <div class="craft-feature-item">
-                    <svg class="craft-feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Custom work gallery &amp; project showcases</span>
-                  </div>
-                  <div class="craft-feature-item">
-                    <svg class="craft-feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <span>Direct customer quote request channels &amp; backend API</span>
-                  </div>
-                </div>
-
-                <!-- Window Footer -->
-                <div class="craft-window-footer">
-                  <div class="craft-location-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    <span>Coimbatore, Tamil Nadu</span>
-                  </div>
-                  <a href="https://dineshfabrications.vercel.app/" target="_blank" rel="noopener noreferrer"
-                    class="craft-live-btn" aria-label="Visit Dinesh Fabrications live website">
-                    <span>Visit Live Website</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" x2="21" y1="14" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
+              <!-- Workspace Footer -->
+              <div class="workspace-board-footer">
+                <span>Turnkey delivery from requirements to live website</span>
+                <span class="workspace-footer-tag">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>100% Direct Collaboration</span>
+                </span>
               </div>
             </div>
           </div>

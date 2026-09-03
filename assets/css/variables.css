@@ -78,27 +78,32 @@
   --z-toast: 400;
 
   /* ==========================================================================
-     Light Color Palette (Refined Boutique Studio / Professional Agency)
+     Light Color Palette (Refined Independent Developer / Studio Aesthetic)
      ========================================================================== */
-  --color-bg: #f8fafc;                  /* Subtle soft off-white background */
+  --color-bg: #f8fafc;                  /* Refined soft slate-tinted background */
   --color-bg-alt: #f1f5f9;              /* Secondary section / surface tint */
+  --color-bg-subtle: #fbfcfd;           /* Delicate elevated card tint */
   --color-surface: #ffffff;             /* Crisp card surface */
   --color-surface-hover: #f8fafc;
-  --color-surface-glass: rgba(248, 250, 252, 0.88);
+  --color-surface-glass: rgba(248, 250, 252, 0.92);
 
-  --color-border: #e2e8f0;              /* Light understated border */
-  --color-border-hover: #cbd5e1;
+  --color-border: #e2e8f0;              /* Understated structural border */
+  --color-border-subtle: #edf2f7;       /* Faint inner border */
+  --color-border-strong: #cbd5e1;       /* Focused / emphasized border */
+  --color-border-hover: #94a3b8;
   --color-divider: #f1f5f9;
 
-  --color-text-main: #0f172a;           /* Deep Slate for high-contrast readability */
+  --color-grid-line: rgba(15, 23, 42, 0.035); /* Static architectural grid line */
+
+  --color-text-main: #0f172a;           /* Deep Slate for authoritative readability */
   --color-text-muted: #475569;          /* Balanced secondary text */
-  --color-text-subtle: #94a3b8;         /* Subdued metadata text */
+  --color-text-subtle: #64748b;         /* Subdued metadata text with solid contrast */
 
   --color-primary: #0f172a;             /* Authoritative deep slate for main buttons */
   --color-primary-hover: #1e293b;
   --color-primary-text: #ffffff;
 
-  --color-accent: #2563eb;              /* Restrained royal blue for links and active states */
+  --color-accent: #2563eb;              /* Refined cobalt blue for links and active states */
   --color-accent-hover: #1d4ed8;
   --color-accent-light: rgba(37, 99, 235, 0.08);
 
@@ -107,9 +112,11 @@
   --color-warning: #d97706;
   --color-danger: #dc2626;
 
-  /* Natural, restrained elevation shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
+  /* Natural, layered elevation shadows with subtle top highlight */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+  --shadow-inset-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }

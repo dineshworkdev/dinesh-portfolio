@@ -135,128 +135,304 @@
 }
 
 /* ==========================================================================
-   Architectural Monogram & Grid Composition (Hero Visual)
+   Hero Brand Pill & Social Connect Strip
    ========================================================================== */
-.monogram-composition {
-  position: relative;
-  width: 100%;
-  max-width: 460px;
+.hero-brand-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.375rem 0.875rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+  box-shadow: var(--shadow-xs);
+  letter-spacing: 0.02em;
 }
 
-.monogram-grid-frame {
+.hero-brand-pill .brand-accent {
+  color: var(--color-accent);
+}
+
+.hero-brand-pill .pill-separator {
+  color: var(--color-border-strong);
+  font-weight: 300;
+}
+
+.hero-social-strip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border-subtle);
+  width: 100%;
+}
+
+.hero-social-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-subtle);
+  margin-right: var(--space-2);
+}
+
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: border-color var(--transition-fast),
+              background-color var(--transition-fast),
+              color var(--transition-fast),
+              transform var(--transition-fast);
+}
+
+.social-icon-btn:hover {
+  border-color: var(--color-border-strong);
+  background-color: var(--color-bg-alt);
+  color: var(--color-text-main);
+  transform: translateY(-1px);
+}
+
+.social-icon-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.social-icon-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ==========================================================================
+   Editorial Developer Interface & Production Showcase Window (Hero Visual)
+   ========================================================================== */
+.craft-window {
   position: relative;
-  padding: var(--space-8);
+  width: 100%;
+  max-width: 480px;
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-lg), var(--shadow-inset-highlight);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.craft-window:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl), var(--shadow-inset-highlight);
+}
+
+/* Window Title Bar */
+.craft-window-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+  gap: var(--space-3);
+}
+
+.window-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.window-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  background-color: #cbd5e1;
+}
+
+.craft-window-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  background-color: var(--color-surface);
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+.craft-window-tab svg {
+  width: 12px;
+  height: 12px;
+  color: var(--color-accent);
+}
+
+.craft-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.6875rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+  background-color: var(--color-surface);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+}
+
+.craft-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-success);
+}
+
+/* Window Body Content */
+.craft-window-body {
+  padding: var(--space-6);
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
 }
 
-.grid-cross {
-  position: absolute;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 300;
-  color: var(--color-text-subtle);
-  line-height: 1;
-  user-select: none;
-}
-
-.grid-cross.top-left { top: 8px; left: 10px; }
-.grid-cross.top-right { top: 8px; right: 10px; }
-.grid-cross.bottom-left { bottom: 8px; left: 10px; }
-.grid-cross.bottom-right { bottom: 8px; right: 10px; }
-
-.monogram-card {
+.craft-project-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-10) var(--space-6);
-  background-color: var(--color-bg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  text-align: center;
-}
-
-.monogram-display {
-  display: inline-flex;
-  align-items: baseline;
-  justify-content: center;
   gap: 4px;
-  font-family: var(--font-heading);
-  font-size: clamp(3.75rem, 7vw, 5.25rem);
-  font-weight: 800;
-  color: var(--color-text-main);
-  letter-spacing: -0.04em;
-  line-height: 1;
 }
 
-.monogram-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: var(--radius-full);
-  background-color: var(--color-accent);
-  margin-bottom: 6px;
-}
-
-.monogram-letter {
-  font-family: var(--font-heading);
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  line-height: 1;
-  color: var(--color-text-main);
-}
-
-.monogram-caption {
+.craft-project-badge {
   font-size: 0.6875rem;
   font-weight: var(--font-weight-semibold);
-  color: var(--color-text-muted);
-  letter-spacing: 0.08em;
+  color: var(--color-accent);
   text-transform: uppercase;
-  margin-top: var(--space-3);
+  letter-spacing: 0.06em;
 }
 
-.specimen-plate {
-  margin-top: -1.375rem;
+.craft-project-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-main);
+  letter-spacing: -0.02em;
+}
+
+.craft-project-desc {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-base);
+}
+
+/* Specification Grid (Factual Project Stack) */
+.craft-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+}
+
+.craft-spec-item {
   display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: var(--z-base);
+  flex-direction: column;
+  gap: 2px;
+  padding: 0.625rem 0.75rem;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
 }
 
-.specimen-badge {
-  display: inline-flex;
+.craft-spec-label {
+  font-size: 0.625rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.craft-spec-val {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-main);
+}
+
+/* Deliverables Checklist (Factual Implementation) */
+.craft-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.craft-feature-item {
+  display: flex;
   align-items: center;
   gap: var(--space-2);
-  padding: 0.5rem 1.125rem;
-  background-color: var(--color-primary);
-  color: #ffffff;
-  border-radius: var(--radius-md);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-semibold);
-  box-shadow: var(--shadow-md);
-  letter-spacing: 0.01em;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
 }
 
-.specimen-icon {
+.craft-feature-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+/* Window Bottom Action Footer */
+.craft-window-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-top: var(--space-1);
+}
+
+.craft-location-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6875rem;
+  color: var(--color-text-subtle);
+}
+
+.craft-location-info svg {
   width: 13px;
   height: 13px;
-  color: var(--color-accent);
 }
 
-.monogram-footer {
-  display: flex;
-  justify-content: space-between;
+.craft-live-btn {
+  display: inline-flex;
   align-items: center;
-  font-size: 0.6875rem;
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-subtle);
-  padding-top: var(--space-3);
-  border-top: 1px dashed var(--color-border);
+  gap: 5px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent);
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  background-color: var(--color-accent-light);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.craft-live-btn:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.craft-live-btn svg {
+  width: 12px;
+  height: 12px;
 }
 
 /* ==========================================================================

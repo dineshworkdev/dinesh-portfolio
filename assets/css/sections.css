@@ -166,11 +166,20 @@
    ========================================================================== */
 .hero-section {
   position: relative;
-  min-height: calc(85vh - var(--header-height));
+  min-height: calc(88vh - var(--header-height));
   display: flex;
   align-items: center;
   padding-top: var(--space-12);
   padding-bottom: var(--space-16);
+  background-color: var(--color-bg);
+  /* Static architectural background: subtle neutral radial tint & fine gridlines */
+  background-image:
+    radial-gradient(ellipse 70% 50% at 85% 20%, rgba(37, 99, 235, 0.04), transparent 70%),
+    linear-gradient(to right, var(--color-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-grid-line) 1px, transparent 1px);
+  background-size: 100% 100%, 36px 36px, 36px 36px;
+  background-position: center top, center center, center center;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .hero-grid {
@@ -185,16 +194,17 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--space-5);
+  gap: var(--space-4);
   max-width: 620px;
 }
 
 .hero-title {
-  font-size: var(--font-size-4xl);
+  font-size: clamp(2rem, 1.6rem + 2vw, 3.125rem);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   color: var(--color-text-main);
   letter-spacing: -0.03em;
+  margin-top: var(--space-1);
 }
 
 .hero-description {
@@ -318,7 +328,7 @@
 @media (max-width: 992px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-10);
+    gap: var(--space-8);
   }
 
   .hero-content {
@@ -326,7 +336,12 @@
   }
 
   .hero-visual {
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .craft-window {
+    max-width: 100%;
   }
 
   .project-showcase-card {
@@ -406,10 +421,17 @@
     width: 100%;
     flex-direction: column;
     align-items: stretch;
+    gap: var(--space-3);
   }
 
   .hero-actions .btn {
     width: 100%;
+    min-height: 48px;
+    justify-content: center;
+  }
+
+  .hero-social-strip {
+    justify-content: flex-start;
   }
 
   .services-section,
@@ -451,5 +473,43 @@
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .craft-window-header {
+    padding: 0.625rem 0.75rem;
+  }
+
+  .craft-window-tab {
+    font-size: 0.625rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .craft-window-body {
+    padding: var(--space-4);
+    gap: var(--space-4);
+  }
+
+  .craft-spec-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .craft-window-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .craft-live-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.5rem;
   }
 }

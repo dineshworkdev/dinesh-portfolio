@@ -5,28 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Dineshwork.dev — Freelance Web Developer based in Tamil Nadu, India. Building clean, fast, purpose-built websites and web applications for growing businesses.">
+    content="Dinesh M — Independent Web Developer & Digital Solutions Builder. Building custom business websites, direct booking engines, management dashboards, and high-performance digital systems for growing companies.">
   <meta name="theme-color" content="#f8fafc">
   <meta name="author" content="Dinesh M">
 
-  <title>Dineshwork.dev | Freelance Web Developer</title>
-
-  <!-- Canonical URL — update with your final deployed domain before going live -->
-  <!-- <link rel="canonical" href="https://dineshwork.dev/"> -->
+  <title>Dinesh M | Independent Web Developer &amp; Business Systems Builder</title>
 
   <!-- Open Graph / Social Preview -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Dineshwork.dev | Freelance Web Developer">
+  <meta property="og:title" content="Dinesh M | Independent Web Developer & Business Systems Builder">
   <meta property="og:description"
-    content="Freelance Web Developer based in Tamil Nadu, India. Building clean, fast, purpose-built websites and web applications for growing businesses.">
-  <!-- Update og:url and og:image with your final domain and a preview image before publishing -->
-  <!-- <meta property="og:url" content="https://[your-domain.com]/"> -->
-  <!-- <meta property="og:image" content="https://[your-domain.com]/assets/images/og-preview.png"> -->
+    content="I build digital experiences and business systems around real business needs. Custom business websites, direct booking systems, dashboards, and tailored web solutions.">
+  <meta property="og:site_name" content="Dineshwork.dev">
 
   <!-- Favicon -->
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
 
-  <!-- Google Fonts Preconnect -->
+  <!-- Google Fonts Preconnect & High-Performance Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -38,6 +33,58 @@
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/sections.css">
+
+  <!-- JSON-LD Structured Data: Business-focused Web Developer -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Dinesh M — Web Developer & Business Systems Builder",
+    "url": "https://dineshwork.dev/",
+    "telephone": "+918610951813",
+    "email": "dineshwork.dev@gmail.com",
+    "description": "Building custom business websites, booking engines, management dashboards, and digital solutions for growing companies.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "IN"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Digital Solutions & Web Development",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Business Websites"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Direct Booking Systems"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Business Management Dashboards"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Digital Solutions"
+          }
+        }
+      ]
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -50,14 +97,14 @@
   <header id="header" class="site-header" role="banner">
     <div class="container nav-container">
       <!-- Brand Logo / Personal Brand -->
-      <a href="#" class="nav-brand" aria-label="Dineshwork.dev - Home">
+      <a href="#" class="nav-brand" aria-label="Dinesh M — Home">
         Dineshwork<span class="brand-accent">.dev</span>
       </a>
 
-      <!-- Desktop Navigation Links -->
+      <!-- Desktop Navigation Links (Client-Friendly Concepts) -->
       <nav class="nav-menu desktop-nav" aria-label="Main Navigation">
+        <a href="#work" class="nav-link">Work</a>
         <a href="#services" class="nav-link">Services</a>
-        <a href="#projects" class="nav-link">Projects</a>
         <a href="#process" class="nav-link">Process</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#contact" class="nav-link">Contact</a>
@@ -66,7 +113,7 @@
       <!-- Navigation Actions -->
       <div class="nav-actions">
         <!-- Header CTA Button -->
-        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
 
         <!-- Mobile Menu Toggle Button (Hamburger) -->
         <button type="button" class="nav-toggle" aria-controls="mobile-drawer" aria-expanded="false"
@@ -80,14 +127,11 @@
   </header>
 
   <!-- ==========================================================================
-       Mobile Navigation Drawer & Backdrop (Direct children of body - viewport fixed)
+       Mobile Navigation Drawer & Backdrop
        ========================================================================== -->
-  <!-- Fullscreen Backdrop -->
   <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
 
-  <!-- Mobile Drawer Panel (Anchored to Right Viewport Edge) -->
   <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
-    <!-- Drawer Header -->
     <div class="drawer-header">
       <span class="drawer-brand">Dineshwork<span class="brand-accent">.dev</span></span>
       <button type="button" class="drawer-close-btn" aria-label="Close navigation menu">
@@ -101,8 +145,8 @@
 
     <!-- Drawer Navigation Links -->
     <nav class="drawer-links" aria-label="Mobile Navigation Links">
+      <a href="#work" class="drawer-link">Work</a>
       <a href="#services" class="drawer-link">Services</a>
-      <a href="#projects" class="drawer-link">Projects</a>
       <a href="#process" class="drawer-link">Process</a>
       <a href="#about" class="drawer-link">About</a>
       <a href="#contact" class="drawer-link">Contact</a>
@@ -110,10 +154,10 @@
 
     <!-- Drawer Footer -->
     <div class="drawer-footer">
-      <a href="#contact" class="btn btn-primary btn-block drawer-cta">Hire Me</a>
+      <a href="#contact" class="btn btn-primary btn-block drawer-cta">Start a Project</a>
       <div class="drawer-status">
         <span class="status-dot" aria-hidden="true"></span>
-        <span>Available for new projects</span>
+        <span>Available for new client projects</span>
       </div>
     </div>
   </aside>
@@ -122,44 +166,46 @@
        Main Content Area
        ========================================================================== -->
   <main id="main-content" class="site-main" role="main">
+
     <!-- ==========================================================================
-         Hero Section
+         HERO SECTION: Central Business Positioning
+         "I build digital experiences and business systems around real business needs."
          ========================================================================== -->
     <section id="hero" class="hero-section" aria-labelledby="hero-title">
       <div class="container">
         <div class="hero-grid">
-          <!-- Left Column: Value Proposition & Information -->
+          <!-- Left Column: Clear Value Proposition -->
           <div class="hero-content">
-            <!-- Availability & Brand Metadata Pill -->
+            <!-- Availability & Brand Pill -->
             <div class="hero-brand-pill">
               <span class="status-dot" aria-hidden="true"></span>
-              <span>Available for new projects</span>
+              <span>Available for new client projects</span>
               <span class="pill-separator" aria-hidden="true">•</span>
-              <span>Dineshwork<span class="brand-accent">.dev</span></span>
+              <span>Tamil Nadu, India</span>
             </div>
 
-            <!-- Hero Headline -->
+            <!-- Central Positioning Headline -->
             <h1 id="hero-title" class="hero-title">
-              Building Fast, Purpose-Built Websites That Help Growing Businesses Succeed.
+              I build digital experiences and business systems around real business needs.
             </h1>
 
-            <!-- Specialization Capability Tags -->
-            <div class="tag-list" aria-label="Core Capabilities">
-              <span class="tag-pill">Full-Stack Websites</span>
-              <span class="tag-pill">Custom Architecture</span>
-              <span class="tag-pill">Mobile-First Responsive</span>
-              <span class="tag-pill">Direct Collaboration</span>
+            <!-- Business Specialization Pills -->
+            <div class="tag-list" aria-label="Core Solutions Offered">
+              <span class="tag-pill">Business Websites</span>
+              <span class="tag-pill">Booking Systems</span>
+              <span class="tag-pill">Business Dashboards</span>
+              <span class="tag-pill">Custom Digital Solutions</span>
             </div>
 
             <!-- Value Proposition Description -->
             <p class="hero-description">
-              I work directly with founders, small businesses, and startups to turn business requirements into clean, high-performing websites and web applications—crafted around your goals, delivered without agency overhead.
+              I collaborate directly with business owners, founders, and growing companies to turn manual workflows and scattered operations into fast, dependable web applications—crafted for qualified client conversion, delivered without agency overhead.
             </p>
 
-            <!-- Call-to-Action Action Buttons -->
+            <!-- Call-to-Action Actions -->
             <div class="hero-actions">
               <a href="#contact" class="btn btn-primary btn-lg">
-                <span>Let's Work Together</span>
+                <span>Start a Project</span>
                 <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   aria-hidden="true">
@@ -167,14 +213,14 @@
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>
               </a>
-              <a href="#projects" class="btn btn-secondary btn-lg">View My Work</a>
+              <a href="#work" class="btn btn-secondary btn-lg">View Selected Work</a>
             </div>
           </div>
 
-          <!-- Right Column: Developer Workspace / Build Process Visual -->
-          <div class="hero-visual" aria-label="Developer Workspace: Client Delivery Process">
+          <!-- Right Column: Business Systems in Action Showcase -->
+          <div class="hero-visual" aria-label="Operational Business Systems Overview">
             <div class="workspace-board">
-              <!-- Window Chrome Header -->
+              <!-- Header Bar -->
               <div class="workspace-board-header">
                 <div class="window-dots" aria-hidden="true">
                   <span class="window-dot"></span>
@@ -187,76 +233,62 @@
                     <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                     <path d="m9 8 4 4-4 4"></path>
                   </svg>
-                  <span>delivery-process // concept-to-launch</span>
+                  <span>solutions // engineered-for-business</span>
                 </div>
-                <span class="workspace-badge">Crafted Workflow</span>
+                <span class="workspace-badge">Turnkey Delivery</span>
               </div>
 
-              <!-- Pipeline Stepper Track -->
-              <div class="workspace-stepper" aria-label="Delivery Stages: Plan, Design, Build, Launch">
-                <span class="stepper-item">01. PLAN</span>
+              <!-- Systems Stepper Track -->
+              <div class="workspace-stepper" aria-label="Capabilities Track">
+                <span class="stepper-item">WEBSITES</span>
                 <span class="stepper-arrow" aria-hidden="true">→</span>
-                <span class="stepper-item">02. DESIGN</span>
+                <span class="stepper-item">BOOKINGS</span>
                 <span class="stepper-arrow" aria-hidden="true">→</span>
-                <span class="stepper-item">03. BUILD</span>
+                <span class="stepper-item">DASHBOARDS</span>
                 <span class="stepper-arrow" aria-hidden="true">→</span>
-                <span class="stepper-item">04. LAUNCH</span>
+                <span class="stepper-item">CUSTOM TOOLS</span>
               </div>
 
-              <!-- Four Editorial Process Stages -->
+              <!-- Real Solutions Cards -->
               <div class="workspace-stages">
-                <!-- Stage 01: Plan -->
+                <!-- Solution 01: Direct Booking Engine -->
                 <div class="workspace-stage-card">
                   <div class="stage-num-badge" aria-hidden="true">01</div>
                   <div class="stage-content">
                     <div class="stage-header-row">
-                      <span class="stage-name">Plan &amp; Architecture</span>
-                      <span class="stage-pill">Phase 01</span>
+                      <span class="stage-name">Direct Booking Systems</span>
+                      <span class="stage-pill">Revenue Engine</span>
                     </div>
                     <p class="stage-detail">
-                      Understand business goals, define content hierarchy, and establish the technical scope.
+                      Commission-free guest reservation flows, live date-range checks, and automated intake for hospitality.
                     </p>
                   </div>
                 </div>
 
-                <!-- Stage 02: Design -->
+                <!-- Solution 02: Business Websites & Catalogues -->
                 <div class="workspace-stage-card">
                   <div class="stage-num-badge" aria-hidden="true">02</div>
                   <div class="stage-content">
                     <div class="stage-header-row">
-                      <span class="stage-name">Design &amp; Interface</span>
-                      <span class="stage-pill">Phase 02</span>
+                      <span class="stage-name">High-Conversion Business Sites</span>
+                      <span class="stage-pill">Client Growth</span>
                     </div>
                     <p class="stage-detail">
-                      Structure responsive, accessible layouts with clear visual hierarchy and typography.
+                      Mobile-first service showcases, photo portfolios, and 1-tap WhatsApp and phone consultation channels.
                     </p>
                   </div>
                 </div>
 
-                <!-- Stage 03: Build -->
+                <!-- Solution 03: Operational Dashboards -->
                 <div class="workspace-stage-card">
                   <div class="stage-num-badge" aria-hidden="true">03</div>
                   <div class="stage-content">
                     <div class="stage-header-row">
-                      <span class="stage-name">Build &amp; Integrate</span>
-                      <span class="stage-pill">Phase 03</span>
+                      <span class="stage-name">Owner Dashboards &amp; Portals</span>
+                      <span class="stage-pill">Control Hub</span>
                     </div>
                     <p class="stage-detail">
-                      Write clean semantic code, integrate APIs and databases, and optimize performance.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Stage 04: Launch -->
-                <div class="workspace-stage-card">
-                  <div class="stage-num-badge" aria-hidden="true">04</div>
-                  <div class="stage-content">
-                    <div class="stage-header-row">
-                      <span class="stage-name">Launch &amp; Handover</span>
-                      <span class="stage-pill">Phase 04</span>
-                    </div>
-                    <p class="stage-detail">
-                      Deploy to production hosting, verify cross-browser quality, and provide seamless handover.
+                      Private portals for business owners to manage customer records, track inquiries, and control daily operations.
                     </p>
                   </div>
                 </div>
@@ -264,13 +296,13 @@
 
               <!-- Workspace Footer -->
               <div class="workspace-board-footer">
-                <span>Turnkey delivery from requirements to live website</span>
+                <span>Direct 1-on-1 collaboration from brief to live system</span>
                 <span class="workspace-footer-tag">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>100% Direct Collaboration</span>
+                  <span>100% Code Ownership</span>
                 </span>
               </div>
             </div>
@@ -280,329 +312,264 @@
     </section>
 
     <!-- ==========================================================================
-         Services Section
+         SELECTED WORK SECTION: What I Have Built
+         1. DECCAN RESORT
+         2. DINESH FABRICATIONS
          ========================================================================== -->
-    <section id="services" class="services-section" aria-labelledby="services-title">
+    <section id="work" class="projects-section" aria-labelledby="work-title">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header">
-          <span class="section-tag">Services</span>
-          <h2 id="services-title" class="section-title">Focused Web Development Services</h2>
-          <p class="section-desc">
-            Clean, reliable web development solutions designed to support your business goals with clarity and
-            performance.
-          </p>
-        </div>
-
-        <!-- Services Grid -->
-        <div class="services-grid">
-          <!-- Service 1: Custom Business Websites -->
-          <article class="service-card">
-            <div class="service-card-top">
-              <div class="service-header-row">
-                <span class="service-number">01</span>
-              </div>
-              <h3 class="service-title">Custom Business Websites</h3>
-              <p class="service-desc">
-                Multi-page websites designed to establish a credible, professional online presence for businesses,
-                consultants, and service providers.
-              </p>
-
-              <!-- Deliverables -->
-              <div class="service-deliverables">
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>3 to 6 custom pages tailored to your business</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Responsive layouts for mobile, tablet, and desktop</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Direct-to-email contact form integration</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Clean semantic HTML &amp; basic on-page SEO structure</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Subtle Tech Scope Tags -->
-            <div class="service-tech-tags">
-              <span class="tech-tag-subtle">HTML5</span>
-              <span class="tech-tag-subtle">Modern CSS</span>
-              <span class="tech-tag-subtle">Vanilla JS</span>
-              <span class="tech-tag-subtle">Serverless Forms</span>
-            </div>
-          </article>
-
-          <!-- Service 2: High-Impact Landing Pages -->
-          <article class="service-card">
-            <div class="service-card-top">
-              <div class="service-header-row">
-                <span class="service-number">02</span>
-              </div>
-              <h3 class="service-title">High-Impact Landing Pages</h3>
-              <p class="service-desc">
-                Focused, single-page websites engineered to present a product, service, or campaign clearly and
-                encourage visitor inquiries.
-              </p>
-
-              <!-- Deliverables -->
-              <div class="service-deliverables">
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Structured single-page layout with clear visual hierarchy</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Distraction-free, fast-loading user experience</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Lead capture and project inquiry form setup</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Interactive components (accordions, modal views)</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Subtle Tech Scope Tags -->
-            <div class="service-tech-tags">
-              <span class="tech-tag-subtle">HTML5</span>
-              <span class="tech-tag-subtle">CSS Grid / Flexbox</span>
-              <span class="tech-tag-subtle">JavaScript</span>
-            </div>
-          </article>
-
-          <!-- Service 3: Website Redesigns & Modernization -->
-          <article class="service-card">
-            <div class="service-card-top">
-              <div class="service-header-row">
-                <span class="service-number">03</span>
-              </div>
-              <h3 class="service-title">Website Redesigns &amp; Modernization</h3>
-              <p class="service-desc">
-                Visual and technical upgrades for existing websites that look outdated, load slowly, or fail to provide
-                a good mobile experience.
-              </p>
-
-              <!-- Deliverables -->
-              <div class="service-deliverables">
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Complete layout and visual modernization</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Full mobile responsiveness overhaul</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Markup cleanup and asset optimization</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Improved navigation and content structure</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Subtle Tech Scope Tags -->
-            <div class="service-tech-tags">
-              <span class="tech-tag-subtle">CSS Architecture</span>
-              <span class="tech-tag-subtle">Asset Optimization</span>
-              <span class="tech-tag-subtle">Responsive Refactoring</span>
-            </div>
-          </article>
-
-          <!-- Service 4: Frontend UI Implementation -->
-          <article class="service-card">
-            <div class="service-card-top">
-              <div class="service-header-row">
-                <span class="service-number">04</span>
-              </div>
-              <h3 class="service-title">Frontend UI Implementation</h3>
-              <p class="service-desc">
-                Translating design mockups and wireframes into clean, accessible, and structured frontend code for
-                founders and teams.
-              </p>
-
-              <!-- Deliverables -->
-              <div class="service-deliverables">
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Accurate implementation of approved designs across screen sizes</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Reusable, modular component structure</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Interactive UI states, navigation, and modal drawers</span>
-                </div>
-                <div class="deliverable-item">
-                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  <span>Clean, well-documented code for easy integration</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Subtle Tech Scope Tags -->
-            <div class="service-tech-tags">
-              <span class="tech-tag-subtle">ES6+ JavaScript</span>
-              <span class="tech-tag-subtle">Modular CSS</span>
-              <span class="tech-tag-subtle">DOM API</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         Selected Projects Section
-         ========================================================================== -->
-    <section id="projects" class="projects-section" aria-labelledby="projects-title">
-      <div class="container">
-        <!-- Section Header -->
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <span class="section-tag">Featured Work</span>
-          <h2 id="projects-title" class="section-title">Selected Projects</h2>
+          <h2 id="work-title" class="section-title">Selected Projects</h2>
           <p class="section-desc">
-            A showcase of real-world websites and web interfaces built for businesses.
+            Real-world digital systems engineered to solve genuine business challenges, streamline customer interactions, and generate qualified leads.
           </p>
         </div>
 
         <!-- Projects Showcase List -->
         <div class="projects-list">
-          <!-- Featured Project: Dinesh Fabrications -->
-          <article class="project-showcase-card">
-            <!-- Left: Visual Preview Container -->
+
+          <!-- ====================================================================
+               FLAGSHIP PROJECT 1: DECCAN RESORT
+               Resort website + direct booking + guest and owner management experience
+               ==================================================================== -->
+          <article class="project-showcase-card reveal-on-scroll" aria-labelledby="project-title-deccan">
+            <!-- Left: Bespoke Hospitality Visual Preview Frame -->
             <div class="project-preview-frame">
-              <div class="project-status-pill">
-                <span class="status-dot-accent" aria-hidden="true"></span>
-                <span>Live Production Website</span>
+              <div class="project-preview-header">
+                <div class="preview-window-dots" aria-hidden="true">
+                  <span class="preview-window-dot"></span>
+                  <span class="preview-window-dot"></span>
+                  <span class="preview-window-dot"></span>
+                </div>
+                <span>deccanresort.com // direct-booking</span>
+                <span class="status-badge status-badge-accent">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span>Complete Build</span>
+                </span>
               </div>
 
-              <div class="project-mockup-canvas">
-                <svg class="project-mockup-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                  <rect width="20" height="14" x="2" y="3" rx="2"></rect>
-                  <line x1="8" x2="16" y1="21" y2="21"></line>
-                  <line x1="12" x2="12" y1="17" y2="21"></line>
-                </svg>
-                <div class="project-mockup-title">Dinesh Fabrications</div>
-                <p class="project-mockup-subtitle">MS Fabrication &amp; Welding Workshop Web Interface</p>
+              <div class="project-mockup-body">
+                <div class="mockup-deccan-card">
+                  <div class="mockup-deccan-hero">
+                    <div>
+                      <div class="mockup-hotel-name">Deccan Resort &amp; Suites</div>
+                      <span style="font-size: 0.625rem; color: var(--color-text-subtle);">Luxury Eco-Living Destination</span>
+                    </div>
+                    <span class="mockup-rating-tag">★ 4.9 Direct Guest Rating</span>
+                  </div>
+
+                  <!-- Interactive Booking Bar Preview -->
+                  <div class="mockup-booking-bar">
+                    <div class="mockup-bar-item">
+                      <span class="mockup-bar-label">Dates</span>
+                      <span class="mockup-bar-val">Oct 14 – Oct 18</span>
+                    </div>
+                    <div class="mockup-bar-item">
+                      <span class="mockup-bar-label">Guests</span>
+                      <span class="mockup-bar-val">2 Adults, 1 Suite</span>
+                    </div>
+                    <div class="mockup-btn-primary">
+                      <span>Reserve Direct</span>
+                    </div>
+                  </div>
+
+                  <!-- Room Discovery Preview -->
+                  <div class="mockup-rooms-preview">
+                    <div class="mockup-room-pill">
+                      <span class="mockup-room-title">Heritage Garden Villa</span>
+                      <span class="mockup-room-price">₹4,800/nt</span>
+                    </div>
+                    <div class="mockup-room-pill">
+                      <span class="mockup-room-title">Poolside Suite</span>
+                      <span class="mockup-room-price">₹6,200/nt</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="project-preview-footer">
-                <span>Coimbatore, Tamil Nadu</span>
-                <span>Industrial Fabrication</span>
+                <span>Commission-Free Direct Booking Engine</span>
+                <span>Private Owner Portal</span>
               </div>
             </div>
 
-            <!-- Right: Project Details & Deliverables -->
+            <!-- Right: Business Problem, Solution & Deliverables -->
             <div class="project-details">
               <div class="project-meta-top">
-                <span class="project-category-tag">Industrial &amp; Business Website</span>
-                <h3 class="project-title">Dinesh Fabrications</h3>
-                <p class="project-desc">
-                  Dinesh Fabrications is a fully deployed, mobile-responsive full-stack business website built for an MS fabrication and welding workshop in Coimbatore, with service/catalog pages, project gallery, contact channels, quote requests, backend API, and database integration.
+                <div class="project-category-row">
+                  <span class="project-category-tag">Hospitality &amp; Booking Management</span>
+                </div>
+
+                <h3 id="project-title-deccan" class="project-title">Deccan Resort</h3>
+
+                <p class="project-tagline">
+                  Resort website + direct booking + guest and owner management experience
                 </p>
 
-                <!-- Deliverables List -->
+                <p class="project-desc">
+                  Built to give a boutique resort complete independence from high online travel agency commissions. The platform pairs a high-touch guest discovery interface with a real-time reservation engine and an owner dashboard for daily booking and occupancy management.
+                </p>
+
+                <!-- Core Deliverables -->
                 <div class="project-deliverables-list">
                   <div class="deliverable-item">
                     <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    <span>Structured product catalog for fabrication &amp; welding services</span>
+                    <span><strong>Room Discovery:</strong> Visual suite exploration with rates, amenities, and capacity guidelines.</span>
                   </div>
                   <div class="deliverable-item">
                     <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    <span>Mobile-first responsive layout across all devices</span>
+                    <span><strong>Direct Booking Flow:</strong> Frictionless date selection, room configuration, and instant confirmation.</span>
                   </div>
                   <div class="deliverable-item">
                     <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    <span>Direct customer inquiry &amp; quote request channels</span>
+                    <span><strong>Owner Dashboard:</strong> Centralized calendar view of active reservations, guest requests, and date blocking.</span>
                   </div>
-                </div>
-
-                <!-- Transparent Technical Status Callout -->
-                <div class="project-status-note">
-                  <svg class="status-note-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" x2="12" y1="16" y2="12"></line>
-                    <line x1="12" x2="12.01" y1="8" y2="8"></line>
-                  </svg>
-                  <span>Fully deployed full-stack website with live backend and database integration.</span>
                 </div>
               </div>
 
-              <!-- Footer Row: Technology Tags & Action Link -->
+              <!-- Footer Row: Technology Tags & Deep Dive Trigger -->
               <div class="project-footer-row">
-                <div class="project-tech-tags">
+                <div class="project-tech-tags" aria-label="Technology Stack">
+                  <span class="tech-tag-subtle">Full-Stack Web</span>
+                  <span class="tech-tag-subtle">Booking API</span>
+                  <span class="tech-tag-subtle">Database Storage</span>
+                  <span class="tech-tag-subtle">Cloud Hosting</span>
+                </div>
+
+                <div class="project-actions-group">
+                  <button type="button" class="btn btn-primary btn-sm" data-open-project="deccan-resort">
+                    <span>View Case Study</span>
+                    <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      aria-hidden="true">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ====================================================================
+               FLAGSHIP PROJECT 2: DINESH FABRICATIONS
+               Business website + service showcase + enquiry/quote experience
+               ==================================================================== -->
+          <article class="project-showcase-card reveal-on-scroll" aria-labelledby="project-title-fabrications">
+            <!-- Left: Bespoke Industrial Visual Preview Frame -->
+            <div class="project-preview-frame">
+              <div class="project-preview-header">
+                <div class="preview-window-dots" aria-hidden="true">
+                  <span class="preview-window-dot"></span>
+                  <span class="preview-window-dot"></span>
+                  <span class="preview-window-dot"></span>
+                </div>
+                <span>dineshfabrications.vercel.app</span>
+                <span class="status-badge status-badge-success">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span>Live Production</span>
+                </span>
+              </div>
+
+              <div class="project-mockup-body">
+                <div class="mockup-fabrications-card">
+                  <div class="mockup-fab-header">
+                    <div>
+                      <div class="mockup-fab-name">Dinesh Fabrications</div>
+                      <span class="mockup-fab-city">MS Fabrication &amp; Welding Workshop • Coimbatore</span>
+                    </div>
+                  </div>
+
+                  <!-- Service Categories Grid Preview -->
+                  <div class="mockup-service-tiles">
+                    <div class="mockup-service-tile">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                      <span>Laser Gates</span>
+                    </div>
+                    <div class="mockup-service-tile">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                      <span>Factory Sheds</span>
+                    </div>
+                    <div class="mockup-service-tile">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                      <span>Safety Grills</span>
+                    </div>
+                  </div>
+
+                  <!-- Mobile Conversion Action Preview -->
+                  <div class="mockup-conversion-banner">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                      Instant WhatsApp &amp; Call Quotes
+                    </span>
+                    <span class="mockup-fast-tag">Database-Backed</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-preview-footer">
+                <span>Coimbatore, Tamil Nadu</span>
+                <span>Live Client Production Deployment</span>
+              </div>
+            </div>
+
+            <!-- Right: Business Problem, Solution & Deliverables -->
+            <div class="project-details">
+              <div class="project-meta-top">
+                <div class="project-category-row">
+                  <span class="project-category-tag">Industrial &amp; Commercial Website</span>
+                </div>
+
+                <h3 id="project-title-fabrications" class="project-title">Dinesh Fabrications</h3>
+
+                <p class="project-tagline">
+                  Business website + service showcase + enquiry/quote experience
+                </p>
+
+                <p class="project-desc">
+                  Built for an MS fabrication and welding workshop in Coimbatore to establish commercial credibility with builders and homeowners, showcase heavy fabrication capabilities, and convert mobile visitors into phone calls, WhatsApp consultations, and structured quote requests.
+                </p>
+
+                <!-- Core Deliverables -->
+                <div class="project-deliverables-list">
+                  <div class="deliverable-item">
+                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>Service Presentation:</strong> Categorized catalog for architectural metalwork, gates, railings, and industrial sheds.</span>
+                  </div>
+                  <div class="deliverable-item">
+                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>Project &amp; Gallery Showcase:</strong> High-resolution past installations demonstrating metal craftsmanship.</span>
+                  </div>
+                  <div class="deliverable-item">
+                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>Quote Request Engine:</strong> Mobile-optimized inquiry channels connecting directly to live backend and database.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Footer Row: Technology Tags & Action Links -->
+              <div class="project-footer-row">
+                <div class="project-tech-tags" aria-label="Technology Stack">
                   <span class="tech-tag-subtle">React</span>
                   <span class="tech-tag-subtle">Vite</span>
                   <span class="tech-tag-subtle">Node.js</span>
@@ -611,105 +578,311 @@
                   <span class="tech-tag-subtle">Vercel</span>
                 </div>
 
-                <a href="https://dineshfabrications.vercel.app/" target="_blank"
-                  rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                  <span>View Live Website</span>
-                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" x2="21" y1="14" y2="3"></line>
-                  </svg>
-                </a>
+                <div class="project-actions-group">
+                  <button type="button" class="btn btn-secondary btn-sm" data-open-project="dinesh-fabrications">
+                    <span>Case Study</span>
+                  </button>
+
+                  <a href="https://dineshfabrications.vercel.app/" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <span>View Live Site</span>
+                    <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" x2="21" y1="14" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         How I Work (Process) Section
+         WHAT I BUILD (SERVICES) SECTION
+         1. Business Websites
+         2. Booking Systems
+         3. Business Dashboards
+         4. Custom Digital Solutions
+         ========================================================================== -->
+    <section id="services" class="services-section" aria-labelledby="services-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">What I Build</span>
+          <h2 id="services-title" class="section-title">Digital Systems Tailored to Real Business Needs</h2>
+          <p class="section-desc">
+            No cookie-cutter website builders or unnecessary subscriptions. Every system is purpose-built to support your customer experience, sales channels, and operational workflows.
+          </p>
+        </div>
+
+        <!-- Services Grid: 4 Core Offerings -->
+        <div class="services-grid">
+
+          <!-- 01: Business Websites -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">01</span>
+                <span class="tag-pill">Credibility &amp; Inquiries</span>
+              </div>
+              <h3 class="service-title">Business Websites</h3>
+              <p class="service-desc">
+                Fast, professional multi-page websites designed to establish commercial authority, showcase products or services, and turn local visitors into qualified clients.
+              </p>
+
+              <div class="service-deliverables">
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Custom architecture structured around your specific service offerings</span>
+                </div>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Mobile-optimized design with instant WhatsApp &amp; direct call conversion</span>
+                </div>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Clean semantic structure for high search visibility &amp; fast loading</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Mobile-First</span>
+              <span class="tech-tag-subtle">Service Catalogues</span>
+              <span class="tech-tag-subtle">Lead Capture</span>
+            </div>
+          </article>
+
+          <!-- 02: Booking Systems -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">02</span>
+                <span class="tag-pill">Direct Revenue</span>
+              </div>
+              <h3 class="service-title">Booking Systems</h3>
+              <p class="service-desc">
+                Direct reservation workflows for resorts, hospitality, and appointment-based businesses designed to eliminate middleman commission fees and scheduling errors.
+              </p>
+
+              <div class="service-deliverables">
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Interactive room/slot discovery with clear rate breakdowns</span>
+                </div>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Real-time availability calendar to prevent double-booking</span>
+                </div>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Automated confirmation delivery and guest intake tracking</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Date Picker</span>
+              <span class="tech-tag-subtle">Availability Engine</span>
+              <span class="tech-tag-subtle">Direct Reservations</span>
+            </div>
+          </article>
+
+          <!-- 03: Business Dashboards -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">03</span>
+                <span class="tag-pill">Operations Control</span>
+              </div>
+              <h3 class="service-title">Business Dashboards</h3>
+              <p class="service-desc">
+                Clean, private administrative interfaces built for owners and operators to manage incoming customer orders, review reservation calendars, and maintain control.
+              </p>
+
+              <div class="service-deliverables">
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Centralized overview of pending inquiries, bookings, or client requests</span>
+                </div>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Inventory, room, or service availability management in 1 click</span>
+                </div>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Intuitive records search, customer archives, and status filtering</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Owner Admin</span>
+              <span class="tech-tag-subtle">Calendar Control</span>
+              <span class="tech-tag-subtle">Inquiry Management</span>
+            </div>
+          </article>
+
+          <!-- 04: Custom Digital Solutions -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">04</span>
+                <span class="tag-pill">Bespoke Workflow</span>
+              </div>
+              <h3 class="service-title">Custom Digital Solutions</h3>
+              <p class="service-desc">
+                Bespoke web applications and workflow tools built to solve specific operational bottlenecks—such as structural quote calculators, form-to-database pipelines, or third-party API syncs.
+              </p>
+
+              <div class="service-deliverables">
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Structured online quote request systems with specification intake</span>
+                </div>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Reliable backend database integration for persistent records</span>
+                </div>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Zero ongoing vendor lock-in or recurring third-party platform licensing</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Quote Engines</span>
+              <span class="tech-tag-subtle">API Integrations</span>
+              <span class="tech-tag-subtle">Database Backends</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOW I WORK (PROCESS) SECTION: 4-Step Collaborative Workflow
          ========================================================================== -->
     <section id="process" class="process-section" aria-labelledby="process-title">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header">
-          <span class="section-tag">Process</span>
-          <h2 id="process-title" class="section-title">A Straightforward, 4-Step Workflow</h2>
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">How I Work</span>
+          <h2 id="process-title" class="section-title">A Transparent, 4-Step Delivery Workflow</h2>
           <p class="section-desc">
-            A transparent and collaborative approach to taking your project from initial concept to a successful launch.
+            A reliable, direct process designed to eliminate confusion, respect your timeline, and keep you in control at every stage.
           </p>
         </div>
 
         <!-- Process Grid -->
         <div class="process-grid">
-          <!-- Step 1 -->
-          <div class="process-card">
+          <!-- Step 1: Discovery -->
+          <div class="process-card reveal-on-scroll">
             <span class="process-step-badge">01</span>
             <h3 class="process-title">Discovery &amp; Requirements</h3>
             <p class="process-desc">
-              We discuss your project goals, required pages, content needs, and timeline to establish a clear project
-              scope.
+              We discuss your business objectives, target customers, required pages, operational workflows, and delivery timeline.
             </p>
             <div class="process-role-list">
               <div class="process-role-box">
                 <span class="process-role-label">What you provide</span>
-                <span class="process-role-text">Project brief, business details, and reference preferences.</span>
+                <span class="process-role-text">Business details, current bottlenecks, and reference preferences.</span>
               </div>
               <div class="process-role-box">
                 <span class="process-role-label">What I deliver</span>
-                <span class="process-role-text">Project scope summary, page outline, and agreed timeline.</span>
+                <span class="process-role-text">Project scope summary, deliverables breakdown, and agreed timeline.</span>
               </div>
             </div>
           </div>
 
-          <!-- Step 2 -->
-          <div class="process-card">
+          <!-- Step 2: Architecture -->
+          <div class="process-card reveal-on-scroll">
             <span class="process-step-badge">02</span>
-            <h3 class="process-title">Layout &amp; Visual Planning</h3>
+            <h3 class="process-title">Architecture &amp; Layout</h3>
             <p class="process-desc">
-              Planning the website structure, sections, content flow, and visual direction required for the project.
+              Structuring the website sections, customer conversion pathways, user journeys, and clean visual direction.
             </p>
             <div class="process-role-list">
               <div class="process-role-box">
                 <span class="process-role-label">What you decide</span>
-                <span class="process-role-text">Review and approve the layout structure and section hierarchy.</span>
+                <span class="process-role-text">Review and approve the layout structure and content hierarchy.</span>
               </div>
               <div class="process-role-box">
                 <span class="process-role-label">What I deliver</span>
-                <span class="process-role-text">Agreed layout structure and section wireframe outline.</span>
+                <span class="process-role-text">Visual wireframe outline and clear system specifications.</span>
               </div>
             </div>
           </div>
 
-          <!-- Step 3 -->
-          <div class="process-card">
+          <!-- Step 3: Development -->
+          <div class="process-card reveal-on-scroll">
             <span class="process-step-badge">03</span>
-            <h3 class="process-title">Development &amp; Testing</h3>
+            <h3 class="process-title">Development &amp; Staging</h3>
             <p class="process-desc">
-              Building the website with clean code, ensuring responsive layouts across representative modern desktop and
-              mobile browsers.
+              Engineering the solution with clean code, testing across modern desktop and mobile browsers, and connecting forms/APIs.
             </p>
             <div class="process-role-list">
               <div class="process-role-box">
                 <span class="process-role-label">What you do</span>
-                <span class="process-role-text">Review a private staging preview link and provide feedback.</span>
+                <span class="process-role-text">Test a private staging preview link on your devices and provide feedback.</span>
               </div>
               <div class="process-role-box">
                 <span class="process-role-label">What I deliver</span>
-                <span class="process-role-text">Functional staging preview with cross-device testing completed.</span>
+                <span class="process-role-text">Working staging platform with cross-browser and mobile verification.</span>
               </div>
             </div>
           </div>
 
-          <!-- Step 4 -->
-          <div class="process-card">
+          <!-- Step 4: Launch -->
+          <div class="process-card reveal-on-scroll">
             <span class="process-step-badge">04</span>
             <h3 class="process-title">Launch &amp; Handover</h3>
             <p class="process-desc">
-              Deploying the completed website to your domain, setting up live forms, and handing over full ownership.
+              Deploying the completed system to your domain, verifying live forms/emails, and providing complete source code ownership.
             </p>
             <div class="process-role-list">
               <div class="process-role-box">
@@ -718,7 +891,7 @@
               </div>
               <div class="process-role-box">
                 <span class="process-role-label">What I deliver</span>
-                <span class="process-role-text">Live website launch, complete source code, and handover guide.</span>
+                <span class="process-role-text">Live website launch, full code repository, and handover orientation.</span>
               </div>
             </div>
           </div>
@@ -727,45 +900,35 @@
     </section>
 
     <!-- ==========================================================================
-         About & Skills Section
+         ABOUT & WHY WORK WITH ME SECTION
          ========================================================================== -->
     <section id="about" class="about-section" aria-labelledby="about-title">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <span class="section-tag">About Me</span>
-          <h2 id="about-title" class="section-title">Independent Web Developer Focused on Building Practical Websites
-          </h2>
+          <h2 id="about-title" class="section-title">Direct Collaboration. Clean Code. Dependable Delivery.</h2>
           <p class="section-desc">
-            Direct collaboration, clean standards-based code, and straightforward digital solutions tailored to business
-            needs.
+            An independent web developer and product builder focused on practical, high-value digital solutions.
           </p>
         </div>
 
-        <!-- About & Skills Grid -->
         <div class="about-grid">
-          <!-- Left Column: Authentic Narrative & Core Principles -->
-          <div class="about-narrative">
+          <!-- Left Column: Narrative & Values -->
+          <div class="about-narrative reveal-on-scroll">
             <p class="about-intro-text">
-              I am <strong style="color: var(--color-text-main);">Dinesh M</strong>, an independent web developer based
-              in <strong>Tamil Nadu, India</strong>. I work directly with business owners, founders, and creators to
-              build clean, responsive websites and web interfaces that serve practical business needs.
+              I am <strong style="color: var(--color-text-main);">Dinesh M</strong>, an independent web developer based in <strong>Tamil Nadu, India</strong>. I build purpose-driven websites, direct booking engines, and business software for founders and business owners.
             </p>
 
             <p class="about-body-text">
-              My approach centers on writing clean, maintainable code using modern web standards. I focus on responsive
-              layouts, thoughtful structure, and testing across representative desktop and mobile browsers to deliver a
-              dependable user experience.
+              Too many businesses get stuck between slow, expensive agencies that inflate overhead and rigid website builders that lock them into recurring monthly subscriptions with limited capabilities. My approach is simple: I build custom, high-speed digital systems engineered specifically around your operations.
             </p>
 
             <p class="about-body-text">
-              When you work with me, you collaborate directly with the person writing your code. I focus on
-              understanding your specific requirements, maintaining clear communication throughout the build, and
-              providing all project files and agreed access as part of the final handover according to our project
-              agreement.
+              When we work together, you work directly with me from start to finish. There are no middlemen, no miscommunicated specifications, and no guesswork. You receive clear milestone previews and full ownership of your code upon launch.
             </p>
 
-            <!-- Working Principles Callout Card -->
+            <!-- Working Principles Card -->
             <div class="about-principles-card">
               <div class="principles-title">Core Working Principles</div>
               <div class="principle-item">
@@ -773,31 +936,27 @@
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
-                <span><strong>Direct Collaboration:</strong> One-on-one communication without intermediaries or account
-                  managers.</span>
+                <span><strong>Direct Collaboration:</strong> 1-on-1 communication directly with the person architecting and building your system.</span>
               </div>
               <div class="principle-item">
                 <svg class="principle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
-                <span><strong>Standards-Based Code:</strong> Structured HTML, modular CSS, and maintainable
-                  JavaScript.</span>
+                <span><strong>Business-First Thinking:</strong> Functionality, design, and technology are chosen solely based on what benefits your business and customers.</span>
               </div>
               <div class="principle-item">
                 <svg class="principle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
-                <span><strong>Transparent Delivery:</strong> Private staging previews, milestone updates, and thorough
-                  project handover.</span>
+                <span><strong>100% Turnkey Ownership:</strong> You own all source code, design assets, and deployment access outright with zero vendor lock-in.</span>
               </div>
             </div>
 
-            <!-- In-section CTA -->
             <div style="margin-top: var(--space-2);">
               <a href="#contact" class="btn btn-primary btn-sm">
-                <span>Get in Touch</span>
+                <span>Start a Conversation</span>
                 <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   aria-hidden="true">
@@ -808,57 +967,53 @@
             </div>
           </div>
 
-          <!-- Right Column: Categorized Skills Matrix -->
-          <div class="skills-stack">
-            <!-- Category 1: Frontend & Interface -->
+          <!-- Right Column: Why Work With Me Comparison Matrix -->
+          <div class="skills-stack reveal-on-scroll">
             <div class="skill-category-card">
               <div class="skill-category-header">
-                <h3 class="skill-category-title">Frontend &amp; Interface</h3>
+                <h3 class="skill-category-title">Why Work With An Independent Builder</h3>
                 <span class="skill-category-num">01</span>
               </div>
               <p class="skill-category-desc">
-                Building structured, responsive, and accessible user interfaces.
+                High accountability, direct responsiveness, and tailored engineering without traditional agency bureaucracy.
               </p>
               <div class="skill-tags-group">
-                <span class="skill-tag">Semantic HTML5</span>
-                <span class="skill-tag">Modern CSS (Flexbox &amp; Grid)</span>
-                <span class="skill-tag">JavaScript (ES6+)</span>
-                <span class="skill-tag">React (Component Fundamentals)</span>
-                <span class="skill-tag">Responsive &amp; Mobile Layouts</span>
+                <span class="skill-tag">Direct Communication</span>
+                <span class="skill-tag">Zero Overhead Inflation</span>
+                <span class="skill-tag">Faster Milestone Turnaround</span>
+                <span class="skill-tag">Bespoke Architecture</span>
               </div>
             </div>
 
-            <!-- Category 2: Backend, Data & APIs -->
             <div class="skill-category-card">
               <div class="skill-category-header">
-                <h3 class="skill-category-title">Backend, Data &amp; APIs</h3>
+                <h3 class="skill-category-title">Technical Craftsmanship</h3>
                 <span class="skill-category-num">02</span>
               </div>
               <p class="skill-category-desc">
-                Developing server logic, RESTful API integrations, and data handling.
+                Clean, standards-compliant codebases designed for longevity, sub-second load times, and effortless future expansion.
               </p>
               <div class="skill-tags-group">
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">Express.js</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">RESTful APIs &amp; Data Handling</span>
+                <span class="skill-tag">Fast Page Speeds</span>
+                <span class="skill-tag">Mobile Responsive</span>
+                <span class="skill-tag">SEO Semantic Structure</span>
+                <span class="skill-tag">Secure Data Handling</span>
               </div>
             </div>
 
-            <!-- Category 3: Workflow, Deployment & Tools -->
             <div class="skill-category-card">
               <div class="skill-category-header">
-                <h3 class="skill-category-title">Workflow &amp; Tools</h3>
+                <h3 class="skill-category-title">Deployment &amp; Handover</h3>
                 <span class="skill-category-num">03</span>
               </div>
               <p class="skill-category-desc">
-                Version control, deployment setups, and modern developer tooling.
+                Seamless production launches with full domain setup, verified email notification routing, and complete walkthrough guidance.
               </p>
               <div class="skill-tags-group">
-                <span class="skill-tag">Git &amp; GitHub</span>
-                <span class="skill-tag">Deployment (GitHub Pages, Vercel, Netlify)</span>
-                <span class="skill-tag">Cross-Browser Testing</span>
-                <span class="skill-tag">AI-Assisted Workflow</span>
+                <span class="skill-tag">Domain &amp; SSL Setup</span>
+                <span class="skill-tag">Production Hosting</span>
+                <span class="skill-tag">Form &amp; Email Delivery</span>
+                <span class="skill-tag">Code Handover</span>
               </div>
             </div>
           </div>
@@ -867,26 +1022,123 @@
     </section>
 
     <!-- ==========================================================================
-         Contact & Project Inquiry Section
+         CAPABILITIES & TECHNOLOGY FOUNDATION SECTION
+         Supporting evidence of technical ability
+         ========================================================================== -->
+    <section id="capabilities" class="capabilities-section" aria-labelledby="capabilities-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Engineering Foundation</span>
+          <h2 id="capabilities-title" class="section-title">Technical Capabilities Behind the Work</h2>
+          <p class="section-desc">
+            Technology is supporting evidence of ability. I use modern, proven web technologies selected to ensure your application is fast, dependable, and maintainable.
+          </p>
+        </div>
+
+        <!-- Capabilities 3-Column Grid -->
+        <div class="capabilities-grid">
+          <!-- 01: Frontend Architecture -->
+          <div class="capability-card reveal-on-scroll">
+            <div class="capability-header">
+              <h3 class="capability-title">Frontend Engineering</h3>
+              <span class="capability-num">01</span>
+            </div>
+            <p class="capability-desc">
+              Building accessible, responsive, and tactile web interfaces that render instantaneously across mobile phones, tablets, and desktop workstations.
+            </p>
+            <div class="capability-tags">
+              <span class="tech-tag-subtle">HTML5 Semantics</span>
+              <span class="tech-tag-subtle">Modern CSS &amp; Flex/Grid</span>
+              <span class="tech-tag-subtle">JavaScript (ES6+)</span>
+              <span class="tech-tag-subtle">React &amp; Vite</span>
+              <span class="tech-tag-subtle">Component Architecture</span>
+            </div>
+          </div>
+
+          <!-- 02: Backend & Systems -->
+          <div class="capability-card reveal-on-scroll">
+            <div class="capability-header">
+              <h3 class="capability-title">Backend &amp; Databases</h3>
+              <span class="capability-num">02</span>
+            </div>
+            <p class="capability-desc">
+              Developing reliable server logic, RESTful API endpoints, quote handling pipelines, and persistent database storage.
+            </p>
+            <div class="capability-tags">
+              <span class="tech-tag-subtle">Node.js</span>
+              <span class="tech-tag-subtle">Express.js</span>
+              <span class="tech-tag-subtle">MongoDB</span>
+              <span class="tech-tag-subtle">REST APIs</span>
+              <span class="tech-tag-subtle">Serverless Functions</span>
+            </div>
+          </div>
+
+          <!-- 03: Delivery & Operations -->
+          <div class="capability-card reveal-on-scroll">
+            <div class="capability-header">
+              <h3 class="capability-title">Delivery &amp; Infrastructure</h3>
+              <span class="capability-num">03</span>
+            </div>
+            <p class="capability-desc">
+              Configuring reliable production hosting, automated form delivery, speed optimizations, and robust version control.
+            </p>
+            <div class="capability-tags">
+              <span class="tech-tag-subtle">Vercel &amp; Netlify</span>
+              <span class="tech-tag-subtle">Git &amp; GitHub</span>
+              <span class="tech-tag-subtle">Web3Forms Integration</span>
+              <span class="tech-tag-subtle">Speed Optimization</span>
+              <span class="tech-tag-subtle">Cross-Browser Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT / FINAL CTA SECTION
          ========================================================================== -->
     <section id="contact" class="contact-section" aria-labelledby="contact-title">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header">
-          <span class="section-tag">Contact</span>
-          <h2 id="contact-title" class="section-title">Let's Work Together</h2>
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Let's Talk</span>
+          <h2 id="contact-title" class="section-title">Start a Project for Your Business</h2>
           <p class="section-desc">
-            Have a project in mind? Fill out the project enquiry form below or reach out directly via email or WhatsApp.
+            Have a project in mind, need a direct booking system, or want to discuss modernizing your company's website? Reach out directly via WhatsApp or submit your project details below.
           </p>
         </div>
 
-        <!-- Contact Grid -->
         <div class="contact-grid">
-          <!-- Left Column: Direct Contact & Availability -->
-          <div class="contact-info-column">
+          <!-- Left Column: Direct Communication Channels -->
+          <div class="contact-info-column reveal-on-scroll">
+            <!-- WhatsApp & Phone Option (High Priority for Business Owners) -->
+            <a href="https://wa.me/918610951813" target="_blank" rel="noopener noreferrer" class="contact-method-card"
+              aria-label="Chat on WhatsApp or call at +91 86109 51813">
+              <div class="contact-method-main">
+                <div class="contact-method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="contact-method-details">
+                  <span class="contact-method-label">Direct WhatsApp &amp; Phone</span>
+                  <span class="contact-method-value">+91 86109 51813</span>
+                </div>
+              </div>
+              <svg class="contact-method-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+
             <!-- Direct Email Option -->
             <a href="mailto:dineshwork.dev@gmail.com" class="contact-method-card"
-              aria-label="Send direct email to dineshwork.dev@gmail.com">
+              aria-label="Send email to dineshwork.dev@gmail.com">
               <div class="contact-method-main">
                 <div class="contact-method-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -907,33 +1159,9 @@
               </svg>
             </a>
 
-            <!-- WhatsApp & Phone Option -->
-            <a href="https://wa.me/918610951813" target="_blank" rel="noopener noreferrer" class="contact-method-card"
-              aria-label="Chat on WhatsApp at +91 86109 51813">
-              <div class="contact-method-main">
-                <div class="contact-method-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                    </path>
-                  </svg>
-                </div>
-                <div class="contact-method-details">
-                  <span class="contact-method-label">Phone &amp; WhatsApp</span>
-                  <span class="contact-method-value">+91 86109 51813</span>
-                </div>
-              </div>
-              <svg class="contact-method-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path>
-              </svg>
-            </a>
-
-            <!-- GitHub Profile Option -->
+            <!-- GitHub Profile -->
             <a href="https://github.com/dineshworkdev" target="_blank" rel="noopener noreferrer" class="contact-method-card"
-              aria-label="View GitHub profile (dineshworkdev)">
+              aria-label="View GitHub code repositories (dineshworkdev)">
               <div class="contact-method-main">
                 <div class="contact-method-icon">
                   <svg viewBox="0 0 24 24" fill="currentColor">
@@ -954,73 +1182,38 @@
               </svg>
             </a>
 
-            <!-- Instagram Profile Option -->
-            <a href="https://www.instagram.com/dinnnnesh/" target="_blank" rel="noopener noreferrer" class="contact-method-card"
-              aria-label="View Instagram profile (@dinnnnesh)">
-              <div class="contact-method-main">
-                <div class="contact-method-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-                  </svg>
-                </div>
-                <div class="contact-method-details">
-                  <span class="contact-method-label">Instagram</span>
-                  <span class="contact-method-value">@dinnnnesh</span>
-                </div>
-              </div>
-              <svg class="contact-method-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path>
-              </svg>
-            </a>
-
-            <!-- Availability & Process Note -->
+            <!-- Availability & Next Steps Card -->
             <div class="contact-note-card">
               <div class="contact-note-header">
                 <span class="status-dot" aria-hidden="true"></span>
-                <span
-                  style="font-size: var(--font-size-xs); font-weight: var(--font-weight-semibold); color: var(--color-text-main);">Available
-                  for New Projects</span>
+                <span style="font-size: var(--font-size-xs); font-weight: var(--font-weight-semibold); color: var(--color-text-main);">
+                  Prompt Response Guarantee
+                </span>
               </div>
               <p class="contact-note-text">
-                I'll review your enquiry and get back to you as soon as possible.
+                I review every enquiry directly and reply with initial thoughts and recommended scope within 24 business hours.
               </p>
 
               <div class="contact-steps-mini">
                 <div class="contact-step-mini-item">
                   <span class="contact-step-mini-num">01</span>
-                  <span><strong>Enquiry Review:</strong> I evaluate your goals, scope, and timeline.</span>
+                  <span><strong>Requirements Review:</strong> I analyze your business goals, target audience, and scope.</span>
                 </div>
                 <div class="contact-step-mini-item">
                   <span class="contact-step-mini-num">02</span>
-                  <span><strong>Scope Alignment:</strong> We align on deliverables and pricing.</span>
+                  <span><strong>Scope &amp; Proposal:</strong> We align on exact deliverables, timeline, and investment.</span>
                 </div>
                 <div class="contact-step-mini-item">
                   <span class="contact-step-mini-num">03</span>
-                  <span><strong>Kickoff:</strong> We begin building with regular staging updates.</span>
+                  <span><strong>Kickoff:</strong> We begin development with regular, private staging progress updates.</span>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Right Column: Project Inquiry Form -->
-          <div class="contact-form-card">
-            <!--
-              WEB3FORMS SETUP INSTRUCTIONS:
-              1. Go to https://web3forms.com and sign up with dineshwork.dev@gmail.com
-              2. Create an access key — it will be emailed to you
-              3. Replace YOUR_ACCESS_KEY_HERE with the key you receive
-              4. Change the form action to: https://api.web3forms.com/submit
-              No backend server required. The key only routes submissions to your email.
-            -->
+          <div class="contact-form-card reveal-on-scroll">
             <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-              <!-- Web3Forms Access Key (safe to expose — it only routes to your email) -->
-              <!-- TODO: Replace YOUR_ACCESS_KEY_HERE with your actual key from web3forms.com -->
-              <!-- TODO: Change form action to https://api.web3forms.com/submit -->
               <input type="hidden" name="access_key" value="30014cea-8964-4fc7-bdc5-6a6061ed3fc7">
               <input type="hidden" name="subject" value="New Project Enquiry — Dinesh M Portfolio">
               <input type="hidden" name="from_name" value="Portfolio Contact Form">
@@ -1035,7 +1228,7 @@
                   <label for="contact-name" class="form-label">
                     Your Name <span class="form-label-req">*</span>
                   </label>
-                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Jane Doe"
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Ramesh Kumar"
                     required autocomplete="name">
                 </div>
 
@@ -1044,7 +1237,7 @@
                     Email Address <span class="form-label-req">*</span>
                   </label>
                   <input type="email" id="contact-email" name="email" class="form-input"
-                    placeholder="e.g. jane@business.com" required autocomplete="email">
+                    placeholder="e.g. ramesh@company.com" required autocomplete="email">
                 </div>
               </div>
 
@@ -1056,25 +1249,26 @@
                       style="font-weight: 400; color: var(--color-text-subtle);">(Optional)</span>
                   </label>
                   <input type="text" id="contact-company" name="company" class="form-input"
-                    placeholder="e.g. Acme Enterprises">
+                    placeholder="e.g. Heritage Resorts">
                 </div>
 
                 <div class="form-group">
                   <label for="contact-type" class="form-label">
-                    Project Type <span class="form-label-req">*</span>
+                    What Do You Need? <span class="form-label-req">*</span>
                   </label>
                   <select id="contact-type" name="project_type" class="form-select" required>
-                    <option value="" disabled selected>Select service needed...</option>
+                    <option value="" disabled selected>Select system needed...</option>
                     <option value="Custom Business Website">Custom Business Website</option>
-                    <option value="High-Impact Landing Page">High-Impact Landing Page</option>
-                    <option value="Website Redesign">Website Redesign &amp; Modernization</option>
-                    <option value="Frontend UI Implementation">Frontend UI Implementation</option>
-                    <option value="Other Project Enquiry">Other / Custom Project</option>
+                    <option value="Booking System & Reservation Engine">Booking System / Reservation Engine</option>
+                    <option value="Business Dashboard & Management Portal">Business Dashboard / Management Portal</option>
+                    <option value="Custom Digital Solution">Custom Digital Solution / Web App</option>
+                    <option value="Website Redesign & Modernization">Website Redesign &amp; Modernization</option>
+                    <option value="Other Project Enquiry">Other / General Consultation</option>
                   </select>
                 </div>
               </div>
 
-              <!-- Timeline (Optional) -->
+              <!-- Desired Timeline -->
               <div class="form-group">
                 <label for="contact-timeline" class="form-label">
                   Desired Timeline <span style="font-weight: 400; color: var(--color-text-subtle);">(Optional)</span>
@@ -1083,7 +1277,7 @@
                   <option value="" selected>Select approximate timeline (optional)...</option>
                   <option value="Within 2-4 weeks">Within 2 to 4 weeks</option>
                   <option value="1-2 months">1 to 2 months</option>
-                  <option value="Flexible / Exploring">Flexible / Exploring options</option>
+                  <option value="Flexible / Planning ahead">Flexible / Planning ahead</option>
                 </select>
               </div>
 
@@ -1093,7 +1287,7 @@
                   Project Summary <span class="form-label-req">*</span>
                 </label>
                 <textarea id="contact-message" name="message" class="form-textarea"
-                  placeholder="Tell me about your business, the goals of this project, and any specific requirements or references..."
+                  placeholder="Tell me briefly about your business, the problem you want to solve, and any specific requirements or deadlines..."
                   required minlength="10"></textarea>
               </div>
 
@@ -1115,7 +1309,28 @@
         </div>
       </div>
     </section>
+
   </main>
+
+  <!-- ==========================================================================
+       Project Detail Interactive Modal Dialog
+       ========================================================================== -->
+  <dialog id="project-modal" class="project-modal" aria-labelledby="modal-project-title" aria-modal="true">
+    <div class="modal-dialog-container">
+      <button type="button" class="modal-close-trigger" data-close-modal aria-label="Close project overview">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-scroll-area">
+        <div class="modal-body-content">
+          <!-- Dynamically populated by assets/js/projects.js -->
+        </div>
+      </div>
+    </div>
+  </dialog>
 
   <!-- ==========================================================================
        Site Footer
@@ -1123,14 +1338,13 @@
   <footer id="footer" class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-top">
-        <!-- Brand Info -->
+        <!-- Brand Statement -->
         <div class="footer-brand-col">
-          <a href="#" class="footer-brand-logo" aria-label="Dineshwork.dev - Home">
+          <a href="#" class="footer-brand-logo" aria-label="Dinesh M - Home">
             Dineshwork<span class="brand-accent">.dev</span>
           </a>
           <p class="footer-desc">
-            Independent Freelance Web Developer crafting clean, modern websites and web interfaces for growing
-            businesses.
+            Independent Web Developer &amp; Product Builder crafting high-performance business websites, booking systems, and custom web applications around real operational needs.
           </p>
         </div>
 
@@ -1138,20 +1352,20 @@
         <div class="footer-col">
           <div class="footer-heading">Navigation</div>
           <nav class="footer-links-list" aria-label="Footer Navigation">
-            <a href="#services" class="footer-link">Services</a>
-            <a href="#projects" class="footer-link">Projects</a>
-            <a href="#process" class="footer-link">Process</a>
-            <a href="#about" class="footer-link">About</a>
+            <a href="#work" class="footer-link">Selected Work</a>
+            <a href="#services" class="footer-link">What I Build</a>
+            <a href="#process" class="footer-link">How I Work</a>
+            <a href="#about" class="footer-link">About &amp; Principles</a>
             <a href="#contact" class="footer-link">Contact</a>
           </nav>
         </div>
 
-        <!-- Direct Contact & Social Links -->
+        <!-- Direct Connect -->
         <div class="footer-col">
           <div class="footer-heading">Connect</div>
           <div class="footer-links-list">
+            <a href="https://wa.me/918610951813" target="_blank" rel="noopener noreferrer" class="footer-link">WhatsApp (+91 86109 51813)</a>
             <a href="mailto:dineshwork.dev@gmail.com" class="footer-link">dineshwork.dev@gmail.com</a>
-            <a href="https://wa.me/918610951813" target="_blank" rel="noopener noreferrer" class="footer-link">+91 86109 51813 (WhatsApp)</a>
             <a href="https://github.com/dineshworkdev" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub (dineshworkdev)</a>
             <a href="https://www.instagram.com/dinnnnesh/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram (@dinnnnesh)</a>
           </div>
@@ -1160,7 +1374,7 @@
 
       <!-- Footer Bottom Bar -->
       <div class="footer-bottom">
-        <span>&copy; 2026 Dinesh M. All rights reserved.</span>
+        <span>&copy; 2026 Dinesh M. All rights reserved. Built with modern web standards.</span>
         <a href="#header" class="footer-back-to-top">
           <span>Back to top</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

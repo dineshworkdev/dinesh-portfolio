@@ -324,12 +324,11 @@ body.menu-open {
   padding-top: var(--space-12);
   padding-bottom: var(--space-16);
   background-color: var(--color-bg);
-  /* Static architectural background: subtle neutral radial tint & fine gridlines */
   background-image:
-    radial-gradient(ellipse 70% 50% at 85% 20%, rgba(37, 99, 235, 0.04), transparent 70%),
+    radial-gradient(ellipse 70% 50% at 85% 20%, rgba(29, 78, 216, 0.05), transparent 70%),
     linear-gradient(to right, var(--color-grid-line) 1px, transparent 1px),
     linear-gradient(to bottom, var(--color-grid-line) 1px, transparent 1px);
-  background-size: 100% 100%, 36px 36px, 36px 36px;
+  background-size: 100% 100%, 40px 40px, 40px 40px;
   background-position: center top, center center, center center;
   border-bottom: 1px solid var(--color-border);
 }
@@ -347,15 +346,15 @@ body.menu-open {
   flex-direction: column;
   align-items: flex-start;
   gap: var(--space-4);
-  max-width: 620px;
+  max-width: 640px;
 }
 
 .hero-title {
-  font-size: clamp(2rem, 1.6rem + 2vw, 3.125rem);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-tight);
+  font-size: var(--font-size-hero);
+  font-weight: var(--font-weight-extrabold);
+  line-height: 1.12;
   color: var(--color-text-main);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
   margin-top: var(--space-1);
 }
 
@@ -383,12 +382,30 @@ body.menu-open {
 }
 
 /* ==========================================================================
-   Services Section
+   Selected Work Section (Top Priority in Content Story)
+   ========================================================================== */
+.projects-section {
+  padding-top: var(--space-20);
+  padding-bottom: var(--space-20);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+  width: 100%;
+}
+
+/* ==========================================================================
+   What I Build (Services) Section
    ========================================================================== */
 .services-section {
   padding-top: var(--space-20);
   padding-bottom: var(--space-20);
-  border-top: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .services-grid {
@@ -398,29 +415,12 @@ body.menu-open {
 }
 
 /* ==========================================================================
-   Projects Section
-   ========================================================================== */
-.projects-section {
-  padding-top: var(--space-20);
-  padding-bottom: var(--space-20);
-  border-top: 1px solid var(--color-border);
-}
-
-.projects-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
-  width: 100%;
-}
-
-/* ==========================================================================
    How I Work (Process) Section
    ========================================================================== */
 .process-section {
   padding-top: var(--space-20);
   padding-bottom: var(--space-20);
   background-color: var(--color-bg-alt);
-  border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -431,12 +431,13 @@ body.menu-open {
 }
 
 /* ==========================================================================
-   About & Skills Section
+   About & Why Work With Me Section
    ========================================================================== */
 .about-section {
   padding-top: var(--space-20);
   padding-bottom: var(--space-20);
-  border-top: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .about-grid {
@@ -444,6 +445,74 @@ body.menu-open {
   grid-template-columns: 1.05fr 0.95fr;
   gap: var(--space-12);
   align-items: flex-start;
+}
+
+/* ==========================================================================
+   Capabilities & Supporting Technology Section
+   ========================================================================== */
+.capabilities-section {
+  padding-top: var(--space-20);
+  padding-bottom: var(--space-20);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.capability-card {
+  padding: var(--space-6);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.capability-card:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.capability-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.capability-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-main);
+  letter-spacing: -0.01em;
+}
+
+.capability-num {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-subtle);
+}
+
+.capability-desc {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-relaxed);
+}
+
+.capability-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-divider);
+  margin-top: auto;
 }
 
 /* ==========================================================================
@@ -494,6 +563,10 @@ body.menu-open {
 
   .workspace-board {
     max-width: 100%;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .project-showcase-card {
@@ -557,13 +630,15 @@ body.menu-open {
   .projects-section,
   .process-section,
   .about-section,
+  .capabilities-section,
   .contact-section {
     padding-top: var(--space-12);
     padding-bottom: var(--space-12);
   }
 
   .services-grid,
-  .process-grid {
+  .process-grid,
+  .capabilities-grid {
     grid-template-columns: 1fr;
   }
 

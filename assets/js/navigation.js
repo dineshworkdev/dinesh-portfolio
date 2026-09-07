@@ -12,14 +12,39 @@ export function initNavigation() {
   const drawerLinks = document.querySelectorAll('.drawer-link, .drawer-cta');
 
   // ==========================================================================
-  // Sticky Header Scroll Effect
+  // Sticky Header Scroll Effect & Scrollspy Active State
   // ==========================================================================
+  const navLinks = document.querySelectorAll('.desktop-nav .nav-link');
+  const sections = document.querySelectorAll('section[id]');
+
   const handleScroll = () => {
     if (!header) return;
     if (window.scrollY > 20) {
       header.classList.add('is-scrolled');
     } else {
       header.classList.remove('is-scrolled');
+    }
+
+    // Scrollspy active state
+    let currentSectionId = '';
+    const scrollPosition = window.scrollY + 120;
+
+    sections.forEach((section) => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      if (scrollPosition >= top && scrollPosition < top + height) {
+        currentSectionId = section.getAttribute('id');
+      }
+    });
+
+    if (currentSectionId) {
+      navLinks.forEach((link) => {
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
     }
   };
 

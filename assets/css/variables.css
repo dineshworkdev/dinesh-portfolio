@@ -6,19 +6,21 @@
   --font-heading: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, monospace;
 
-  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);      /* 12px - 13px */
-  --font-size-sm: clamp(0.875rem, 0.825rem + 0.25vw, 0.9375rem);   /* 14px - 15px */
-  --font-size-base: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);      /* 16px - 17px */
-  --font-size-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);      /* 18px - 20px */
-  --font-size-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);         /* 20px - 24px */
-  --font-size-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);      /* 24px - 30px */
-  --font-size-3xl: clamp(1.875rem, 1.65rem + 1.1vw, 2.375rem);     /* 30px - 38px */
-  --font-size-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.25rem);       /* 36px - 52px */
+  --font-size-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);      /* 12px - 13px */
+  --font-size-sm: clamp(0.875rem, 0.84rem + 0.2vw, 0.9375rem);      /* 14px - 15px */
+  --font-size-base: clamp(1rem, 0.96rem + 0.25vw, 1.0625rem);       /* 16px - 17px */
+  --font-size-lg: clamp(1.125rem, 1.06rem + 0.35vw, 1.25rem);       /* 18px - 20px */
+  --font-size-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);          /* 20px - 24px */
+  --font-size-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);       /* 24px - 30px */
+  --font-size-3xl: clamp(1.875rem, 1.65rem + 1.1vw, 2.375rem);      /* 30px - 38px */
+  --font-size-4xl: clamp(2.25rem, 1.9rem + 1.6vw, 3.25rem);         /* 36px - 52px */
+  --font-size-hero: clamp(2.5rem, 2rem + 2.2vw, 3.75rem);           /* 40px - 60px */
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
 
   --line-height-tight: 1.15;
   --line-height-snug: 1.35;
@@ -49,23 +51,25 @@
   --radius-md: 0.5rem;    /* 8px */
   --radius-lg: 0.75rem;   /* 12px */
   --radius-xl: 1rem;      /* 16px */
-  --radius-2xl: 1.5rem;   /* 24px */
+  --radius-2xl: 1.25rem;  /* 20px */
+  --radius-3xl: 1.75rem;  /* 28px */
   --radius-full: 9999px;
 
   /* ==========================================================================
      Layout & Container Sizes
      ========================================================================== */
   --container-max-width: 1200px;
-  --container-narrow-width: 800px;
-  --container-padding: clamp(1rem, 4vw, 2.5rem);
+  --container-narrow-width: 840px;
+  --container-padding: clamp(1.25rem, 4vw, 2.5rem);
   --header-height: 4.5rem; /* 72px */
 
   /* ==========================================================================
      Transitions & Motion
      ========================================================================== */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 360ms cubic-bezier(0.16, 1, 0.3, 1);
+  --anim-ease: cubic-bezier(0.16, 1, 0.3, 1);
 
   /* ==========================================================================
      Z-Index Scale
@@ -74,16 +78,16 @@
   --z-base: 1;
   --z-sticky: 100;
   --z-drawer: 200;
-  --z-modal: 300;
-  --z-toast: 400;
+  --z-modal: 1000;
+  --z-toast: 1100;
 
   /* ==========================================================================
-     Light Color Palette (Refined Independent Developer / Studio Aesthetic)
+     Refined Palette (Digital Studio + Product Builder Aesthetic)
      ========================================================================== */
-  --color-bg: #f8fafc;                  /* Refined soft slate-tinted background */
-  --color-bg-alt: #f1f5f9;              /* Secondary section / surface tint */
-  --color-bg-subtle: #fbfcfd;           /* Delicate elevated card tint */
-  --color-surface: #ffffff;             /* Crisp card surface */
+  --color-bg: #f8fafc;                  /* Soft slate-tinted canvas */
+  --color-bg-alt: #f1f5f9;              /* Secondary subtle section surface */
+  --color-bg-subtle: #fbfcfd;           /* Delicate elevated tint */
+  --color-surface: #ffffff;             /* Crisp pure white card surface */
   --color-surface-hover: #f8fafc;
   --color-surface-glass: rgba(248, 250, 252, 0.92);
 
@@ -93,30 +97,30 @@
   --color-border-hover: #94a3b8;
   --color-divider: #f1f5f9;
 
-  --color-grid-line: rgba(15, 23, 42, 0.035); /* Static architectural grid line */
+  --color-grid-line: rgba(15, 23, 42, 0.035); /* Architectural grid line */
 
-  --color-text-main: #0f172a;           /* Deep Slate for authoritative readability */
-  --color-text-muted: #475569;          /* Balanced secondary text */
-  --color-text-subtle: #64748b;         /* Subdued metadata text with solid contrast */
+  --color-text-main: #090d16;           /* Authoritative obsidian for readability */
+  --color-text-muted: #475569;          /* Balanced secondary editorial text */
+  --color-text-subtle: #64748b;         /* Subdued metadata text */
 
   --color-primary: #0f172a;             /* Authoritative deep slate for main buttons */
   --color-primary-hover: #1e293b;
   --color-primary-text: #ffffff;
 
-  --color-accent: #2563eb;              /* Refined cobalt blue for links and active states */
-  --color-accent-hover: #1d4ed8;
-  --color-accent-light: rgba(37, 99, 235, 0.08);
+  --color-accent: #1d4ed8;              /* Confident royal electric cobalt */
+  --color-accent-hover: #1e40af;
+  --color-accent-light: rgba(29, 78, 216, 0.08);
 
-  --color-success: #10b981;             /* Calm Emerald for status indicator */
-  --color-success-light: rgba(16, 185, 129, 0.1);
+  --color-success: #059669;             /* Confident Emerald for live status */
+  --color-success-light: rgba(5, 150, 105, 0.1);
   --color-warning: #d97706;
   --color-danger: #dc2626;
 
   /* Natural, layered elevation shadows with subtle top highlight */
   --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
   --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
-  --shadow-inset-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 18px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 20px 28px -5px rgba(15, 23, 42, 0.09), 0 8px 12px -6px rgba(15, 23, 42, 0.04);
+  --shadow-inset-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.95);
 }

@@ -47,9 +47,14 @@ export function initContactForm() {
     }
 
     // 3. UI State: Submitting
+    const clientName = nameInput.value.trim();
     const originalBtnText = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.innerHTML = `
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="animation: formSpin 0.75s linear infinite; display: inline-block; vertical-align: -3px; margin-right: 8px;" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
+        <path d="M12 2a10 10 0 0 1 10 10" stroke-opacity="0.95"></path>
+      </svg>
       <span>Sending enquiry...</span>
     `;
 
@@ -73,7 +78,6 @@ export function initContactForm() {
         const result = await response.json().catch(() => ({}));
 
         if (response.ok && (result.success !== false)) {
-          const clientName = nameInput.value.trim();
           form.reset();
           showFormStatus('success', `Thank you, ${escapeHtml(clientName)}! Your project enquiry has been sent. I'll review your enquiry and get back to you as soon as possible.`);
         } else {
@@ -88,7 +92,6 @@ export function initContactForm() {
     } else {
       // Local preview / staging fallback when access key is pending configuration
       setTimeout(() => {
-        const clientName = nameInput.value.trim();
         form.reset();
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnText;

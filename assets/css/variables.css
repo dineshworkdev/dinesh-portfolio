@@ -14,7 +14,7 @@
   --font-size-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);       /* 24px - 30px */
   --font-size-3xl: clamp(1.875rem, 1.65rem + 1.1vw, 2.375rem);      /* 30px - 38px */
   --font-size-4xl: clamp(2.25rem, 1.9rem + 1.6vw, 3.25rem);         /* 36px - 52px */
-  --font-size-hero: clamp(2.5rem, 2rem + 2.2vw, 3.75rem);           /* 40px - 60px */
+  --font-size-hero: clamp(2.75rem, 2.1rem + 2.8vw, 4.25rem);        /* 44px - 68px - Larger */
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -22,8 +22,8 @@
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
 
-  --line-height-tight: 1.15;
-  --line-height-snug: 1.35;
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.3;
   --line-height-base: 1.6;
   --line-height-relaxed: 1.75;
 
@@ -42,6 +42,8 @@
   --space-16: 4rem;      /* 64px */
   --space-20: 5rem;      /* 80px */
   --space-24: 6rem;      /* 96px */
+  --space-28: 7rem;      /* 112px */
+  --space-32: 8rem;      /* 128px */
 
   /* ==========================================================================
      Border Radius
@@ -53,6 +55,7 @@
   --radius-xl: 1rem;      /* 16px */
   --radius-2xl: 1.25rem;  /* 20px */
   --radius-3xl: 1.75rem;  /* 28px */
+  --radius-4xl: 2.5rem;   /* 40px */
   --radius-full: 9999px;
 
   /* ==========================================================================
@@ -68,7 +71,8 @@
      ========================================================================== */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-base: 240ms cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-slow: 360ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
   --anim-ease: cubic-bezier(0.16, 1, 0.3, 1);
 
   /* ==========================================================================
@@ -82,45 +86,75 @@
   --z-toast: 1100;
 
   /* ==========================================================================
-     Refined Palette (Digital Studio + Product Builder Aesthetic)
+     Premium Palette: Editorial Dark Studio Aesthetic
+     Deep navy brand + crisp light surfaces
      ========================================================================== */
-  --color-bg: #f8fafc;                  /* Soft slate-tinted canvas */
-  --color-bg-alt: #f1f5f9;              /* Secondary subtle section surface */
-  --color-bg-subtle: #fbfcfd;           /* Delicate elevated tint */
-  --color-surface: #ffffff;             /* Crisp pure white card surface */
-  --color-surface-hover: #f8fafc;
-  --color-surface-glass: rgba(248, 250, 252, 0.92);
 
-  --color-border: #e2e8f0;              /* Understated structural border */
-  --color-border-subtle: #edf2f7;       /* Faint inner border */
-  --color-border-strong: #cbd5e1;       /* Focused / emphasized border */
-  --color-border-hover: #94a3b8;
-  --color-divider: #f1f5f9;
+  /* Canvas / Background */
+  --color-bg: #f7f9fc;                  /* Very slightly cool-tinted white canvas */
+  --color-bg-alt: #eef2f8;              /* Secondary subtle section surface */
+  --color-bg-subtle: #f0f4f9;           /* Hover surface */
+  --color-surface: #ffffff;             /* Pure white card */
+  --color-surface-hover: #f7f9fc;
+  --color-surface-glass: rgba(247, 249, 252, 0.94);
 
-  --color-grid-line: rgba(15, 23, 42, 0.035); /* Architectural grid line */
+  /* Borders */
+  --color-border: #dde4ef;              /* Slightly blue-tinted border */
+  --color-border-subtle: #e8edf6;       /* Very faint structural line */
+  --color-border-strong: #b8c5d9;       /* Emphasized/hover border */
+  --color-border-hover: #96a9c4;
+  --color-divider: #edf2f8;
 
-  --color-text-main: #090d16;           /* Authoritative obsidian for readability */
-  --color-text-muted: #475569;          /* Balanced secondary editorial text */
-  --color-text-subtle: #64748b;         /* Subdued metadata text */
+  /* Grid & Texture */
+  --color-grid-line: rgba(13, 25, 60, 0.035); /* Richer blue-tinted architectural grid */
 
-  --color-primary: #0f172a;             /* Authoritative deep slate for main buttons */
-  --color-primary-hover: #1e293b;
+  /* Typography */
+  --color-text-main: #060c1a;           /* Near-black with warm blue undertone */
+  --color-text-muted: #445066;          /* Rich mid-tone editorial gray */
+  --color-text-subtle: #6b7c9a;         /* Subdued metadata */
+
+  /* Primary CTAs — Deep Navy Brand Ink */
+  --color-primary: #0c1a38;             /* Deep authoritative navy */
+  --color-primary-hover: #1a2e52;
   --color-primary-text: #ffffff;
 
-  --color-accent: #1d4ed8;              /* Confident royal electric cobalt */
-  --color-accent-hover: #1e40af;
-  --color-accent-light: rgba(29, 78, 216, 0.08);
+  /* Accent — Premium Royal Cobalt */
+  --color-accent: #2563eb;              /* Vibrant but professional royal blue */
+  --color-accent-hover: #1d4ed8;
+  --color-accent-light: rgba(37, 99, 235, 0.09);
+  --color-accent-glow: rgba(37, 99, 235, 0.18);
 
-  --color-success: #059669;             /* Confident Emerald for live status */
+  /* Warm accent for editorial highlights */
+  --color-warm-accent: #c97a2b;         /* Rich amber - use sparingly */
+  --color-warm-light: rgba(201, 122, 43, 0.1);
+
+  /* Semantic */
+  --color-success: #059669;
   --color-success-light: rgba(5, 150, 105, 0.1);
   --color-warning: #d97706;
   --color-danger: #dc2626;
 
-  /* Natural, layered elevation shadows with subtle top highlight */
-  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
-  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
-  --shadow-lg: 0 10px 18px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
-  --shadow-xl: 0 20px 28px -5px rgba(15, 23, 42, 0.09), 0 8px 12px -6px rgba(15, 23, 42, 0.04);
-  --shadow-inset-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  /* ==========================================================================
+     Elevation Shadows — Layered, directional, premium feel
+     ========================================================================== */
+  --shadow-xs:  0 1px 2px 0 rgba(6, 12, 26, 0.04);
+  --shadow-sm:  0 1px 4px 0 rgba(6, 12, 26, 0.06), 0 1px 2px -1px rgba(6, 12, 26, 0.04);
+  --shadow-md:  0 4px 8px -2px rgba(6, 12, 26, 0.08), 0 2px 4px -2px rgba(6, 12, 26, 0.04);
+  --shadow-lg:  0 10px 24px -4px rgba(6, 12, 26, 0.10), 0 4px 8px -4px rgba(6, 12, 26, 0.06);
+  --shadow-xl:  0 20px 40px -6px rgba(6, 12, 26, 0.12), 0 8px 16px -6px rgba(6, 12, 26, 0.06);
+  --shadow-2xl: 0 32px 64px -8px rgba(6, 12, 26, 0.16), 0 16px 24px -8px rgba(6, 12, 26, 0.08);
+  --shadow-inset-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --shadow-accent-glow: 0 4px 20px rgba(37, 99, 235, 0.25);
+
+  /* Project card dark frame shadows */
+  --shadow-card-dark: 0 20px 60px -8px rgba(6, 12, 26, 0.55), 0 8px 20px -4px rgba(6, 12, 26, 0.3);
+
+  /* ==========================================================================
+     Gradient Definitions
+     ========================================================================== */
+  --gradient-hero-orb-1: radial-gradient(ellipse 80% 60% at 90% 10%, rgba(37, 99, 235, 0.07), transparent 65%);
+  --gradient-hero-orb-2: radial-gradient(ellipse 50% 40% at 10% 85%, rgba(37, 99, 235, 0.045), transparent 60%);
+  --gradient-section-divider: linear-gradient(90deg, transparent, var(--color-border) 20%, var(--color-border) 80%, transparent);
+  --gradient-brand-text: linear-gradient(135deg, #1a2e52 0%, #2563eb 100%);
+  --gradient-cta-dark: linear-gradient(135deg, #060c1a 0%, #0c2044 60%, #0f2d5a 100%);
 }

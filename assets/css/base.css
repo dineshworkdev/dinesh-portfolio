@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Modern CSS Reset & Base Rules
+   Retro Editorial Reset & Base Rules
    ========================================================================== */
 
 *,
@@ -39,39 +39,66 @@ body {
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
   color: var(--color-text-main);
-  background-color: var(--color-bg);
+  background-color: var(--retro-cream);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  transition: background-color var(--transition-base), color var(--transition-base);
 }
 
 /* ==========================================================================
    Selection
    ========================================================================== */
 ::selection {
-  background-color: var(--color-sage);
-  color: var(--color-forest-deep);
+  background-color: var(--retro-orange);
+  color: #ffffff;
 }
 
 /* ==========================================================================
-   Typography Base Styles
+   Retro Typography Base Styles
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-heading-retro);
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   color: var(--color-text-main);
-  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
-h1 { font-size: var(--font-size-4xl); }
-h2 { font-size: var(--font-size-3xl); }
-h3 { font-size: var(--font-size-2xl); }
-h4 { font-size: var(--font-size-xl); }
-h5 { font-size: var(--font-size-lg); font-family: var(--font-sans); }
-h6 { font-size: var(--font-size-base); font-family: var(--font-sans); }
+h1 {
+  font-size: var(--font-size-hero);
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font-size: var(--font-size-4xl);
+  letter-spacing: 0.04em;
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+  letter-spacing: 0.03em;
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.02em;
+}
+
+h5 {
+  font-size: var(--font-size-lg);
+  font-family: var(--font-sans);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+h6 {
+  font-size: var(--font-size-base);
+  font-family: var(--font-sans);
+  text-transform: none;
+  letter-spacing: 0;
+}
 
 p {
   color: var(--color-text-muted);
@@ -79,13 +106,9 @@ p {
 }
 
 a {
-  color: var(--color-primary);
+  color: inherit;
   text-decoration: none;
   transition: color var(--transition-fast);
-}
-
-a:hover {
-  color: var(--color-terracotta);
 }
 
 /* ==========================================================================
@@ -132,7 +155,7 @@ ol {
    Accessibility & Focus States
    ========================================================================== */
 :focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--retro-orange);
   outline-offset: 3px;
   border-radius: var(--radius-xs);
 }
@@ -148,11 +171,15 @@ ol {
   left: var(--space-4);
   z-index: 1000;
   padding: var(--space-3) var(--space-6);
-  background-color: var(--color-primary);
-  color: #ffffff;
-  font-weight: var(--font-weight-semibold);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
+  background-color: var(--retro-charcoal-dark);
+  color: var(--retro-cream);
+  font-family: var(--font-heading-retro);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid var(--retro-orange);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-retro-hard);
   transition: top var(--transition-fast);
 }
 
@@ -192,4 +219,137 @@ ol {
   margin-right: auto;
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
+}
+
+/* ==========================================================================
+   RETRO GRAPHIC UTILITIES & DETAILS (Directly from reference)
+   ========================================================================== */
+
+/* 1. Hanging Ribbon Bookmark Tag on Section Headings */
+.retro-bookmark-tag {
+  display: inline-block;
+  width: 22px;
+  height: 32px;
+  background-color: rgba(35, 38, 41, 0.2);
+  position: relative;
+  margin-right: var(--space-3);
+  vertical-align: middle;
+  border: 1px solid rgba(35, 38, 41, 0.35);
+  border-bottom: none;
+}
+
+.retro-bookmark-tag::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: -1px;
+  right: -1px;
+  height: 10px;
+  background: inherit;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  border-left: 1px solid rgba(35, 38, 41, 0.35);
+  border-right: 1px solid rgba(35, 38, 41, 0.35);
+}
+
+/* Variant bookmark for dark backgrounds */
+.retro-bookmark-tag.tag-light {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.retro-bookmark-tag.tag-light::after {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+/* 2. Vintage Ribbon Banner with Notched Folds */
+.retro-ribbon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: var(--retro-cream);
+  color: var(--retro-charcoal-dark);
+  font-family: var(--font-heading-retro);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(35, 38, 41, 0.3);
+  border-bottom: 1px solid rgba(35, 38, 41, 0.3);
+}
+
+.retro-ribbon::before,
+.retro-ribbon::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  width: 14px;
+  background: var(--retro-cream-paper);
+  z-index: -1;
+}
+
+.retro-ribbon::before {
+  left: -10px;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.retro-ribbon::after {
+  right: -10px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+/* 3. Stitched / Perforated Border Divider */
+.stitched-divider {
+  width: 100%;
+  height: 0;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.38);
+  position: relative;
+  margin: var(--space-8) 0;
+}
+
+.stitched-divider-dark {
+  border-bottom-color: rgba(35, 38, 41, 0.25);
+}
+
+/* 4. Circular Retro Badge / Stamp Seal */
+.retro-seal-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-full);
+  background-color: var(--retro-orange);
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.22);
+  position: relative;
+  flex-shrink: 0;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.retro-seal-badge::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius-full);
+  pointer-events: none;
+}
+
+.retro-seal-badge:hover {
+  transform: scale(1.05);
+}
+
+/* 5. Retro Framed Container */
+.retro-frame {
+  background: #ffffff;
+  border: 6px solid #ffffff;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 24px rgba(25, 30, 35, 0.16);
+  position: relative;
+  overflow: hidden;
 }

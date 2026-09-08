@@ -1,22 +1,29 @@
 :root {
   /* ==========================================================================
-     Typography
+     Typography — Retro Woodblock Display, Editorial Serif & Clean Sans
      ========================================================================== */
+  --font-display-retro: 'Bebas Neue', 'Oswald', -apple-system, sans-serif;
+  --font-heading-retro: 'Oswald', 'Bebas Neue', sans-serif;
+  --font-editorial: 'Newsreader', Georgia, 'Times New Roman', serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-heading: 'Newsreader', Georgia, 'Times New Roman', serif;
-  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
-  --font-display: 'Newsreader', Georgia, serif;
-  --font-mono: 'Plus Jakarta Sans', monospace;
+  --font-mono: 'Courier Prime', 'Space Mono', monospace;
 
+  /* Aliases for semantic usage */
+  --font-heading: var(--font-heading-retro);
+  --font-serif: var(--font-editorial);
+  --font-display: var(--font-display-retro);
+
+  /* Fluid typography scale */
+  --font-size-2xs: clamp(0.6875rem, 0.65rem + 0.15vw, 0.75rem);   /* 11px - 12px */
   --font-size-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);      /* 12px - 13px */
   --font-size-sm: clamp(0.875rem, 0.84rem + 0.2vw, 0.9375rem);      /* 14px - 15px */
   --font-size-base: clamp(1rem, 0.96rem + 0.25vw, 1.0625rem);       /* 16px - 17px */
   --font-size-lg: clamp(1.125rem, 1.06rem + 0.35vw, 1.25rem);       /* 18px - 20px */
   --font-size-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);          /* 20px - 24px */
   --font-size-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);       /* 24px - 30px */
-  --font-size-3xl: clamp(1.875rem, 1.65rem + 1.1vw, 2.375rem);      /* 30px - 38px */
-  --font-size-4xl: clamp(2.25rem, 1.9rem + 1.6vw, 3.25rem);         /* 36px - 52px */
-  --font-size-hero: clamp(2.5rem, 2rem + 2.4vw, 3.85rem);           /* 40px - 62px - Elegant editorial */
+  --font-size-3xl: clamp(1.875rem, 1.65rem + 1.1vw, 2.5rem);        /* 30px - 40px */
+  --font-size-4xl: clamp(2.5rem, 2.1rem + 2vw, 3.75rem);            /* 40px - 60px */
+  --font-size-hero: clamp(3.25rem, 2.5rem + 4vw, 5.75rem);          /* 52px - 92px bold retro title */
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -24,13 +31,13 @@
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
 
-  --line-height-tight: 1.12;
-  --line-height-snug: 1.32;
-  --line-height-base: 1.68;
+  --line-height-tight: 1.05;
+  --line-height-snug: 1.25;
+  --line-height-base: 1.65;
   --line-height-relaxed: 1.8;
 
   /* ==========================================================================
-     Spacing System (8pt scale)
+     Spacing System
      ========================================================================== */
   --space-1: 0.25rem;    /* 4px */
   --space-2: 0.5rem;     /* 8px */
@@ -48,34 +55,31 @@
   --space-32: 8rem;      /* 128px */
 
   /* ==========================================================================
-     Border Radius
+     Border Radius — Crisp retro framing (small radii, badges, frames)
      ========================================================================== */
-  --radius-xs: 0.25rem;   /* 4px */
-  --radius-sm: 0.375rem;  /* 6px */
-  --radius-md: 0.5rem;    /* 8px */
-  --radius-lg: 0.75rem;   /* 12px */
-  --radius-xl: 1rem;      /* 16px */
-  --radius-2xl: 1.25rem;  /* 20px */
-  --radius-3xl: 1.75rem;  /* 28px */
-  --radius-4xl: 2.5rem;   /* 40px */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
   --radius-full: 9999px;
 
   /* ==========================================================================
      Layout & Container Sizes
      ========================================================================== */
-  --container-max-width: 1200px;
-  --container-narrow-width: 840px;
+  --container-max-width: 1140px;
+  --container-narrow-width: 820px;
   --container-padding: clamp(1.25rem, 4vw, 2.5rem);
-  --header-height: 4.5rem; /* 72px */
+  --header-height: 4.75rem; /* 76px */
 
   /* ==========================================================================
-     Transitions & Motion
+     Motion & Transitions
      ========================================================================== */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base: 240ms cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
-  --anim-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 350ms cubic-bezier(0.16, 1, 0.3, 1);
 
   /* ==========================================================================
      Z-Index Scale
@@ -88,88 +92,83 @@
   --z-toast: 1100;
 
   /* ==========================================================================
-     Color Palette: Warm, Rich, Natural, Premium Editorial
-     Ivory + Deep Forest Green + Rich Charcoal + Terracotta + Brass + Soft Sage
+     RETRO COLOR PALETTE (Directly inspired by reference design)
+     Teal / Turquoise + Warm Cream + Burnt Orange + Stone Grey + Dark Charcoal
      ========================================================================== */
 
-  /* Canvas / Background */
-  --color-bg: #F7F3EA;                  /* Warm Ivory / Cream canvas */
-  --color-bg-alt: #EFE9DC;              /* Secondary warm cream surface */
-  --color-bg-subtle: #F2EDE4;           /* Soft warm hover surface */
-  --color-surface: #FFFFFF;             /* Pure crisp card surface */
-  --color-surface-warm: #FAF7F0;        /* Soft warm tinted card */
-  --color-surface-hover: #FAF8F3;
-  --color-surface-glass: rgba(247, 243, 234, 0.94);
+  /* 1. RETRO MUTED TEAL / TURQUOISE (Header & Hero Block) */
+  --retro-teal: #5b8e8f;
+  --retro-teal-dark: #446e6f;
+  --retro-teal-deep: #2c4d4e;
+  --retro-teal-light: #76a7a8;
+  --retro-teal-pale: #e2eeee;
+  --retro-teal-contrast: #f7f3eb;
 
-  /* Deep Forest Green (Primary Brand Ink) */
-  --color-forest: #183B2B;
-  --color-forest-deep: #10261C;
-  --color-forest-light: rgba(24, 59, 43, 0.08);
-  --color-forest-hover: #122C20;
+  /* 2. RETRO WARM CREAM / NEWSPRINT (About Block, Inputs, Mat Frames) */
+  --retro-cream: #f4efe4;
+  --retro-cream-alt: #ebe3d3;
+  --retro-cream-paper: #ded5c2;
+  --retro-cream-border: #ccbeaa;
+  --retro-cream-text: #2c3033;
 
-  /* Primary CTAs & Brand */
-  --color-primary: #183B2B;             /* Deep Forest Green */
-  --color-primary-hover: #10261C;
-  --color-primary-text: #F7F3EA;
+  /* 3. RETRO BURNT ORANGE / CORAL (Portfolio Block, Badges, CTAs) */
+  --retro-orange: #d25d38;
+  --retro-orange-dark: #b54724;
+  --retro-orange-deep: #8a3114;
+  --retro-orange-light: #e47552;
+  --retro-orange-pale: #fbeee8;
+  --retro-orange-contrast: #ffffff;
 
-  /* Accents */
-  --color-accent: #183B2B;              /* Forest Green */
-  --color-accent-hover: #10261C;
-  --color-accent-light: rgba(24, 59, 43, 0.08);
-  --color-accent-glow: rgba(24, 59, 43, 0.16);
+  /* 4. RETRO HEATHER GREY / STONE (Services & Magazine Block) */
+  --retro-grey: #dedad1;
+  --retro-grey-alt: #d1cbc0;
+  --retro-grey-dark: #595750;
+  --retro-grey-ink: #2b2c2b;
 
-  /* Terracotta & Brass & Sage Accents */
-  --color-terracotta: #A95F45;          /* Muted Terracotta */
-  --color-terracotta-hover: #934E37;
-  --color-terracotta-light: rgba(169, 95, 69, 0.12);
-  --color-brass: #B8955A;               /* Warm Brass / Sand */
-  --color-brass-light: rgba(184, 149, 90, 0.14);
-  --color-sage: #DCE4DA;                /* Soft Sage */
-  --color-sage-dark: #3F5E4D;
-  --color-sage-light: rgba(220, 228, 218, 0.6);
-  --color-sage-border: #C6D4C3;
+  /* 5. RETRO INK CHARCOAL (Contact Block, Footer, Linework) */
+  --retro-charcoal: #2c2f32;
+  --retro-charcoal-dark: #1e2022;
+  --retro-charcoal-light: #3f4347;
+  --retro-charcoal-contrast: #f4efe4;
 
-  /* Typography */
-  --color-text-main: #202522;           /* Rich Charcoal */
-  --color-text-muted: #48524C;          /* Balanced mid-tone natural gray */
-  --color-text-subtle: #6E7972;         /* Subdued metadata */
+  /* Crisp Graphic Linework */
+  --retro-border-ink: #232629;
+  --retro-border-thin: 1px solid rgba(35, 38, 41, 0.22);
+  --retro-border-bold: 2px solid #232629;
+  --retro-border-frame: 4px solid #ffffff;
 
-  /* Borders & Dividers */
-  --color-border: #E5DFD3;              /* Warm subtle boundary */
-  --color-border-subtle: #EBE6DC;       /* Faint hairline */
-  --color-border-strong: #CFC7B8;       /* Emphasized frame */
-  --color-border-hover: #B5AB99;
-  --color-divider: #EDE7DC;
+  /* System Semantics mapped to Retro Palette */
+  --color-bg: var(--retro-cream);
+  --color-surface: #ffffff;
+  --color-text-main: var(--retro-charcoal-dark);
+  --color-text-muted: #52575d;
+  --color-text-subtle: #747a82;
 
-  /* Subtle Warm Texture / Architectural Line */
-  --color-grid-line: rgba(32, 37, 34, 0.035);
+  --color-primary: var(--retro-orange);
+  --color-primary-hover: var(--retro-orange-dark);
+  --color-primary-text: #ffffff;
 
-  /* Semantic Status */
-  --color-success: #1E6646;
-  --color-success-light: rgba(30, 102, 70, 0.12);
-  --color-warning: #B87C2B;
-  --color-danger: #A95F45;
+  --color-accent: var(--retro-teal);
+  --color-accent-hover: var(--retro-teal-dark);
+
+  --color-border: rgba(35, 38, 41, 0.16);
+  --color-border-subtle: rgba(35, 38, 41, 0.08);
+  --color-border-strong: rgba(35, 38, 41, 0.4);
+  --color-divider: rgba(35, 38, 41, 0.12);
+
+  --color-success: #2d7a54;
+  --color-success-light: #e6f3ec;
 
   /* ==========================================================================
-     Elevation Shadows — Warm, natural, grounded
+     Retro Shadows & 3D Extrusions
      ========================================================================== */
-  --shadow-xs:  0 1px 2px 0 rgba(32, 37, 34, 0.04);
-  --shadow-sm:  0 2px 6px 0 rgba(32, 37, 34, 0.05), 0 1px 2px -1px rgba(32, 37, 34, 0.03);
-  --shadow-md:  0 6px 16px -2px rgba(32, 37, 34, 0.07), 0 2px 6px -2px rgba(32, 37, 34, 0.04);
-  --shadow-lg:  0 14px 30px -4px rgba(32, 37, 34, 0.09), 0 4px 10px -4px rgba(32, 37, 34, 0.04);
-  --shadow-xl:  0 24px 50px -8px rgba(32, 37, 34, 0.12), 0 8px 18px -6px rgba(32, 37, 34, 0.05);
-  --shadow-2xl: 0 36px 72px -12px rgba(32, 37, 34, 0.16);
-  --shadow-inset-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.85);
-  --shadow-accent-glow: 0 6px 24px rgba(24, 59, 43, 0.2);
+  --shadow-retro-hard: 3px 3px 0 rgba(35, 38, 41, 0.85);
+  --shadow-retro-hard-lg: 5px 5px 0 rgba(35, 38, 41, 0.9);
+  --shadow-retro-title: 3px 3px 0 var(--retro-teal-deep), 6px 6px 0 rgba(30, 45, 45, 0.45);
+  --shadow-retro-frame: 0 8px 24px rgba(35, 38, 41, 0.12), 0 2px 6px rgba(35, 38, 41, 0.08);
+  --shadow-inner-bevel: inset 0 1px 3px rgba(0, 0, 0, 0.18);
 
-  /* Project card frame shadow */
-  --shadow-card: 0 16px 40px -10px rgba(32, 37, 34, 0.12), 0 4px 12px -2px rgba(32, 37, 34, 0.06);
-
-  /* ==========================================================================
-     Gradient & Atmospheric Definitions
-     ========================================================================== */
-  --gradient-hero-orb-1: radial-gradient(ellipse 70% 60% at 85% 15%, rgba(184, 149, 90, 0.08), transparent 60%);
-  --gradient-hero-orb-2: radial-gradient(ellipse 50% 50% at 10% 80%, rgba(220, 228, 218, 0.5), transparent 60%);
-  --gradient-section-divider: linear-gradient(90deg, transparent, var(--color-border) 25%, var(--color-border) 75%, transparent);
-  --gradient-cta-dark: linear-gradient(145deg, #10261C 0%, #183B2B 60%, #204B37 100%);
+  /* Subtle vintage paper texture pattern */
+  --texture-halftone: radial-gradient(circle, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  --texture-stitching: 2px dashed rgba(255, 255, 255, 0.45);
 }

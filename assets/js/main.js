@@ -9,12 +9,13 @@ import { initContactForm } from './form.js';
 
 /**
  * Hero Featured Showcase Slider Controller
- * Toggles between Deccan Resort and Dinesh Fabrications in the hero showcase frame
+ * Rotates between Deccan Resort, Dinesh Fabrications, and Dinesh M. Portfolio
  */
 function initHeroShowcase() {
   const prevBtn = document.getElementById('showcase-prev-btn');
   const nextBtn = document.getElementById('showcase-next-btn');
   const slides = document.querySelectorAll('.showcase-slide');
+  const sliderFrame = document.querySelector('.hero-showcase-frame');
 
   if (!slides.length) return;
 
@@ -44,6 +45,41 @@ function initHeroShowcase() {
       currentSlide = (currentSlide + 1) % slides.length;
       showSlide(currentSlide);
     });
+  }
+
+  // Keyboard arrow navigation when showcase frame is focused
+  if (sliderFrame) {
+    sliderFrame.setAttribute('tabindex', '0');
+    sliderFrame.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      } else if (e.key === 'ArrowRight') {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+    });
+
+    // Touch swipe support for mobile devices
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    sliderFrame.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    sliderFrame.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const swipeDiff = touchStartX - touchEndX;
+      if (Math.abs(swipeDiff) > 45) {
+        if (swipeDiff > 0) {
+          currentSlide = (currentSlide + 1) % slides.length;
+        } else {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        }
+        showSlide(currentSlide);
+      }
+    }, { passive: true });
   }
 }
 
@@ -76,6 +112,39 @@ function initPortfolioFilter() {
   });
 }
 
+/**
+ * Subtle Viewport Reveal Animations
+ * Gracefully reveals cards as they scroll into view
+ */
+function initScrollReveal() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!('IntersectionObserver' in window)) return;
+
+  const revealTargets = document.querySelectorAll(
+    '.project-card, .service-card, .about-col-item, .contact-card-box, .contact-form'
+  );
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.08,
+      rootMargin: '0px 0px -30px 0px'
+    }
+  );
+
+  revealTargets.forEach((el) => {
+    el.classList.add('reveal-on-scroll');
+    observer.observe(el);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize responsive navigation and header scroll effects
   initNavigation();
@@ -91,4 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize contact form validation and submission
   initContactForm();
+
+  // Initialize subtle scroll reveal
+  initScrollReveal();
 });

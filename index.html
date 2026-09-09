@@ -149,7 +149,7 @@
             </div>
           </div>
 
-          <!-- Framed Retro Showcase Box (Switchable between Deccan Resort & Dinesh Fabrications) -->
+          <!-- Framed Retro Showcase Box (Switchable between Deccan Resort, Dinesh Fabrications & Dinesh M. Portfolio) -->
           <div class="hero-showcase-frame" aria-label="Featured Projects Showcase">
             <div class="showcase-slider">
               <!-- Slide 1: Deccan Resort -->
@@ -166,10 +166,12 @@
                     Custom guest booking engine with multi-room discovery, zero commission fees, and private owner management calendar.
                   </p>
                   <div class="showcase-actions">
-                    <button type="button" class="btn btn-primary btn-sm" data-open-project="deccan-resort">
-                      <span>Explore Case Study</span>
+                    <a href="https://deccan-resort.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                      <span>Live Website &rarr;</span>
+                    </a>
+                    <button type="button" class="btn btn-secondary btn-sm" data-open-project="deccan-resort">
+                      <span>Case Study</span>
                     </button>
-                    <a href="#work" class="btn btn-secondary btn-sm">All Projects &darr;</a>
                   </div>
                 </div>
               </div>
@@ -188,10 +190,34 @@
                     Commercial workshop catalog with laser-cut gates, direct 1-tap WhatsApp consultation, and database-backed quote pipeline.
                   </p>
                   <div class="showcase-actions">
-                    <a href="https://dineshfabrications.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <a href="https://dineshfabrications.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
                       <span>Live Website &rarr;</span>
                     </a>
                     <button type="button" class="btn btn-secondary btn-sm" data-open-project="dinesh-fabrications">
+                      <span>Case Study</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Dinesh M. Portfolio -->
+              <div class="showcase-slide" id="hero-slide-3" data-project-id="dinesh-portfolio">
+                <div class="showcase-img-wrap">
+                  <img src="assets/images/projects/portfolio-preview.jpg"
+                       alt="Dinesh M. retro editorial portfolio website preview"
+                       class="showcase-img" width="560" height="315" loading="lazy">
+                </div>
+                <div class="showcase-details">
+                  <span class="showcase-tag">Web Development &amp; Systems</span>
+                  <h3 class="showcase-title">Dinesh M. Portfolio</h3>
+                  <p class="showcase-desc">
+                    Retro-editorial portfolio engineered with modern semantic standards, direct booking showcases, and verified client inquiry channels.
+                  </p>
+                  <div class="showcase-actions">
+                    <a href="https://dineshworkdev.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                      <span>Live Website &rarr;</span>
+                    </a>
+                    <button type="button" class="btn btn-secondary btn-sm" data-open-project="dinesh-portfolio">
                       <span>Case Study</span>
                     </button>
                   </div>
@@ -327,6 +353,7 @@
           <button type="button" class="filter-pill active" data-filter="all">All Projects</button>
           <button type="button" class="filter-pill" data-filter="hospitality">Hospitality &amp; Booking</button>
           <button type="button" class="filter-pill" data-filter="industrial">Commercial &amp; Workshop</button>
+          <button type="button" class="filter-pill" data-filter="systems">Web &amp; Systems</button>
         </div>
 
         <!-- Projects Showcase List -->
@@ -371,33 +398,19 @@
                 </p>
 
                 <p class="project-story">
-                  Built to give a serene boutique destination complete independence from high online travel agency commissions. The platform pairs an intuitive room discovery experience for guests with a seamless reservation flow and a private owner calendar to control room inventory.
+                  Custom guest booking platform featuring interactive room discovery, real-time reservation availability, and a private owner calendar that eliminates third-party travel agency fees.
                 </p>
-
-                <div style="margin-top: var(--space-4);">
-                  <h4 class="deliverables-heading">Key Deliverables:</h4>
-                  <ul class="deliverables-list">
-                    <li>
-                      <span class="deliverable-bullet">&bull;</span>
-                      <span><strong>Visual Room Discovery:</strong> Photo galleries, room amenities, and per-night rate cards.</span>
-                    </li>
-                    <li>
-                      <span class="deliverable-bullet">&bull;</span>
-                      <span><strong>Commission-Free Direct Reservations:</strong> Multi-guest date selection flow that eliminates third-party platform fees.</span>
-                    </li>
-                    <li>
-                      <span class="deliverable-bullet">&bull;</span>
-                      <span><strong>Owner Management Calendar:</strong> Centralized interface to review bookings and block unavailable dates.</span>
-                    </li>
-                  </ul>
-                </div>
               </div>
 
               <div class="project-footer-actions">
                 <button type="button" class="btn btn-primary btn-sm" data-open-project="deccan-resort">
-                  <span>Explore Case Study</span>
+                  <span>View Case Study</span>
                   <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                 </button>
+                <a href="https://deccan-resort.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>View Live Site</span>
+                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>
+                </a>
                 <div class="project-pill-tags">
                   <span class="pill-tag">Booking Engine</span>
                   <span class="pill-tag">Admin Calendar</span>
@@ -446,40 +459,84 @@
                 </p>
 
                 <p class="project-story">
-                  Built for an established MS fabrication and welding workshop in Coimbatore to establish commercial authority with contractors, showcase heavy fabrication capabilities, and convert mobile visitors into direct phone consultations, WhatsApp inquiries, and structured quote requests.
+                  Commercial workshop web platform with architectural metalcraft catalog, 1-tap WhatsApp lead triggers, and a persistent quote request pipeline built for an established workshop.
                 </p>
-
-                <div style="margin-top: var(--space-4);">
-                  <h4 class="deliverables-heading">Key Deliverables:</h4>
-                  <ul class="deliverables-list">
-                    <li>
-                      <span class="deliverable-bullet">&bull;</span>
-                      <span><strong>Architectural &amp; Industrial Catalog:</strong> Laser-cut gates, factory sheds, and safety grills organized by application.</span>
-                    </li>
-                    <li>
-                      <span class="deliverable-bullet">&bull;</span>
-                      <span><strong>1-Tap Direct Inquiries:</strong> Instant WhatsApp and phone consultation triggers for mobile visitors.</span>
-                    </li>
-                    <li>
-                      <span class="deliverable-bullet">&bull;</span>
-                      <span><strong>Structured Quote Intake:</strong> Specification intake form backed by persistent database storage.</span>
-                    </li>
-                  </ul>
-                </div>
               </div>
 
               <div class="project-footer-actions">
-                <a href="https://dineshfabrications.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <button type="button" class="btn btn-primary btn-sm" data-open-project="dinesh-fabrications">
+                  <span>View Case Study</span>
+                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+                <a href="https://dineshfabrications.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
                   <span>View Live Site</span>
                   <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>
                 </a>
-                <button type="button" class="btn btn-secondary btn-sm" data-open-project="dinesh-fabrications">
-                  <span>Case Study</span>
-                </button>
                 <div class="project-pill-tags">
                   <span class="pill-tag">Workshop Showcase</span>
                   <span class="pill-tag">WhatsApp Conversion</span>
                   <span class="pill-tag">Quote Pipeline</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: DINESH M. PORTFOLIO -->
+          <article class="project-card" data-category="systems" aria-labelledby="project-title-portfolio">
+            <div class="project-media-col">
+              <div class="project-image-wrapper">
+                <img src="assets/images/projects/portfolio-preview.jpg"
+                     alt="Dinesh M. retro editorial portfolio website preview"
+                     class="project-main-image"
+                     width="1200" height="675"
+                     loading="lazy">
+                <div class="project-image-overlay">
+                  <span class="project-status-chip">
+                    <span class="status-dot status-dot-green"></span>
+                    <span>Live Developer Portfolio</span>
+                  </span>
+                </div>
+                <!-- Stamped Seal Badge overlapping corner -->
+                <div class="card-stamp-badge" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content-col">
+              <div>
+                <div class="project-header-meta">
+                  <span class="project-tag-editorial">Web Development &amp; Systems</span>
+                  <span class="project-client-name">Independent Builder</span>
+                </div>
+
+                <h3 id="project-title-portfolio" class="project-title">Dinesh M. Portfolio</h3>
+                
+                <p class="project-tagline">
+                  Personal portfolio + retro editorial showcase + lead intake pipeline
+                </p>
+
+                <p class="project-story">
+                  High-performance retro editorial portfolio showcasing bespoke business applications, interactive direct booking engines, and verified client inquiry channels with zero framework overhead.
+                </p>
+              </div>
+
+              <div class="project-footer-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-open-project="dinesh-portfolio">
+                  <span>View Case Study</span>
+                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+                <a href="https://dineshworkdev.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>View Live Site</span>
+                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg>
+                </a>
+                <div class="project-pill-tags">
+                  <span class="pill-tag">Editorial Design</span>
+                  <span class="pill-tag">Zero Bloat</span>
+                  <span class="pill-tag">Inquiry Pipeline</span>
                 </div>
               </div>
             </div>
@@ -504,197 +561,126 @@
           No cookie-cutter site builders or recurring lock-in. Every digital system is engineered from the ground up around your customers and daily operations.
         </p>
 
-        <div class="magazine-layout-grid">
-          <!-- Left Column: 4 Service Articles -->
-          <div class="magazine-main-col">
-            <!-- 01: Business Websites -->
-            <article class="service-card">
-              <div class="service-card-top">
-                <div class="service-header-row">
-                  <span class="service-number">01</span>
-                  <span class="pill-tag">Credibility &amp; Inquiries</span>
-                </div>
-                <h3 class="service-title">Business Websites</h3>
-                <p class="service-desc">
-                  Fast, custom multi-page business websites designed to establish commercial authority, showcase products or services, and turn local visitors into qualified clients.
-                </p>
-
-                <div class="service-deliverables">
-                  <div class="deliverable-item">
-                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <span>Structured service catalogs highlighting your core capabilities</span>
-                  </div>
-                  <div class="deliverable-item">
-                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <span>Instant mobile WhatsApp &amp; telephone conversion triggers</span>
-                  </div>
-                </div>
+        <div class="services-grid-2x2">
+          <!-- 01: Business Websites -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">01</span>
+                <span class="pill-tag">Credibility &amp; Inquiries</span>
               </div>
-              <div class="service-tech-tags">
-                <span class="tech-tag-subtle">Mobile-First</span>
-                <span class="tech-tag-subtle">SEO Semantics</span>
-                <span class="tech-tag-subtle">Fast Speeds</span>
-              </div>
-            </article>
+              <h3 class="service-title">Business Websites</h3>
+              <p class="service-desc">
+                Fast, custom multi-page business websites designed to establish commercial authority, showcase products or services, and turn local visitors into qualified clients.
+              </p>
 
-            <!-- 02: Booking Systems -->
-            <article class="service-card">
-              <div class="service-card-top">
-                <div class="service-header-row">
-                  <span class="service-number">02</span>
-                  <span class="pill-tag">Direct Revenue</span>
+              <div class="service-deliverables">
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Structured service catalogs highlighting your core capabilities</span>
                 </div>
-                <h3 class="service-title">Booking Systems</h3>
-                <p class="service-desc">
-                  Direct reservation workflows for boutique resorts, hospitality destinations, and appointment-based businesses to eliminate platform commission fees.
-                </p>
-
-                <div class="service-deliverables">
-                  <div class="deliverable-item">
-                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <span>Interactive room discovery with transparent per-night rate cards</span>
-                  </div>
-                  <div class="deliverable-item">
-                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <span>Real-time availability calendar to prevent double-booking errors</span>
-                  </div>
-                </div>
-              </div>
-              <div class="service-tech-tags">
-                <span class="tech-tag-subtle">Date Picker</span>
-                <span class="tech-tag-subtle">Availability Engine</span>
-                <span class="tech-tag-subtle">Zero Commissions</span>
-              </div>
-            </article>
-
-            <!-- 03: Business Dashboards -->
-            <article class="service-card">
-              <div class="service-card-top">
-                <div class="service-header-row">
-                  <span class="service-number">03</span>
-                  <span class="pill-tag">Operations Control</span>
-                </div>
-                <h3 class="service-title">Business Dashboards</h3>
-                <p class="service-desc">
-                  Private administrative portals built for business owners to review reservation calendars, track incoming customer leads, and update room or service inventory.
-                </p>
-
-                <div class="service-deliverables">
-                  <div class="deliverable-item">
-                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <span>Centralized overview of pending inquiries, bookings, and records</span>
-                  </div>
-                  <div class="deliverable-item">
-                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <span>1-click date blocking for maintenance or private reservations</span>
-                  </div>
-                </div>
-              </div>
-              <div class="service-tech-tags">
-                <span class="tech-tag-subtle">Owner Admin</span>
-                <span class="tech-tag-subtle">Calendar Control</span>
-                <span class="tech-tag-subtle">Inquiry Storage</span>
-              </div>
-            </article>
-
-            <!-- 04: Custom Digital Solutions -->
-            <article class="service-card">
-              <div class="service-card-top">
-                <div class="service-header-row">
-                  <span class="service-number">04</span>
-                  <span class="pill-tag">Bespoke Systems</span>
-                </div>
-                <h3 class="service-title">Custom Digital Solutions</h3>
-                <p class="service-desc">
-                  Bespoke web applications built to resolve specific operational bottlenecks—such as custom quote intake calculators, form-to-database pipelines, or API syncs.
-                </p>
-
-                <div class="service-deliverables">
-                  <div class="deliverable-item">
-                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <span>Online quote request pipelines with material specifications</span>
-                  </div>
-                  <div class="deliverable-item">
-                    <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <span>Zero vendor lock-in or recurring monthly platform licensing</span>
-                  </div>
-                </div>
-              </div>
-              <div class="service-tech-tags">
-                <span class="tech-tag-subtle">Quote Engines</span>
-                <span class="tech-tag-subtle">Database Backends</span>
-                <span class="tech-tag-subtle">Custom APIs</span>
-              </div>
-            </article>
-          </div>
-
-          <!-- Right Column: Retro Magazine Sidebar -->
-          <div class="magazine-sidebar-col">
-            <!-- Box 1: Why Work With An Independent Builder -->
-            <div class="retro-sidebar-box">
-              <h4 class="sidebar-title">Why Work With Me</h4>
-              <ul class="sidebar-list">
-                <li class="sidebar-item">
-                  <span class="sidebar-bullet">&#10004;</span>
-                  <span><strong>Direct 1-on-1 Access:</strong> You speak directly with the developer building your application.</span>
-                </li>
-                <li class="sidebar-item">
-                  <span class="sidebar-bullet">&#10004;</span>
-                  <span><strong>Zero Overhead:</strong> No bloated agency management tiers or inflated retainer fees.</span>
-                </li>
-                <li class="sidebar-item">
-                  <span class="sidebar-bullet">&#10004;</span>
-                  <span><strong>100% Code Ownership:</strong> You own all source code and design assets upon handover.</span>
-                </li>
-                <li class="sidebar-item">
-                  <span class="sidebar-bullet">&#10004;</span>
-                  <span><strong>Fast Turnaround:</strong> Direct decision-making and live milestone previews.</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Box 2: Working Process -->
-            <div class="retro-sidebar-box">
-              <h4 class="sidebar-title">Delivery Workflow</h4>
-              <div class="sidebar-list">
-                <div class="sidebar-item">
-                  <span class="sidebar-bullet">01</span>
-                  <span><strong>Discovery:</strong> Clarify business goals, required features, and timeline.</span>
-                </div>
-                <div class="sidebar-item">
-                  <span class="sidebar-bullet">02</span>
-                  <span><strong>Architecture:</strong> Design wireframes, conversion pathways, and system schema.</span>
-                </div>
-                <div class="sidebar-item">
-                  <span class="sidebar-bullet">03</span>
-                  <span><strong>Development:</strong> Build clean code, connect APIs, and test on mobile.</span>
-                </div>
-                <div class="sidebar-item">
-                  <span class="sidebar-bullet">04</span>
-                  <span><strong>Launch:</strong> Production domain setup, live form verification, and handover.</span>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Instant mobile WhatsApp &amp; telephone conversion triggers</span>
                 </div>
               </div>
             </div>
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Mobile-First</span>
+              <span class="tech-tag-subtle">SEO Semantics</span>
+              <span class="tech-tag-subtle">Fast Speeds</span>
+            </div>
+          </article>
 
-            <!-- Box 3: Technical Capabilities -->
-            <div class="retro-sidebar-box">
-              <h4 class="sidebar-title">Technical Standards</h4>
-              <div class="sidebar-list">
-                <div class="sidebar-item">
-                  <span class="sidebar-bullet">&#9670;</span>
-                  <span><strong>Frontend:</strong> HTML5 Semantics, Modern CSS, ES6+ JS, React, Vite</span>
+          <!-- 02: Booking Systems -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">02</span>
+                <span class="pill-tag">Direct Revenue</span>
+              </div>
+              <h3 class="service-title">Booking Systems</h3>
+              <p class="service-desc">
+                Direct reservation workflows for boutique resorts, hospitality destinations, and appointment-based businesses to eliminate platform commission fees.
+              </p>
+
+              <div class="service-deliverables">
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Interactive room discovery with transparent per-night rate cards</span>
                 </div>
-                <div class="sidebar-item">
-                  <span class="sidebar-bullet">&#9670;</span>
-                  <span><strong>Backend:</strong> Node.js, Express, REST APIs, MongoDB</span>
-                </div>
-                <div class="sidebar-item">
-                  <span class="sidebar-bullet">&#9670;</span>
-                  <span><strong>Infrastructure:</strong> Vercel, Netlify, Git, Web3Forms</span>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Real-time availability calendar to prevent double-booking errors</span>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Date Picker</span>
+              <span class="tech-tag-subtle">Availability Engine</span>
+              <span class="tech-tag-subtle">Zero Commissions</span>
+            </div>
+          </article>
+
+          <!-- 03: Business Dashboards -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">03</span>
+                <span class="pill-tag">Operations Control</span>
+              </div>
+              <h3 class="service-title">Business Dashboards</h3>
+              <p class="service-desc">
+                Private administrative portals built for business owners to review reservation calendars, track incoming customer leads, and update room or service inventory.
+              </p>
+
+              <div class="service-deliverables">
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Centralized overview of pending inquiries, bookings, and records</span>
+                </div>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>1-click date blocking for maintenance or private reservations</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Owner Admin</span>
+              <span class="tech-tag-subtle">Calendar Control</span>
+              <span class="tech-tag-subtle">Inquiry Storage</span>
+            </div>
+          </article>
+
+          <!-- 04: Custom Digital Solutions -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">04</span>
+                <span class="pill-tag">Bespoke Systems</span>
+              </div>
+              <h3 class="service-title">Custom Digital Solutions</h3>
+              <p class="service-desc">
+                Bespoke web applications built to resolve specific operational bottlenecks—such as custom quote intake calculators, form-to-database pipelines, or API syncs.
+              </p>
+
+              <div class="service-deliverables">
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Online quote request pipelines with material specifications</span>
+                </div>
+                <div class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Zero vendor lock-in or recurring monthly platform licensing</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Quote Engines</span>
+              <span class="tech-tag-subtle">Database Backends</span>
+              <span class="tech-tag-subtle">Custom APIs</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>

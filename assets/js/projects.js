@@ -51,7 +51,7 @@ export const projects = [
       "Database Persistence",
       "Cloud Deployment"
     ],
-    liveUrl: null,
+    liveUrl: "https://deccan-resort.vercel.app",
     previewType: "deccan-preview"
   },
   {
@@ -101,8 +101,53 @@ export const projects = [
       "MongoDB",
       "Vercel"
     ],
-    liveUrl: "https://dineshfabrications.vercel.app/",
+    liveUrl: "https://dineshfabrications.vercel.app",
     previewType: "fabrications-preview"
+  },
+  {
+    id: "dinesh-portfolio",
+    title: "Dinesh M. Portfolio",
+    businessRole: "Personal portfolio + retro editorial showcase + lead intake pipeline",
+    category: "Web Development & Systems",
+    statusBadge: "Live Production Website",
+    statusTone: "success",
+    location: "Tamil Nadu, India",
+    summary: "A high-performance retro-editorial personal portfolio engineered to showcase custom web applications, direct booking engines, and business dashboards with polished interactions and zero framework bloat.",
+    businessNeed: "An independent developer required an authoritative, visually distinct digital presence that departed from cookie-cutter tech templates, communicated deep craft in business web systems, and converted prospective clients directly via WhatsApp and structured inquiries.",
+    whatBuilt: "A custom editorial web experience utilizing curated typography, framed layouts, responsive project showcases, interactive case study deep-dives, and serverless lead dispatching.",
+    keyFeatures: [
+      {
+        title: "Retro-Editorial Design System",
+        detail: "Curated vintage color palette, distinct typographic hierarchy (Bebas Neue, Oswald, Newsreader), and custom framed card layouts."
+      },
+      {
+        title: "Interactive Project Showcases",
+        detail: "Dynamic hero carousel and concise portfolio overviews paired with detailed modal case study deep-dives."
+      },
+      {
+        title: "Multi-Channel Lead Capture",
+        detail: "Persistent 1-tap WhatsApp triggers and Web3Forms inquiry form with spam protection and inline feedback."
+      },
+      {
+        title: "Zero-Bloat Performance",
+        detail: "Built on vanilla CSS and modern vanilla JavaScript for instant loading, high Lighthouse scores, and full mobile responsiveness."
+      }
+    ],
+    deliverables: [
+      "Custom retro-editorial design system with responsive layouts",
+      "Interactive hero project rotator and filtered portfolio catalog",
+      "Accessible modal case study viewer with detailed system breakdowns",
+      "Production domain deployment on Vercel with Web3Forms integration"
+    ],
+    techStack: [
+      "HTML5 Semantics",
+      "Vanilla CSS",
+      "Modern JavaScript",
+      "Web3Forms",
+      "Vercel"
+    ],
+    liveUrl: "https://dineshworkdev.vercel.app",
+    previewType: "portfolio-preview"
   }
 ];
 

@@ -152,15 +152,57 @@
             </div>
           </div>
 
-          <!-- Framed Retro Showcase Box (Switchable between Deccan Resort, Dinesh Fabrications & Dinesh M. Portfolio) -->
+          <!-- Framed Retro Showcase Box (Switchable between 5 Featured Projects) -->
           <div class="hero-showcase-frame" aria-label="Featured Projects Showcase">
             <div class="showcase-slider">
-              <!-- Slide 1: Deccan Resort -->
-              <div class="showcase-slide is-active" id="hero-slide-1" data-project-id="deccan-resort">
+              <!-- Slide 1: Golden Hour Cafe -->
+              <div class="showcase-slide is-active" id="hero-slide-1" data-project-id="golden-hour-cafe">
+                <div class="showcase-img-wrap">
+                  <img src="assets/images/projects/golden-hour-preview.png"
+                    alt="Golden Hour Cafe artisanal restaurant and digital menu website preview" class="showcase-img" width="560"
+                    height="315" loading="eager" fetchpriority="high">
+                </div>
+                <div class="showcase-details">
+                  <span class="showcase-tag">Cafe / Restaurant Website</span>
+                  <h3 class="showcase-title">Golden Hour Cafe</h3>
+                  <p class="showcase-desc">
+                    Artisanal cafe and dining platform in Pollachi featuring digital menu exploration, signature Seeraga Samba biryani showcase, and direct customer triggers.
+                  </p>
+                  <div class="showcase-actions">
+                    <a href="#work" class="btn btn-primary btn-sm">
+                      <span>View My Work &rarr;</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Dental Clinic -->
+              <div class="showcase-slide" id="hero-slide-2" data-project-id="dental-clinic">
+                <div class="showcase-img-wrap">
+                  <img src="assets/images/projects/dental-clinic-preview.png"
+                    alt="Dental Clinic aesthetic restorative dentistry and consultation website preview" class="showcase-img"
+                    width="560" height="315" loading="lazy">
+                </div>
+                <div class="showcase-details">
+                  <span class="showcase-tag">Dental Clinic Website</span>
+                  <h3 class="showcase-title">Dental Clinic</h3>
+                  <p class="showcase-desc">
+                    Tranquil clinical sanctuary platform with Digital Smile Design, aesthetic restorative procedures, and streamlined patient consultation scheduling.
+                  </p>
+                  <div class="showcase-actions">
+                    <a href="#work" class="btn btn-primary btn-sm">
+                      <span>View My Work &rarr;</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Deccan Resort -->
+              <div class="showcase-slide" id="hero-slide-3" data-project-id="deccan-resort">
                 <div class="showcase-img-wrap">
                   <img src="assets/images/projects/deccan-resort-preview.png"
                     alt="Deccan Resort booking website and management system preview" class="showcase-img" width="560"
-                    height="315" loading="eager" fetchpriority="high">
+                    height="315" loading="lazy">
                 </div>
                 <div class="showcase-details">
                   <span class="showcase-tag">Hospitality &amp; Direct Booking</span>
@@ -177,8 +219,29 @@
                 </div>
               </div>
 
-              <!-- Slide 2: Dinesh Fabrications -->
-              <div class="showcase-slide" id="hero-slide-2" data-project-id="dinesh-fabrications">
+              <!-- Slide 4: Orren Cafe -->
+              <div class="showcase-slide" id="hero-slide-4" data-project-id="orren-cafe">
+                <div class="showcase-img-wrap">
+                  <img src="assets/images/projects/orren-cafe-preview.png"
+                    alt="Orren Cafe specialty coffee room and artisanal pastry website preview" class="showcase-img"
+                    width="560" height="315" loading="lazy">
+                </div>
+                <div class="showcase-details">
+                  <span class="showcase-tag">Cafe Website</span>
+                  <h3 class="showcase-title">Orren Cafe</h3>
+                  <p class="showcase-desc">
+                    Architectural specialty coffee room website with Western Ghats single-origin roasts, hearth viennoiserie guide, and table reservations.
+                  </p>
+                  <div class="showcase-actions">
+                    <a href="#work" class="btn btn-primary btn-sm">
+                      <span>View My Work &rarr;</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5: Dinesh Fabrications -->
+              <div class="showcase-slide" id="hero-slide-5" data-project-id="dinesh-fabrications">
                 <div class="showcase-img-wrap">
                   <img src="assets/images/projects/fabrications-preview.png"
                     alt="Dinesh Fabrications workshop catalog and instant quote system preview" class="showcase-img"
@@ -190,28 +253,6 @@
                   <p class="showcase-desc">
                     Commercial workshop catalog with laser-cut gates, direct 1-tap WhatsApp consultation, and
                     database-backed quote pipeline.
-                  </p>
-                  <div class="showcase-actions">
-                    <a href="#work" class="btn btn-primary btn-sm">
-                      <span>View My Work &rarr;</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 3: Dinesh M. Portfolio -->
-              <div class="showcase-slide" id="hero-slide-3" data-project-id="dinesh-portfolio">
-                <div class="showcase-img-wrap">
-                  <img src="assets/images/projects/portfolio-preview.png"
-                    alt="Dinesh M. retro editorial portfolio website preview" class="showcase-img" width="560"
-                    height="315" loading="lazy">
-                </div>
-                <div class="showcase-details">
-                  <span class="showcase-tag">Web Development &amp; Systems</span>
-                  <h3 class="showcase-title">Dinesh M. Portfolio</h3>
-                  <p class="showcase-desc">
-                    Retro-editorial portfolio engineered with modern semantic standards, direct booking showcases, and
-                    verified client inquiry channels.
                   </p>
                   <div class="showcase-actions">
                     <a href="#work" class="btn btn-primary btn-sm">
@@ -357,7 +398,8 @@
         <div class="filter-bar" role="toolbar" aria-label="Filter Projects">
           <span class="filter-label">Filter By:</span>
           <button type="button" class="filter-pill active" data-filter="all">All Projects</button>
-          <button type="button" class="filter-pill" data-filter="hospitality">Hospitality &amp; Booking</button>
+          <button type="button" class="filter-pill" data-filter="hospitality">Hospitality &amp; Dining</button>
+          <button type="button" class="filter-pill" data-filter="healthcare">Healthcare &amp; Clinic</button>
           <button type="button" class="filter-pill" data-filter="industrial">Commercial &amp; Workshop</button>
           <button type="button" class="filter-pill" data-filter="systems">Web &amp; Systems</button>
         </div>
@@ -579,6 +621,224 @@
                   <span class="pill-tag">Editorial Design</span>
                   <span class="pill-tag">Zero Bloat</span>
                   <span class="pill-tag">Inquiry Pipeline</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: GOLDEN HOUR CAFE -->
+          <article class="project-card" data-category="hospitality" aria-labelledby="project-title-golden-hour">
+            <div class="project-media-col">
+              <div class="project-image-wrapper">
+                <img src="assets/images/projects/golden-hour-preview.png"
+                  alt="Golden Hour Cafe artisanal restaurant and digital menu website preview" class="project-main-image"
+                  width="1448" height="1086" loading="lazy">
+                <div class="project-image-overlay">
+                  <span class="project-status-chip">
+                    <span class="status-dot status-dot-green"></span>
+                    <span>Live Cafe Production</span>
+                  </span>
+                </div>
+                <!-- Stamped Seal Badge overlapping corner -->
+                <div class="card-stamp-badge" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content-col">
+              <div>
+                <div class="project-header-meta">
+                  <span class="project-tag-editorial">Cafe / Restaurant Website</span>
+                  <span class="project-client-name">Pollachi, Coimbatore</span>
+                </div>
+
+                <h3 id="project-title-golden-hour" class="project-title">Golden Hour Cafe</h3>
+
+                <p class="project-tagline">
+                  Cafe &amp; restaurant website + digital menu + table discovery &amp; visiting experience
+                </p>
+
+                <p class="project-story">
+                  Bespoke cafe web destination featuring interactive menu exploration, signature Seeraga Samba biryani showcase, authentic culinary storytelling, and direct 1-tap call and visit channels.
+                </p>
+              </div>
+
+              <div class="project-footer-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-open-project="golden-hour-cafe">
+                  <span>View Case Study</span>
+                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+                <a href="https://goldenhour-cafe.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary btn-sm">
+                  <span>View Live Site</span>
+                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" x2="21" y1="14" y2="3"></line>
+                  </svg>
+                </a>
+                <div class="project-pill-tags">
+                  <span class="pill-tag">Digital Menu</span>
+                  <span class="pill-tag">Local Discovery</span>
+                  <span class="pill-tag">Instant Contact</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: DENTAL CLINIC -->
+          <article class="project-card" data-category="healthcare" aria-labelledby="project-title-dental">
+            <div class="project-media-col">
+              <div class="project-image-wrapper">
+                <img src="assets/images/projects/dental-clinic-preview.png"
+                  alt="Dental Clinic aesthetic restorative dentistry and consultation website preview" class="project-main-image"
+                  width="1448" height="1086" loading="lazy">
+                <div class="project-image-overlay">
+                  <span class="project-status-chip">
+                    <span class="status-dot status-dot-green"></span>
+                    <span>Live Clinic Platform</span>
+                  </span>
+                </div>
+                <!-- Stamped Seal Badge overlapping corner -->
+                <div class="card-stamp-badge" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content-col">
+              <div>
+                <div class="project-header-meta">
+                  <span class="project-tag-editorial">Dental Clinic Website</span>
+                  <span class="project-client-name">Aesthetic &amp; Restorative Care</span>
+                </div>
+
+                <h3 id="project-title-dental" class="project-title">Dental Clinic</h3>
+
+                <p class="project-tagline">
+                  Clinic website + Digital Smile Design showcase + appointment consultation intake
+                </p>
+
+                <p class="project-story">
+                  Tranquil clinical platform highlighting Digital Smile Design, custom porcelain veneers, sterile surgical suites, and an intuitive online consultation intake workflow designed to remove patient anxiety.
+                </p>
+              </div>
+
+              <div class="project-footer-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-open-project="dental-clinic">
+                  <span>View Case Study</span>
+                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+                <a href="https://dentalclinic-sample.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary btn-sm">
+                  <span>View Live Site</span>
+                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" x2="21" y1="14" y2="3"></line>
+                  </svg>
+                </a>
+                <div class="project-pill-tags">
+                  <span class="pill-tag">Digital Smile Design</span>
+                  <span class="pill-tag">Consultation Intake</span>
+                  <span class="pill-tag">Surgical Suites</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: ORREN CAFE -->
+          <article class="project-card" data-category="hospitality" aria-labelledby="project-title-orren">
+            <div class="project-media-col">
+              <div class="project-image-wrapper">
+                <img src="assets/images/projects/orren-cafe-preview.png"
+                  alt="Orren Cafe specialty coffee room and artisanal pastry website preview" class="project-main-image"
+                  width="1448" height="1086" loading="lazy">
+                <div class="project-image-overlay">
+                  <span class="project-status-chip">
+                    <span class="status-dot status-dot-green"></span>
+                    <span>Live Specialty Coffee</span>
+                  </span>
+                </div>
+                <!-- Stamped Seal Badge overlapping corner -->
+                <div class="card-stamp-badge" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                    <path d="M12 6v6l4 2"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content-col">
+              <div>
+                <div class="project-header-meta">
+                  <span class="project-tag-editorial">Cafe Website</span>
+                  <span class="project-client-name">Race Course Road, Coimbatore</span>
+                </div>
+
+                <h3 id="project-title-orren" class="project-title">Orren Cafe</h3>
+
+                <p class="project-tagline">
+                  Specialty coffee room website + single-origin roast catalog + table reservation experience
+                </p>
+
+                <p class="project-story">
+                  Architectural specialty coffee web experience highlighting single-origin Western Ghats roasts, 72-hour slow-laminated Bronte pistachio viennoiserie, fluted oak interior spaces, and table bookings.
+                </p>
+              </div>
+
+              <div class="project-footer-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-open-project="orren-cafe">
+                  <span>View Case Study</span>
+                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+                <a href="https://orrencafe.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-secondary btn-sm">
+                  <span>View Live Site</span>
+                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" x2="21" y1="14" y2="3"></line>
+                  </svg>
+                </a>
+                <div class="project-pill-tags">
+                  <span class="pill-tag">Single-Origin Roasts</span>
+                  <span class="pill-tag">French Viennoiserie</span>
+                  <span class="pill-tag">Table Reservation</span>
                 </div>
               </div>
             </div>

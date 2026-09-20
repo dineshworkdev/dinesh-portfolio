@@ -148,6 +148,141 @@ export const projects = [
     ],
     liveUrl: "https://dineshworkdev.vercel.app",
     previewType: "portfolio-preview"
+  },
+  {
+    id: "golden-hour-cafe",
+    title: "Golden Hour Cafe",
+    businessRole: "Cafe & restaurant website + digital menu + table discovery & visiting experience",
+    category: "Cafe / Restaurant Website",
+    statusBadge: "Live Production Website",
+    statusTone: "success",
+    location: "Pollachi, Coimbatore",
+    summary: "A warm, high-performance web experience engineered for an artisanal cafe and dining destination in Pollachi, Coimbatore, showcasing traditional South Indian flavors, signature Seeraga Samba biryani, and direct customer engagement.",
+    businessNeed: "An artisanal cafe in Pollachi needed a distinctive digital home that reflects its warm, unhurried hospitality, highlights its signature menu offerings (including Seeraga Samba biryani, fresh pressed juices, and filter coffee), and guides mobile customers effortlessly to visit, call, or explore menu specials.",
+    whatBuilt: "A mobile-first, responsive cafe website featuring an interactive multi-category food and beverage showcase, crowd favourites marquee, location discovery, opening hours, and direct 1-tap telephone and navigation triggers.",
+    keyFeatures: [
+      {
+        title: "Interactive Digital Menu & Specials",
+        detail: "Categorized showcase of South Indian breakfast, lunch specials, Seeraga Samba biryani, and evening refreshments with transparent pricing."
+      },
+      {
+        title: "Atmosphere & Kitchen Storytelling",
+        detail: "Visual storytelling capturing authentic cooking moments, fresh juice preparation, and the relaxed dining ambience."
+      },
+      {
+        title: "1-Tap Local Customer Triggers",
+        detail: "Quick-dial telephone calling, Google Maps direction routing, and streamlined customer visit planning."
+      },
+      {
+        title: "Zero-Bloat Mobile Architecture",
+        detail: "Lightweight, fluid layouts engineered for instant loading on mobile devices across varying network speeds."
+      }
+    ],
+    deliverables: [
+      "Mobile-first cafe & restaurant website tailored to Pollachi's local dining scene",
+      "High-conversion digital menu with rich visual presentation",
+      "Direct phone and location navigation integration for hungry patrons",
+      "Smooth animations, editorial typography, and high performance scores"
+    ],
+    techStack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Semantic HTML",
+      "Vercel"
+    ],
+    liveUrl: "https://goldenhour-cafe.vercel.app/",
+    previewType: "golden-hour-preview"
+  },
+  {
+    id: "dental-clinic",
+    title: "Dental Clinic",
+    businessRole: "Clinic website + Digital Smile Design showcase + appointment consultation intake",
+    category: "Dental Clinic Website",
+    statusBadge: "Live Production Website",
+    statusTone: "accent",
+    location: "Coimbatore & Metro Sanctuary",
+    summary: "A premier, tranquil digital presence for a state-of-the-art dental clinic, combining aesthetic restorative dentistry, Digital Smile Design (DSD), and a frictionless online patient consultation intake system.",
+    businessNeed: "A high-end dental practice required an authoritative digital platform that removes patient anxiety, highlights clinical mastery across cosmetic and restorative dentistry, showcases modern treatment suites, and captures qualified patient consultation requests.",
+    whatBuilt: "An elegant clinical web platform featuring Digital Smile Design interactive previews, verified patient transformation stories, comprehensive specialist profiles, and a secure multi-field consultation booking intake form.",
+    keyFeatures: [
+      {
+        title: "Digital Smile Design & Cosmetic Suite",
+        detail: "Clear breakdowns of porcelain veneers, dental implants, teeth whitening, and smile transformations with clinical precision standards."
+      },
+      {
+        title: "Tranquil Consultation Intake Flow",
+        detail: "Intuitive appointment scheduling interface collecting patient treatment needs, preferred dates, and contact details."
+      },
+      {
+        title: "Specialist Clinician Roster",
+        detail: "Detailed credentials for implantologists, microscopic endodontists, and cosmetic dental architects."
+      },
+      {
+        title: "Clinic Virtual Tour & Facility Showcase",
+        detail: "Modern photography showcasing sterile surgical suites, welcoming reception, and private consultation lounges."
+      }
+    ],
+    deliverables: [
+      "Full responsive dental clinic platform with tranquil healthcare design language",
+      "Automated appointment consultation request workflow",
+      "Comprehensive dental service and procedure catalog",
+      "Fast loading speed with optimized imagery and accessibility standards"
+    ],
+    techStack: [
+      "React",
+      "Vite",
+      "Modern CSS",
+      "Web APIs",
+      "Vercel"
+    ],
+    liveUrl: "https://dentalclinic-sample.vercel.app/",
+    previewType: "dental-clinic-preview"
+  },
+  {
+    id: "orren-cafe",
+    title: "Orren Cafe",
+    businessRole: "Specialty coffee room website + single-origin roast catalog + table reservation experience",
+    category: "Cafe Website",
+    statusBadge: "Live Production Website",
+    statusTone: "success",
+    location: "Race Course Road, Coimbatore",
+    summary: "An architectural, editorial web experience for a high-end specialty coffee room in Coimbatore, celebrating single-origin Western Ghats roasts, artisanal French viennoiserie, and contemporary fluted oak sanctuary spaces.",
+    businessNeed: "A specialty coffee roaster on Race Course Road required an editorial digital presence that honors high-elevation South Indian terroir, educates discerning guests on single-origin roasts, and drives table reservations.",
+    whatBuilt: "A design-forward web destination integrating coffee origin breakdowns, daily hearth viennoiserie schedules, an architectural tour of the sunlit sanctuary, and a table reservation system.",
+    keyFeatures: [
+      {
+        title: "Single-Origin Western Ghats Coffee Catalog",
+        detail: "Interactive tasting notes, elevation profiles, and processing methods for Coorg, Yercaud, and Chikmagalur micro-lots."
+      },
+      {
+        title: "Artisanal Viennoiserie & Daily Hearth Schedule",
+        detail: "Showcase of slow-laminated French butter pastries including signature Bronte pistachio croissants with morning baking hours."
+      },
+      {
+        title: "Architectural Space Tour",
+        detail: "High-resolution photography exploring the limewash plaster, arched alcoves, and natural fluted oak sanctuary."
+      },
+      {
+        title: "Table Reservation & Visiting Guide",
+        detail: "Direct digital table reservation workflow and visiting details for Race Course Road."
+      }
+    ],
+    deliverables: [
+      "Editorial specialty coffee web platform with custom architectural aesthetics",
+      "Filterable coffee, viennoiserie, and kitchen menu catalog",
+      "Interactive coffee extraction and terroir storytelling guide",
+      "Seamless table reservation dispatching system"
+    ],
+    techStack: [
+      "Next.js",
+      "React",
+      "Modern CSS",
+      "Component UI",
+      "Vercel"
+    ],
+    liveUrl: "https://orrencafe.vercel.app/",
+    previewType: "orren-cafe-preview"
   }
 ];
 

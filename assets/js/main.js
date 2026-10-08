@@ -8,79 +8,134 @@ import { initProjects } from './projects.js';
 import { initContactForm } from './form.js';
 
 /**
- * Hero Featured Showcase Slider Controller
- * Rotates between Deccan Resort, Dinesh Fabrications, and Dinesh M. Portfolio
+ * Interactive Developer Workspace Controller
+ * Handles screen tabs switching and subtle desktop mouse-based parallax
  */
-function initHeroShowcase() {
-  const prevBtn = document.getElementById('showcase-prev-btn');
-  const nextBtn = document.getElementById('showcase-next-btn');
-  const slides = document.querySelectorAll('.showcase-slide');
-  const sliderFrame = document.querySelector('.hero-showcase-frame');
+function initHeroWorkspace() {
+  const workspace = document.getElementById('hero-workspace');
+  if (!workspace) return;
 
-  if (!slides.length) return;
+  // 1. Laptop Screen Tab Switching
+  const screenTabs = workspace.querySelectorAll('.screen-tab');
+  const screenPanels = workspace.querySelectorAll('.screen-panel');
 
-  let currentSlide = 0;
+  if (screenTabs.length && screenPanels.length) {
+    const activateTab = (tabBtn) => {
+      const targetId = tabBtn.getAttribute('aria-controls');
+      
+      screenTabs.forEach((tab) => {
+        tab.classList.remove('is-active');
+        tab.setAttribute('aria-selected', 'false');
+      });
+      screenPanels.forEach((panel) => {
+        panel.classList.remove('is-active');
+      });
 
-  const showSlide = (index) => {
-    slides.forEach((slide, i) => {
-      if (i === index) {
-        slide.classList.add('is-active');
+      tabBtn.classList.add('is-active');
+      tabBtn.setAttribute('aria-selected', 'true');
+
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.classList.add('is-active');
+      }
+    };
+
+    screenTabs.forEach((tab, index) => {
+      tab.addEventListener('click', (e) => {
+        e.preventDefault();
+        activateTab(tab);
+      });
+
+      tab.addEventListener('keydown', (e) => {
+        let nextIndex = null;
+        if (e.key === 'ArrowRight') {
+          nextIndex = (index + 1) % screenTabs.length;
+        } else if (e.key === 'ArrowLeft') {
+          nextIndex = (index - 1 + screenTabs.length) % screenTabs.length;
+        }
+        if (nextIndex !== null) {
+          e.preventDefault();
+          screenTabs[nextIndex].focus();
+          activateTab(screenTabs[nextIndex]);
+        }
+      });
+    });
+  }
+
+  // 2. Subtle Refined Mouse Parallax (Desktop Only & Reduced-Motion Aware)
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isTouch = window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 768;
+
+  if (prefersReduced || isTouch) return;
+
+  const parallaxTargets = workspace.querySelectorAll('[data-depth]');
+  if (!parallaxTargets.length) return;
+
+  let mouseX = 0;
+  let mouseY = 0;
+  let currentX = 0;
+  let currentY = 0;
+  let rafId = null;
+  let isMoving = false;
+
+  const maxOffset = 24; // Subtle max pixel excursion
+  const lerpFactor = 0.07; // Slow, refined easing
+
+  const updateParallax = () => {
+    currentX += (mouseX - currentX) * lerpFactor;
+    currentY += (mouseY - currentY) * lerpFactor;
+
+    parallaxTargets.forEach((el) => {
+      const depth = parseFloat(el.getAttribute('data-depth')) || 0.02;
+      const x = (currentX * depth * maxOffset).toFixed(2);
+      const y = (currentY * depth * maxOffset).toFixed(2);
+
+      // Preserve existing base rotations on hoverable elements
+      if (el.classList.contains('workspace-notebook-wrap')) {
+        el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+      } else if (el.classList.contains('workspace-spec-sheets')) {
+        el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
       } else {
-        slide.classList.remove('is-active');
+        el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
       }
     });
+
+    // Settle RAF when motion is nearly zero
+    const diff = Math.abs(mouseX - currentX) + Math.abs(mouseY - currentY);
+    if (diff > 0.001 || isMoving) {
+      rafId = requestAnimationFrame(updateParallax);
+    } else {
+      rafId = null;
+    }
   };
 
-  if (prevBtn) {
-    prevBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide(currentSlide);
-    });
-  }
+  const onMouseMove = (e) => {
+    const rect = workspace.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
 
-  if (nextBtn) {
-    nextBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    });
-  }
+    // Normalized from -1 to 1
+    mouseX = Math.max(-1, Math.min(1, (e.clientX - centerX) / (rect.width / 2)));
+    mouseY = Math.max(-1, Math.min(1, (e.clientY - centerY) / (rect.height / 2)));
 
-  // Keyboard arrow navigation when showcase frame is focused
-  if (sliderFrame) {
-    sliderFrame.setAttribute('tabindex', '0');
-    sliderFrame.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowLeft') {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
-      } else if (e.key === 'ArrowRight') {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-      }
-    });
+    isMoving = true;
+    if (!rafId) {
+      rafId = requestAnimationFrame(updateParallax);
+    }
+  };
 
-    // Touch swipe support for mobile devices
-    let touchStartX = 0;
-    let touchEndX = 0;
+  const onMouseLeave = () => {
+    mouseX = 0;
+    mouseY = 0;
+    isMoving = false;
+    if (!rafId) {
+      rafId = requestAnimationFrame(updateParallax);
+    }
+  };
 
-    sliderFrame.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    }, { passive: true });
-
-    sliderFrame.addEventListener('touchend', (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      const swipeDiff = touchStartX - touchEndX;
-      if (Math.abs(swipeDiff) > 45) {
-        if (swipeDiff > 0) {
-          currentSlide = (currentSlide + 1) % slides.length;
-        } else {
-          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        }
-        showSlide(currentSlide);
-      }
-    }, { passive: true });
-  }
+  const heroSection = document.getElementById('hero') || workspace;
+  heroSection.addEventListener('mousemove', onMouseMove, { passive: true });
+  heroSection.addEventListener('mouseleave', onMouseLeave, { passive: true });
 }
 
 /**
@@ -149,8 +204,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize responsive navigation and header scroll effects
   initNavigation();
 
-  // Initialize hero project showcase slider
-  initHeroShowcase();
+  // Initialize interactive hero developer workspace
+  initHeroWorkspace();
 
   // Initialize portfolio filtering
   initPortfolioFilter();

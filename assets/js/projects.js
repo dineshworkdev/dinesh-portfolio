@@ -55,6 +55,174 @@ export const projects = [
     previewType: "deccan-preview"
   },
   {
+    id: "lee-gym",
+    title: "Lee Gym",
+    businessRole: "Gym website + membership management + membership plans exploration",
+    category: "Fitness / Gym Website",
+    statusBadge: "Live Production Website",
+    statusTone: "success",
+    location: "Fitness & Training",
+    summary: "A gym website featuring membership management and membership plans, designed to present gym services and help members explore available plans.",
+    businessNeed: "A dedicated fitness and training center needed a modern online platform to present its facility, showcase available training services, and enable visitors to explore membership plans with clear tier options.",
+    whatBuilt: "A responsive fitness platform featuring an interactive presentation of gym services, membership plan breakdowns, and direct member onboarding triggers.",
+    keyFeatures: [
+      {
+        title: "Gym Website & Facility Showcase",
+        detail: "Comprehensive presentation of gym training facilities, expert coaching, and workout programs."
+      },
+      {
+        title: "Membership Management",
+        detail: "Streamlined member tracking, onboarding workflows, and plan management."
+      },
+      {
+        title: "Membership Plans",
+        detail: "Transparent tiers and pricing options designed to help prospective members explore available plans."
+      }
+    ],
+    deliverables: [
+      "Responsive gym website with training & service highlights",
+      "Membership management and plan exploration system",
+      "Fast mobile-first performance and conversion triggers"
+    ],
+    techStack: [
+      "React",
+      "Vite",
+      "Modern CSS",
+      "Vercel"
+    ],
+    liveUrl: "https://leegym.vercel.app",
+    previewType: "lee-gym-preview"
+  },
+  {
+    id: "golden-hour-cafe",
+    title: "Golden Hour Cafe",
+    businessRole: "Cafe & restaurant website + digital menu + table discovery & visiting experience",
+    category: "Cafe / Restaurant Website",
+    statusBadge: "Live Production Website",
+    statusTone: "success",
+    location: "Pollachi, Coimbatore",
+    summary: "A warm, high-performance web experience engineered for an artisanal cafe and dining destination in Pollachi, Coimbatore, showcasing traditional South Indian flavors, signature Seeraga Samba biryani, and direct customer engagement.",
+    businessNeed: "An artisanal cafe in Pollachi needed a distinctive digital home that reflects its warm, unhurried hospitality, highlights its signature menu offerings (including Seeraga Samba biryani, fresh pressed juices, and filter coffee), and guides mobile customers effortlessly to visit, call, or explore menu specials.",
+    whatBuilt: "A mobile-first, responsive cafe website featuring an interactive multi-category food and beverage showcase, crowd favourites marquee, location discovery, opening hours, and direct 1-tap telephone and navigation triggers.",
+    keyFeatures: [
+      {
+        title: "Interactive Digital Menu & Specials",
+        detail: "Categorized showcase of South Indian breakfast, lunch specials, Seeraga Samba biryani, and evening refreshments with transparent pricing."
+      },
+      {
+        title: "Atmosphere & Kitchen Storytelling",
+        detail: "Visual storytelling capturing authentic cooking moments, fresh juice preparation, and the relaxed dining ambience."
+      },
+      {
+        title: "1-Tap Local Customer Triggers",
+        detail: "Quick-dial telephone calling, Google Maps direction routing, and streamlined customer visit planning."
+      },
+      {
+        title: "Zero-Bloat Mobile Architecture",
+        detail: "Lightweight, fluid layouts engineered for instant loading on mobile devices across varying network speeds."
+      }
+    ],
+    deliverables: [
+      "Mobile-first cafe & restaurant website tailored to Pollachi's local dining scene",
+      "High-conversion digital menu with rich visual presentation",
+      "Direct phone and location navigation integration for hungry patrons",
+      "Smooth animations, editorial typography, and high performance scores"
+    ],
+    techStack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Semantic HTML",
+      "Vercel"
+    ],
+    liveUrl: "https://goldenhour-cafe.vercel.app/",
+    previewType: "golden-hour-preview"
+  },
+  {
+    id: "yk-mens-fashion",
+    title: "YK Men's Fashion",
+    businessRole: "Men's fashion store + e-commerce product browsing + integrated payment gateway",
+    category: "E-commerce / Fashion",
+    statusBadge: "Live Production Website",
+    statusTone: "success",
+    location: "Retail & Apparel",
+    summary: "A men's T-shirt fashion e-commerce website featuring product browsing and an integrated payment gateway.",
+    businessNeed: "A contemporary men's apparel brand required an online store to showcase their curated T-shirt collection, support product browsing across categories, and accept online payments securely.",
+    whatBuilt: "An e-commerce store with interactive product catalogs, mobile-optimized apparel browsing, and Cashfree integrated payment gateway.",
+    keyFeatures: [
+      {
+        title: "Men's T-Shirt Fashion Store",
+        detail: "Curated catalog of contemporary men's T-shirts and luxury apparel with sizing and details."
+      },
+      {
+        title: "E-Commerce Product Browsing",
+        detail: "Intuitive product grid, filtering, and responsive browsing optimized for mobile shoppers."
+      },
+      {
+        title: "Integrated Payment Gateway",
+        detail: "Secure online checkout and payment processing integrated via Cashfree payment gateway."
+      }
+    ],
+    deliverables: [
+      "Mobile-first e-commerce store for men's fashion",
+      "Fast product exploration and apparel browsing",
+      "Secure integrated payment gateway checkout"
+    ],
+    techStack: [
+      "React",
+      "Motion",
+      "Cashfree Payment Gateway",
+      "Vercel"
+    ],
+    liveUrl: "https://www.ykmensfashion.in",
+    previewType: "yk-fashion-preview"
+  },
+  {
+    id: "dental-clinic",
+    title: "Dental Clinic",
+    businessRole: "Clinic website + Digital Smile Design showcase + appointment consultation intake",
+    category: "Dental Clinic Website",
+    statusBadge: "Live Production Website",
+    statusTone: "accent",
+    location: "Coimbatore & Metro Sanctuary",
+    summary: "A premier, tranquil digital presence for a state-of-the-art dental clinic, combining aesthetic restorative dentistry, Digital Smile Design (DSD), and a frictionless online patient consultation intake system.",
+    businessNeed: "A high-end dental practice required an authoritative digital platform that removes patient anxiety, highlights clinical mastery across cosmetic and restorative dentistry, showcases modern treatment suites, and captures qualified patient consultation requests.",
+    whatBuilt: "An elegant clinical web platform featuring Digital Smile Design interactive previews, verified patient transformation stories, comprehensive specialist profiles, and a secure multi-field consultation booking intake form.",
+    keyFeatures: [
+      {
+        title: "Digital Smile Design & Cosmetic Suite",
+        detail: "Clear breakdowns of porcelain veneers, dental implants, teeth whitening, and smile transformations with clinical precision standards."
+      },
+      {
+        title: "Tranquil Consultation Intake Flow",
+        detail: "Intuitive appointment scheduling interface collecting patient treatment needs, preferred dates, and contact details."
+      },
+      {
+        title: "Specialist Clinician Roster",
+        detail: "Detailed credentials for implantologists, microscopic endodontists, and cosmetic dental architects."
+      },
+      {
+        title: "Clinic Virtual Tour & Facility Showcase",
+        detail: "Modern photography showcasing sterile surgical suites, welcoming reception, and private consultation lounges."
+      }
+    ],
+    deliverables: [
+      "Full responsive dental clinic platform with tranquil healthcare design language",
+      "Automated appointment consultation request workflow",
+      "Comprehensive dental service and procedure catalog",
+      "Fast loading speed with optimized imagery and accessibility standards"
+    ],
+    techStack: [
+      "React",
+      "Vite",
+      "Modern CSS",
+      "Web APIs",
+      "Vercel"
+    ],
+    liveUrl: "https://dentalclinic-sample.vercel.app/",
+    previewType: "dental-clinic-preview"
+  },
+  {
     id: "dinesh-fabrications",
     title: "Dinesh Fabrications",
     businessRole: "Business website + service showcase + enquiry/quote experience",
@@ -103,186 +271,6 @@ export const projects = [
     ],
     liveUrl: "https://dineshfabrications.vercel.app",
     previewType: "fabrications-preview"
-  },
-  {
-    id: "dinesh-portfolio",
-    title: "Dinesh M. Portfolio",
-    businessRole: "Personal portfolio + retro editorial showcase + lead intake pipeline",
-    category: "Web Development & Systems",
-    statusBadge: "Live Production Website",
-    statusTone: "success",
-    location: "Tamil Nadu, India",
-    summary: "A high-performance retro-editorial personal portfolio engineered to showcase custom web applications, direct booking engines, and business dashboards with polished interactions and zero framework bloat.",
-    businessNeed: "An independent developer required an authoritative, visually distinct digital presence that departed from cookie-cutter tech templates, communicated deep craft in business web systems, and converted prospective clients directly via WhatsApp and structured inquiries.",
-    whatBuilt: "A custom editorial web experience utilizing curated typography, framed layouts, responsive project showcases, interactive case study deep-dives, and serverless lead dispatching.",
-    keyFeatures: [
-      {
-        title: "Retro-Editorial Design System",
-        detail: "Curated vintage color palette, distinct typographic hierarchy (Bebas Neue, Oswald, Newsreader), and custom framed card layouts."
-      },
-      {
-        title: "Interactive Project Showcases",
-        detail: "Dynamic hero carousel and concise portfolio overviews paired with detailed modal case study deep-dives."
-      },
-      {
-        title: "Multi-Channel Lead Capture",
-        detail: "Persistent 1-tap WhatsApp triggers and Web3Forms inquiry form with spam protection and inline feedback."
-      },
-      {
-        title: "Zero-Bloat Performance",
-        detail: "Built on vanilla CSS and modern vanilla JavaScript for instant loading, high Lighthouse scores, and full mobile responsiveness."
-      }
-    ],
-    deliverables: [
-      "Custom retro-editorial design system with responsive layouts",
-      "Interactive hero project rotator and filtered portfolio catalog",
-      "Accessible modal case study viewer with detailed system breakdowns",
-      "Production domain deployment on Vercel with Web3Forms integration"
-    ],
-    techStack: [
-      "HTML5 Semantics",
-      "Vanilla CSS",
-      "Modern JavaScript",
-      "Web3Forms",
-      "Vercel"
-    ],
-    liveUrl: "https://dineshworkdev.vercel.app",
-    previewType: "portfolio-preview"
-  },
-  {
-    id: "golden-hour-cafe",
-    title: "Golden Hour Cafe",
-    businessRole: "Cafe & restaurant website + digital menu + table discovery & visiting experience",
-    category: "Cafe / Restaurant Website",
-    statusBadge: "Live Production Website",
-    statusTone: "success",
-    location: "Pollachi, Coimbatore",
-    summary: "A warm, high-performance web experience engineered for an artisanal cafe and dining destination in Pollachi, Coimbatore, showcasing traditional South Indian flavors, signature Seeraga Samba biryani, and direct customer engagement.",
-    businessNeed: "An artisanal cafe in Pollachi needed a distinctive digital home that reflects its warm, unhurried hospitality, highlights its signature menu offerings (including Seeraga Samba biryani, fresh pressed juices, and filter coffee), and guides mobile customers effortlessly to visit, call, or explore menu specials.",
-    whatBuilt: "A mobile-first, responsive cafe website featuring an interactive multi-category food and beverage showcase, crowd favourites marquee, location discovery, opening hours, and direct 1-tap telephone and navigation triggers.",
-    keyFeatures: [
-      {
-        title: "Interactive Digital Menu & Specials",
-        detail: "Categorized showcase of South Indian breakfast, lunch specials, Seeraga Samba biryani, and evening refreshments with transparent pricing."
-      },
-      {
-        title: "Atmosphere & Kitchen Storytelling",
-        detail: "Visual storytelling capturing authentic cooking moments, fresh juice preparation, and the relaxed dining ambience."
-      },
-      {
-        title: "1-Tap Local Customer Triggers",
-        detail: "Quick-dial telephone calling, Google Maps direction routing, and streamlined customer visit planning."
-      },
-      {
-        title: "Zero-Bloat Mobile Architecture",
-        detail: "Lightweight, fluid layouts engineered for instant loading on mobile devices across varying network speeds."
-      }
-    ],
-    deliverables: [
-      "Mobile-first cafe & restaurant website tailored to Pollachi's local dining scene",
-      "High-conversion digital menu with rich visual presentation",
-      "Direct phone and location navigation integration for hungry patrons",
-      "Smooth animations, editorial typography, and high performance scores"
-    ],
-    techStack: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "Semantic HTML",
-      "Vercel"
-    ],
-    liveUrl: "https://goldenhour-cafe.vercel.app/",
-    previewType: "golden-hour-preview"
-  },
-  {
-    id: "dental-clinic",
-    title: "Dental Clinic",
-    businessRole: "Clinic website + Digital Smile Design showcase + appointment consultation intake",
-    category: "Dental Clinic Website",
-    statusBadge: "Live Production Website",
-    statusTone: "accent",
-    location: "Coimbatore & Metro Sanctuary",
-    summary: "A premier, tranquil digital presence for a state-of-the-art dental clinic, combining aesthetic restorative dentistry, Digital Smile Design (DSD), and a frictionless online patient consultation intake system.",
-    businessNeed: "A high-end dental practice required an authoritative digital platform that removes patient anxiety, highlights clinical mastery across cosmetic and restorative dentistry, showcases modern treatment suites, and captures qualified patient consultation requests.",
-    whatBuilt: "An elegant clinical web platform featuring Digital Smile Design interactive previews, verified patient transformation stories, comprehensive specialist profiles, and a secure multi-field consultation booking intake form.",
-    keyFeatures: [
-      {
-        title: "Digital Smile Design & Cosmetic Suite",
-        detail: "Clear breakdowns of porcelain veneers, dental implants, teeth whitening, and smile transformations with clinical precision standards."
-      },
-      {
-        title: "Tranquil Consultation Intake Flow",
-        detail: "Intuitive appointment scheduling interface collecting patient treatment needs, preferred dates, and contact details."
-      },
-      {
-        title: "Specialist Clinician Roster",
-        detail: "Detailed credentials for implantologists, microscopic endodontists, and cosmetic dental architects."
-      },
-      {
-        title: "Clinic Virtual Tour & Facility Showcase",
-        detail: "Modern photography showcasing sterile surgical suites, welcoming reception, and private consultation lounges."
-      }
-    ],
-    deliverables: [
-      "Full responsive dental clinic platform with tranquil healthcare design language",
-      "Automated appointment consultation request workflow",
-      "Comprehensive dental service and procedure catalog",
-      "Fast loading speed with optimized imagery and accessibility standards"
-    ],
-    techStack: [
-      "React",
-      "Vite",
-      "Modern CSS",
-      "Web APIs",
-      "Vercel"
-    ],
-    liveUrl: "https://dentalclinic-sample.vercel.app/",
-    previewType: "dental-clinic-preview"
-  },
-  {
-    id: "orren-cafe",
-    title: "Orren Cafe",
-    businessRole: "Specialty coffee room website + single-origin roast catalog + table reservation experience",
-    category: "Cafe Website",
-    statusBadge: "Live Production Website",
-    statusTone: "success",
-    location: "Race Course Road, Coimbatore",
-    summary: "An architectural, editorial web experience for a high-end specialty coffee room in Coimbatore, celebrating single-origin Western Ghats roasts, artisanal French viennoiserie, and contemporary fluted oak sanctuary spaces.",
-    businessNeed: "A specialty coffee roaster on Race Course Road required an editorial digital presence that honors high-elevation South Indian terroir, educates discerning guests on single-origin roasts, and drives table reservations.",
-    whatBuilt: "A design-forward web destination integrating coffee origin breakdowns, daily hearth viennoiserie schedules, an architectural tour of the sunlit sanctuary, and a table reservation system.",
-    keyFeatures: [
-      {
-        title: "Single-Origin Western Ghats Coffee Catalog",
-        detail: "Interactive tasting notes, elevation profiles, and processing methods for Coorg, Yercaud, and Chikmagalur micro-lots."
-      },
-      {
-        title: "Artisanal Viennoiserie & Daily Hearth Schedule",
-        detail: "Showcase of slow-laminated French butter pastries including signature Bronte pistachio croissants with morning baking hours."
-      },
-      {
-        title: "Architectural Space Tour",
-        detail: "High-resolution photography exploring the limewash plaster, arched alcoves, and natural fluted oak sanctuary."
-      },
-      {
-        title: "Table Reservation & Visiting Guide",
-        detail: "Direct digital table reservation workflow and visiting details for Race Course Road."
-      }
-    ],
-    deliverables: [
-      "Editorial specialty coffee web platform with custom architectural aesthetics",
-      "Filterable coffee, viennoiserie, and kitchen menu catalog",
-      "Interactive coffee extraction and terroir storytelling guide",
-      "Seamless table reservation dispatching system"
-    ],
-    techStack: [
-      "Next.js",
-      "React",
-      "Modern CSS",
-      "Component UI",
-      "Vercel"
-    ],
-    liveUrl: "https://orrencafe.vercel.app/",
-    previewType: "orren-cafe-preview"
   }
 ];
 

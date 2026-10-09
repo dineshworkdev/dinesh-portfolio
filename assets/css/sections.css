@@ -333,238 +333,240 @@
   animation: heroEditorialReveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* Professional Subtitle Lockup: Direct, Understated, No Clutter */
-.hero-subtitle-block {
-  display: inline-flex;
-  align-items: center;
+/* Retro Ribbon Banner Underneath Title */
+.hero-ribbon-wrap {
+  position: relative;
+  display: flex;
   justify-content: center;
-  gap: clamp(0.5rem, 1.2vw, 0.85rem);
-  color: var(--retro-cream);
-  font-family: var(--font-heading-retro);
-  font-size: clamp(0.8125rem, 0.75rem + 0.35vw, 1rem);
-  font-weight: var(--font-weight-medium);
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  margin-top: -0.25rem;
+  margin-top: -6px;
+  width: 100%;
+  max-width: 100%;
   animation: heroEditorialReveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
 }
 
-.hero-subtitle-line {
-  display: inline-block;
-  white-space: nowrap;
+.hero-ribbon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--retro-cream);
+  color: var(--retro-charcoal-dark);
+  font-family: var(--font-heading-retro);
+  font-size: clamp(0.75rem, 0.7rem + 0.3vw, 0.9375rem);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.55rem 2.25rem;
+  border-top: 1.5px solid rgba(35, 38, 41, 0.35);
+  border-bottom: 1.5px solid rgba(35, 38, 41, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.hero-subtitle-sep {
-  color: var(--retro-orange-light);
-  opacity: 0.85;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  user-select: none;
+.hero-ribbon::before,
+.hero-ribbon::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  width: 14px;
+  background: var(--retro-cream);
+  z-index: -1;
 }
 
-/* ==========================================================================
-   ZONE 1: EDITORIAL WORK INDEX (Opening Archival Index)
-   ========================================================================== */
-.hero-work-index {
+.hero-ribbon::before {
+  left: -10px;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.hero-ribbon::after {
+  right: -10px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+/* Framed Retro Showcase Frame (Text-Only Project Carousel) */
+.hero-showcase-frame {
   width: 100%;
-  max-width: 680px;
-  margin: clamp(1.5rem, 3.5vw, 2.75rem) auto 0;
+  max-width: 820px;
+  background-color: var(--retro-cream);
+  border: 7px solid #ffffff;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 12px 32px rgba(20, 30, 35, 0.25), 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  margin: var(--space-4) 0;
+  box-sizing: border-box;
+  min-width: 0;
+  outline: none;
+  animation: heroEditorialReveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+.hero-showcase-frame:focus-visible {
+  box-shadow: 0 12px 32px rgba(20, 30, 35, 0.25), 0 0 0 3px var(--retro-orange);
+}
+
+.showcase-slider {
+  display: grid;
+  grid-template-areas: "slide";
+  position: relative;
+  min-height: 280px;
+  width: 100%;
+  min-width: 0;
+}
+
+.showcase-slide {
+  grid-area: slide;
   display: flex;
   flex-direction: column;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(6px);
+  transition: opacity 0.35s cubic-bezier(0.25, 0.1, 0.25, 1),
+              transform 0.35s cubic-bezier(0.25, 0.1, 0.25, 1),
+              visibility 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.showcase-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+  z-index: 2;
+}
+
+.showcase-details {
+  padding: clamp(1.75rem, 3.5vw, 2.75rem) clamp(3.25rem, 6vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-3);
+  max-width: 680px;
+  margin: 0 auto;
+  min-width: 0;
   box-sizing: border-box;
 }
 
-/* Editorial Hairline Dividers (Top & Bottom) */
-.index-rule {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(244, 239, 228, 0.55) 15%,
-    rgba(244, 239, 228, 0.55) 85%,
-    transparent 100%
-  );
-  position: relative;
-}
-
-.index-rule-top {
-  margin-bottom: 0.25rem;
-  animation: heroEditorialReveal 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both;
-}
-
-.index-rule-bottom {
-  margin-top: 0.25rem;
-  animation: heroEditorialReveal 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.48s both;
-}
-
-/* Index List */
-.index-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.index-item {
-  width: 100%;
-}
-
-.index-item:nth-child(1) { animation: heroEditorialReveal 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both; }
-.index-item:nth-child(2) { animation: heroEditorialReveal 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.30s both; }
-.index-item:nth-child(3) { animation: heroEditorialReveal 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.36s both; }
-.index-item:nth-child(4) { animation: heroEditorialReveal 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.42s both; }
-
-/* Subtly Interactive Index Row */
-.index-row {
-  display: flex;
-  align-items: center;
-  gap: clamp(1rem, 2.5vw, 2.25rem);
-  padding: clamp(0.75rem, 1.4vw, 1.05rem) clamp(0.4rem, 1vw, 0.75rem);
-  text-decoration: none;
-  color: var(--retro-cream);
-  border-bottom: 1px solid rgba(244, 239, 228, 0.14);
-  position: relative;
-  transition: background-color var(--transition-fast),
-              border-color var(--transition-fast);
-  border-radius: var(--radius-xs);
-}
-
-.index-item:last-child .index-row {
-  border-bottom: none;
-}
-
-.index-row:hover,
-.index-row:focus-visible {
-  background-color: rgba(244, 239, 228, 0.06);
-  border-bottom-color: rgba(244, 239, 228, 0.4);
-  outline: none;
-}
-
-/* Index Number (01, 02, 03, 04): Monospace, shifts on hover */
-.index-num {
-  font-family: var(--font-mono);
-  font-size: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
-  color: rgba(244, 239, 228, 0.6);
-  letter-spacing: 0.14em;
-  font-weight: 500;
-  transition: transform var(--transition-base),
-              color var(--transition-base);
-  will-change: transform;
-  flex-shrink: 0;
-  min-width: 2.2ch;
-  text-align: left;
-}
-
-.index-row:hover .index-num,
-.index-row:focus-visible .index-num {
-  color: var(--retro-orange-light);
-  transform: translateX(3px);
-}
-
-/* Index Discipline Title: Editorial display typography, moves slightly on hover */
-.index-title {
+.showcase-tag {
   font-family: var(--font-heading-retro);
-  font-size: clamp(1.125rem, 1rem + 0.9vw, 1.55rem);
-  font-weight: var(--font-weight-medium);
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-semibold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--retro-cream);
-  text-align: left;
-  flex: 1;
-  transition: transform var(--transition-base),
-              letter-spacing var(--transition-base),
-              color var(--transition-base);
-  will-change: transform;
+  color: var(--retro-orange);
+  background-color: var(--retro-orange-pale);
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--retro-orange);
+  border-radius: var(--radius-xs);
+  display: inline-block;
 }
 
-.index-row:hover .index-title,
-.index-row:focus-visible .index-title {
-  color: #ffffff;
-  transform: translateX(6px);
+.showcase-title {
+  font-family: var(--font-heading-retro);
+  font-size: clamp(1.75rem, 1.5rem + 1vw, 2.35rem);
+  font-weight: var(--font-weight-bold);
+  color: var(--retro-charcoal-dark);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.showcase-desc {
+  font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1.05rem);
+  color: var(--retro-charcoal);
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0;
+}
+
+.showcase-actions {
+  margin-top: var(--space-2);
+}
+
+.showcase-actions .btn {
   letter-spacing: 0.1em;
 }
 
-/* Subtle Accent Arrow: Shifts and brightens on hover */
-.index-arrow {
-  font-family: var(--font-mono);
-  font-size: 1.15rem;
-  line-height: 1;
-  color: rgba(244, 239, 228, 0.25);
-  transition: transform var(--transition-base),
-              color var(--transition-base),
-              opacity var(--transition-base);
-  will-change: transform;
-  flex-shrink: 0;
-}
-
-.index-row:hover .index-arrow,
-.index-row:focus-visible .index-arrow {
-  color: var(--retro-orange-light);
-  transform: translateX(4px);
-  opacity: 1;
-}
-
-/* ==========================================================================
-   ZONE 1: INDEX FOOTER & UNDERSTATED NAVIGATION CUE
-   ========================================================================== */
-.index-footer {
-  margin-top: clamp(1.75rem, 3vw, 2.75rem);
+/* Nav arrow buttons on the showcase matching the original */
+.showcase-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-full);
+  background-color: var(--retro-charcoal-dark);
+  color: #ffffff;
+  border: 2px solid #ffffff;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: clamp(0.75rem, 1.5vw, 1.15rem);
-  animation: heroEditorialReveal 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both;
+  justify-content: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-.index-meta {
-  font-family: var(--font-mono);
-  font-size: clamp(0.6875rem, 0.65rem + 0.15vw, 0.78125rem);
-  letter-spacing: 0.18em;
-  color: rgba(244, 239, 228, 0.65);
-  text-transform: uppercase;
+.showcase-nav-btn:hover {
+  background-color: var(--retro-orange);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
 }
 
-/* Understated Navigation Cue: Editorial link, NOT a button */
-.index-nav-cue {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  color: var(--retro-cream);
-  text-decoration: none;
+.showcase-prev {
+  left: 12px;
+}
+
+.showcase-prev:hover {
+  transform: translateY(-50%) translateX(-2px);
+}
+
+.showcase-next {
+  right: 12px;
+}
+
+.showcase-next:hover {
+  transform: translateY(-50%) translateX(2px);
+}
+
+.showcase-nav-btn:active {
+  transform: translateY(-50%) scale(0.92);
+}
+
+/* Retro Quote Banner (as in reference: “ HELLO, I AM DINESH M. ... ”) */
+.hero-quote-banner {
+  max-width: 820px;
+  width: 100%;
+  padding: var(--space-4) var(--space-6);
+  border-top: 1px dashed rgba(255, 255, 255, 0.4);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
   font-family: var(--font-heading-retro);
-  font-size: clamp(0.75rem, 0.72rem + 0.2vw, 0.875rem);
-  letter-spacing: 0.14em;
+  font-size: clamp(0.9375rem, 0.85rem + 0.5vw, 1.3rem);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 0.35rem 0.5rem;
-  border-bottom: 1px dashed rgba(244, 239, 228, 0.45);
-  transition: color var(--transition-fast),
-              border-color var(--transition-fast),
-              transform var(--transition-fast);
+  color: var(--retro-cream);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  line-height: 1.4;
+  margin-top: var(--space-2);
+  animation: heroEditorialReveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
 }
 
-.index-nav-cue:hover,
-.index-nav-cue:focus-visible {
-  color: var(--retro-orange-light);
-  border-bottom-style: solid;
-  border-bottom-color: var(--retro-orange-light);
-  transform: translateY(2px);
-  outline: none;
-}
-
-.cue-arrow {
-  display: inline-block;
-  font-size: 1.1em;
-  line-height: 1;
-  transition: transform var(--transition-base);
-}
-
-.index-nav-cue:hover .cue-arrow,
-.index-nav-cue:focus-visible .cue-arrow {
-  transform: translateY(3px);
+.hero-quote-mark {
+  color: #ffffff;
+  font-size: 1.5em;
+  vertical-align: middle;
 }
 
 /* ==========================================================================
@@ -999,23 +1001,21 @@
 
 @media (prefers-reduced-motion: reduce) {
   .hero-title-retro,
-  .hero-subtitle-block,
-  .index-rule,
-  .index-item,
-  .index-footer {
+  .hero-ribbon-wrap,
+  .hero-showcase-frame,
+  .hero-quote-banner {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
   }
 
-  .index-row,
-  .index-num,
-  .index-title,
-  .index-arrow,
-  .index-nav-cue,
-  .cue-arrow {
+  .showcase-slide {
     transition: none !important;
     transform: none !important;
+  }
+
+  .showcase-nav-btn {
+    transition: none !important;
   }
 }
 
@@ -1067,35 +1067,69 @@
     font-size: clamp(2.5rem, 11vw, 3.75rem);
   }
 
-  .hero-subtitle-block {
-    flex-direction: column;
-    gap: 0.2rem;
-    font-size: 0.78125rem;
-    letter-spacing: 0.12em;
+  .hero-ribbon-wrap {
+    width: 100%;
+    max-width: calc(100vw - 32px);
   }
 
-  .hero-subtitle-sep {
+  .hero-ribbon {
+    display: block;
+    width: 100%;
+    font-size: clamp(0.6875rem, 2.4vw, 0.8125rem);
+    letter-spacing: 0.08em;
+    padding: 0.45rem 0.75rem;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.35;
+  }
+
+  .hero-ribbon::before,
+  .hero-ribbon::after {
     display: none;
   }
 
-  .hero-work-index {
-    max-width: 100%;
-    margin-top: 1.5rem;
+  .hero-showcase-frame {
+    max-width: calc(100vw - 32px);
+    border-width: 5px;
+    margin: var(--space-3) 0;
   }
 
-  .index-row {
-    padding: 0.85rem 0.25rem;
-    gap: 1rem;
+  .showcase-slider {
+    min-height: 290px;
   }
 
-  .index-title {
-    font-size: clamp(1rem, 4.4vw, 1.25rem);
-    letter-spacing: 0.06em;
+  .showcase-details {
+    padding: var(--space-5) var(--space-8);
+    gap: var(--space-2);
   }
 
-  .index-arrow {
-    opacity: 0.6;
-    font-size: 1rem;
+  .showcase-nav-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.7rem;
+  }
+
+  .showcase-prev {
+    left: 6px;
+  }
+
+  .showcase-next {
+    right: 6px;
+  }
+
+  .showcase-title {
+    font-size: 1.45rem;
+  }
+
+  .showcase-desc {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .hero-quote-banner {
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+    padding: var(--space-3) var(--space-2);
   }
 
   .about-section,

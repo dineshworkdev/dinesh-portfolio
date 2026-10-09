@@ -1,0 +1,12 @@
+# Dependency & package manager artifacts
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Operating System & Editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

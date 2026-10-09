@@ -385,6 +385,38 @@
   clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
+/* ==========================================================================
+   Editorial Heading Above Hero Carousel
+   ========================================================================== */
+.hero-carousel-heading-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-top: calc(var(--space-2) * -1);
+  margin-bottom: calc(var(--space-3) * -1);
+  max-width: 100%;
+  animation: heroEditorialReveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+.hero-carousel-heading {
+  font-family: var(--font-heading-retro);
+  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--retro-cream);
+  line-height: 1;
+  text-shadow: 1px 1px 2px rgba(15, 25, 25, 0.45);
+}
+
+.carousel-heading-line {
+  display: inline-block;
+  width: clamp(24px, 4vw, 40px);
+  height: 1px;
+  background-color: rgba(247, 243, 233, 0.45);
+}
+
 /* Framed Retro Showcase Frame (Text-Only Project Carousel) */
 .hero-showcase-frame {
   width: 100%;
@@ -1002,6 +1034,7 @@
 @media (prefers-reduced-motion: reduce) {
   .hero-title-retro,
   .hero-ribbon-wrap,
+  .hero-carousel-heading-wrap,
   .hero-showcase-frame,
   .hero-quote-banner {
     animation: none !important;

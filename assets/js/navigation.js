@@ -115,7 +115,7 @@ export function initNavigation() {
 
   // Close mobile drawer if window resized to desktop
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 768 && drawer.classList.contains('is-open')) {
+    if (window.innerWidth > 992 && drawer.classList.contains('is-open')) {
       closeDrawer();
     }
   });

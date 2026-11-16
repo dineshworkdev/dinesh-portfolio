@@ -5,22 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Dinesh M — Independent Web Developer & Digital Solutions Builder. Building custom business websites, direct booking engines, management dashboards, and high-performance digital systems for growing companies.">
+    content="Dinesh M — Aspiring AV Professional | Audio-Visual Technology. B.Sc. Computer Technology graduate with foundational knowledge in Audio, Video, Lighting, AV Control Systems, Networking, Embedded Systems and IoT, and 8 completed HARMAN Professional Training courses.">
   <meta name="theme-color" content="#5b8e8f">
   <meta name="author" content="Dinesh M">
 
-  <title>Dinesh M — Independent Web Developer &amp; Digital Solutions Builder</title>
+  <title>Dinesh M — Aspiring AV Professional | Audio-Visual Technology</title>
 
   <!-- Open Graph / Social Preview -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Dinesh M — Independent Web Developer &amp; Business Systems Builder">
+  <meta property="og:title" content="Dinesh M — Aspiring AV Professional | Audio-Visual Technology">
   <meta property="og:description"
-    content="I build digital experiences for businesses. Custom business websites, direct booking systems, management dashboards, and tailored web solutions.">
-  <meta property="og:site_name" content="Dineshwork.dev">
+    content="B.Sc. Computer Technology graduate with foundational knowledge in Audio, Video, Lighting, AV Control Systems, Networking, Embedded Systems and IoT. Completed 8 HARMAN Professional Training courses.">
+  <meta property="og:site_name" content="Dinesh M — Personal AV Portfolio">
 
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="assets/images/icons/logo-drawn.jpg">
-
 
   <!-- Google Fonts: Retro Display (Bebas Neue & Oswald), Editorial Serif (Newsreader), Modern Sans (Plus Jakarta Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,21 +34,31 @@
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/sections.css">
 
-  <!-- JSON-LD Structured Data: Business-focused Web Developer -->
+  <!-- JSON-LD Structured Data: Personal AV Industry Portfolio & Resume -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Dinesh M — Web Developer & Business Systems Builder",
+    "@type": "Person",
+    "name": "Dinesh M",
+    "jobTitle": "Aspiring AV Professional | Audio-Visual Technology",
     "url": "https://dineshwork.dev/",
     "telephone": "+918610951813",
     "email": "dineshwork.dev@gmail.com",
-    "description": "Building custom business websites, booking engines, management dashboards, and digital solutions for growing companies.",
+    "description": "B.Sc. Computer Technology graduate with foundational knowledge in Audio, Video, Lighting, AV Control Systems, Networking, Embedded Systems and IoT. Completed multiple HARMAN Professional Training courses and seeking opportunities to begin a career in the Audio-Visual industry.",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Sri Ramakrishna College of Arts & Science, Coimbatore"
+    },
     "address": {
       "@type": "PostalAddress",
+      "addressLocality": "Coimbatore",
       "addressRegion": "Tamil Nadu",
       "addressCountry": "IN"
-    }
+    },
+    "sameAs": [
+      "https://github.com/dineshworkdev",
+      "https://www.linkedin.com"
+    ]
   }
   </script>
 </head>
@@ -65,25 +74,27 @@
     <div class="container nav-container">
       <!-- Left Desktop Links -->
       <nav class="desktop-nav desktop-nav-left" aria-label="Primary Left Navigation">
-        <a href="#about" class="nav-link">About Me</a>
-        <a href="#work" class="nav-link">Portfolio</a>
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
       </nav>
 
       <!-- Center Brand Logo -->
       <a href="#hero" class="nav-brand-seal" aria-label="Dinesh M — Back to Top">
-        <img src="assets/images/icons/logo-drawn.jpg" alt="Dinesh M." class="nav-brand-logo" width="52" height="52">
+        <img src="assets/images/icons/logo-drawn.jpg" alt="Dinesh M" class="nav-brand-logo" width="52" height="52">
       </a>
 
       <!-- Right Desktop Links & Actions -->
       <div class="nav-right-group">
         <nav class="desktop-nav desktop-nav-right" aria-label="Primary Right Navigation">
-          <a href="#services" class="nav-link">Services</a>
-          <a href="#contact" class="nav-link">Contact Me</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </nav>
 
         <div class="nav-actions">
-          <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
-
           <!-- Mobile Menu Toggle Button (Hamburger) -->
           <button type="button" class="nav-toggle" aria-controls="mobile-drawer" aria-expanded="false"
             aria-label="Toggle navigation menu">
@@ -103,7 +114,7 @@
 
   <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
     <div class="drawer-header">
-      <span class="drawer-brand">DINESH M.</span>
+      <span class="drawer-brand">DINESH M</span>
       <button type="button" class="drawer-close-btn" aria-label="Close navigation menu">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="20" height="20">
@@ -115,18 +126,22 @@
 
     <!-- Drawer Navigation Links -->
     <nav class="drawer-links" aria-label="Mobile Navigation Links">
-      <a href="#about" class="drawer-link">About Me</a>
-      <a href="#work" class="drawer-link">Portfolio</a>
-      <a href="#services" class="drawer-link">What I Build</a>
-      <a href="#contact" class="drawer-link">Contact Me</a>
+      <a href="#hero" class="drawer-link">Home</a>
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#skills" class="drawer-link">Skills</a>
+      <a href="#certifications" class="drawer-link">Certifications</a>
+      <a href="#education" class="drawer-link">Education</a>
+      <a href="#experience" class="drawer-link">Experience</a>
+      <a href="#achievements" class="drawer-link">Achievements</a>
+      <a href="#contact" class="drawer-link">Contact</a>
     </nav>
 
     <!-- Drawer Footer -->
     <div class="drawer-footer">
-      <a href="#contact" class="btn btn-primary btn-block drawer-cta">Start a Project</a>
+      <a href="#contact" class="btn btn-primary btn-block drawer-cta">Contact Me</a>
       <div class="status-badge" style="justify-content: center; width: 100%;">
         <span class="status-dot status-dot-green" aria-hidden="true"></span>
-        <span>Available for client projects</span>
+        <span>Seeking Entry-Level AV Opportunities</span>
       </div>
     </div>
   </aside>
@@ -137,144 +152,69 @@
   <main id="main-content" class="site-main" role="main">
 
     <!-- ==========================================================================
-         ZONE 1: HERO SECTION (Retro Muted Teal with 3D Title, Ribbon, Text Carousel)
+         ZONE 1: HERO SECTION (Retro Muted Teal — AV Professional Identity)
          ========================================================================== -->
     <section id="hero" class="hero-section" aria-labelledby="hero-title">
       <div class="container">
         <div class="hero-inner">
           <!-- 3D Extruded Display Title -->
-          <h1 id="hero-title" class="hero-title-retro">DINESH M.</h1>
+          <h1 id="hero-title" class="hero-title-retro">DINESH M</h1>
 
           <!-- Ribbon Banner Underneath Title -->
           <div class="hero-ribbon-wrap">
             <div class="hero-ribbon">
-              ★ WEB DEVELOPER · DIGITAL SYSTEMS BUILDER ★
+              &#9733; ASPIRING AV PROFESSIONAL | AUDIO-VISUAL TECHNOLOGY &#9733;
             </div>
           </div>
 
-          <!-- Editorial Heading Above Hero Project Carousel -->
-          <div class="hero-carousel-heading-wrap" aria-label="A Selection of My Work">
+          <!-- Editorial Heading Above Hero Profile Frame -->
+          <div class="hero-carousel-heading-wrap" aria-label="Professional Profile Summary">
             <span class="carousel-heading-line" aria-hidden="true"></span>
-            <span class="hero-carousel-heading">A SELECTION OF MY WORK</span>
+            <span class="hero-carousel-heading">CAREER OBJECTIVE &amp; PROFILE</span>
             <span class="carousel-heading-line" aria-hidden="true"></span>
           </div>
 
-          <!-- Framed Retro Showcase Frame (Text-Only Hero Project Carousel) -->
-          <div class="hero-showcase-frame" aria-label="Featured Projects Showcase">
-            <div class="showcase-slider">
+          <!-- Framed Retro Profile Showcase Card -->
+          <div class="hero-showcase-frame" aria-label="AV Professional Introduction">
+            <div class="showcase-details hero-profile-details">
+              <span class="showcase-tag">B.Sc. Computer Technology &middot; HARMAN Professional Training</span>
+              <h2 class="showcase-title">Aspiring AV Professional | Audio-Visual Technology</h2>
+              <p class="showcase-desc">
+                B.Sc. Computer Technology graduate with foundational knowledge in Audio, Video, Lighting, AV Control
+                Systems, Networking, Embedded Systems and IoT. Completed multiple HARMAN Professional Training courses
+                and seeking opportunities to begin a career in the Audio-Visual industry.
+              </p>
 
-              <!-- Slide 1: Deccan Resort -->
-              <div class="showcase-slide is-active" id="hero-slide-1" data-project-id="deccan-resort">
-                <div class="showcase-details">
-                  <span class="showcase-tag">Hospitality &amp; Direct Booking</span>
-                  <h3 class="showcase-title">Deccan Resort</h3>
-                  <p class="showcase-desc">
-                    Premium resort website and digital management platform engineered to deliver commission-free direct bookings, showcase luxury suites, and streamline guest operations.
-                  </p>
-                  <div class="showcase-actions">
-                    <a href="#work" class="btn btn-primary btn-sm">
-                      <span>VIEW MY WORK &rarr;</span>
-                    </a>
-                  </div>
-                </div>
+              <div class="project-pill-tags hero-domain-pills" aria-label="Core Focus Areas">
+                <span class="pill-tag">Audio</span>
+                <span class="pill-tag">Video</span>
+                <span class="pill-tag">Lighting</span>
+                <span class="pill-tag">AV Control Systems</span>
+                <span class="pill-tag">Networking</span>
+                <span class="pill-tag">Embedded Systems &amp; IoT</span>
               </div>
 
-              <!-- Slide 2: Lee Gym -->
-              <div class="showcase-slide" id="hero-slide-2" data-project-id="lee-gym">
-                <div class="showcase-details">
-                  <span class="showcase-tag">Fitness / Gym Website</span>
-                  <h3 class="showcase-title">Lee Gym</h3>
-                  <p class="showcase-desc">
-                    A gym website featuring membership management and membership plans, designed to present gym services and help members explore available plans.
-                  </p>
-                  <div class="showcase-actions">
-                    <a href="#work" class="btn btn-primary btn-sm">
-                      <span>VIEW MY WORK &rarr;</span>
-                    </a>
-                  </div>
-                </div>
+              <div class="showcase-actions hero-cta-group">
+                <a href="#about" class="btn btn-primary">
+                  <span>View Resume</span>
+                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <span>Contact Me</span>
+                </a>
               </div>
-
-              <!-- Slide 3: Golden Hour Cafe -->
-              <div class="showcase-slide" id="hero-slide-3" data-project-id="golden-hour-cafe">
-                <div class="showcase-details">
-                  <span class="showcase-tag">Cafe / Restaurant Website</span>
-                  <h3 class="showcase-title">Golden Hour Cafe</h3>
-                  <p class="showcase-desc">
-                    Artisanal cafe and dining platform in Pollachi featuring digital menu exploration, signature Seeraga Samba biryani showcase, and direct customer triggers.
-                  </p>
-                  <div class="showcase-actions">
-                    <a href="#work" class="btn btn-primary btn-sm">
-                      <span>VIEW MY WORK &rarr;</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 4: YK Men's Fashion -->
-              <div class="showcase-slide" id="hero-slide-4" data-project-id="yk-mens-fashion">
-                <div class="showcase-details">
-                  <span class="showcase-tag">E-commerce / Fashion</span>
-                  <h3 class="showcase-title">YK Men's Fashion</h3>
-                  <p class="showcase-desc">
-                    A men's T-shirt fashion e-commerce website featuring product browsing and an integrated payment gateway.
-                  </p>
-                  <div class="showcase-actions">
-                    <a href="#work" class="btn btn-primary btn-sm">
-                      <span>VIEW MY WORK &rarr;</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 5: Dental Clinic -->
-              <div class="showcase-slide" id="hero-slide-5" data-project-id="dental-clinic">
-                <div class="showcase-details">
-                  <span class="showcase-tag">Dental Clinic Website</span>
-                  <h3 class="showcase-title">Dental Clinic</h3>
-                  <p class="showcase-desc">
-                    Tranquil clinical sanctuary platform with Digital Smile Design, aesthetic restorative procedures, and streamlined patient consultation scheduling.
-                  </p>
-                  <div class="showcase-actions">
-                    <a href="#work" class="btn btn-primary btn-sm">
-                      <span>VIEW MY WORK &rarr;</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 6: Dinesh Fabrications -->
-              <div class="showcase-slide" id="hero-slide-6" data-project-id="dinesh-fabrications">
-                <div class="showcase-details">
-                  <span class="showcase-tag">Industrial &amp; Fabrication</span>
-                  <h3 class="showcase-title">Dinesh Fabrications</h3>
-                  <p class="showcase-desc">
-                    Commercial workshop catalog with laser-cut gates, direct 1-tap WhatsApp consultation, and database-backed quote pipeline.
-                  </p>
-                  <div class="showcase-actions">
-                    <a href="#work" class="btn btn-primary btn-sm">
-                      <span>VIEW MY WORK &rarr;</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Prev / Next Navigation Arrows -->
-              <button type="button" class="showcase-nav-btn showcase-prev" aria-label="Previous featured project"
-                id="showcase-prev-btn">
-                &#9664;
-              </button>
-              <button type="button" class="showcase-nav-btn showcase-next" aria-label="Next featured project"
-                id="showcase-next-btn">
-                &#9654;
-              </button>
             </div>
           </div>
 
           <!-- Retro Editorial Quotation Banner -->
           <div class="hero-quote-banner">
             <span class="hero-quote-mark">&ldquo;</span>
-            <span>HELLO, I AM DINESH M. I BUILD DIGITAL EXPERIENCES FOR BUSINESSES.</span>
+            <span>FOUNDATIONAL AUDIO-VISUAL KNOWLEDGE &middot; HARMAN PROFESSIONAL TRAINING &middot; COIMBATORE, INDIA</span>
             <span class="hero-quote-mark">&rdquo;</span>
           </div>
 
@@ -283,7 +223,7 @@
     </section>
 
     <!-- ==========================================================================
-         ZONE 2: ABOUT SECTION (Warm Paper Cream Canvas with 4 Circular Badges)
+         ZONE 2: ABOUT ME SECTION (Warm Paper Cream Canvas with 4 Circular Badges)
          ========================================================================== -->
     <section id="about" class="about-section" aria-labelledby="about-title">
       <div class="container">
@@ -295,81 +235,85 @@
 
         <div class="about-intro-grid">
           <p class="about-editorial-lead">
-            I collaborate directly with business owners and growing companies to build custom websites, direct booking
-            systems, and business tools that solve real operational bottlenecks—delivered with precision craftsmanship,
-            clean code, and zero agency bloat.
+            I am a B.Sc. Computer Technology graduate interested in building a career in the Audio-Visual industry. My
+            technical background includes programming, embedded systems, IoT and technical fundamentals. Through HARMAN
+            Professional Training, I have completed courses covering different areas of AV technology. I am eager to
+            expand my practical knowledge and contribute to professional AV environments.
           </p>
         </div>
 
-        <!-- 4-Column Circular Badge Grid (Directly mirroring reference structure) -->
+        <!-- 4-Column Circular Badge Grid -->
         <div class="about-columns-grid">
-          <!-- Column 1: What I Build -->
+          <!-- Column 1: AV Foundation -->
           <div class="about-col-item">
             <div class="about-seal-icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
               </svg>
             </div>
-            <h3 class="about-col-title">WHAT I BUILD</h3>
+            <h3 class="about-col-title">AV FUNDAMENTALS</h3>
             <p class="about-col-text">
-              Custom business websites, commission-free booking engines, owner admin dashboards, and automated quote
-              systems tailored to your workflows.
+              Foundational understanding of audio, video, lighting, control systems, networking, and structured AV
+              cabling developed through HARMAN Professional Training.
             </p>
           </div>
 
-          <!-- Column 2: How I Work -->
+          <!-- Column 2: Technical Background -->
           <div class="about-col-item">
             <div class="about-seal-icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                <path d="M15 2v2"></path>
+                <path d="M15 20v2"></path>
+                <path d="M2 15h2"></path>
+                <path d="M2 9h2"></path>
+                <path d="M20 15h2"></path>
+                <path d="M20 9h2"></path>
+                <path d="M9 2v2"></path>
+                <path d="M9 20v2"></path>
               </svg>
             </div>
-            <h3 class="about-col-title">HOW I WORK</h3>
+            <h3 class="about-col-title">EMBEDDED &amp; IOT</h3>
             <p class="about-col-text">
-              Direct 1-on-1 collaboration from discovery to launch. No agency overhead, no miscommunicated specs, and
-              clear milestone staging previews.
+              Academic and internship grounding in embedded systems, Internet of Things (IoT) concepts, Python,
+              JavaScript, programming logic, and technical troubleshooting.
             </p>
           </div>
 
-          <!-- Column 3: Tech Stack -->
+          <!-- Column 3: Education & Academics -->
           <div class="about-col-item">
             <div class="about-seal-icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
               </svg>
             </div>
-            <h3 class="about-col-title">TECH STACK</h3>
+            <h3 class="about-col-title">COMPUTER TECHNOLOGY</h3>
             <p class="about-col-text">
-              Modern web standards: Semantic HTML5, Vanilla CSS, modern JavaScript, React, Node.js, Express, and
-              high-performance serverless cloud hosting.
+              B.Sc. Computer Technology graduate (2023–2026) from Sri Ramakrishna College of Arts &amp; Science,
+              Coimbatore, with an 8.5 CGPA and 1st Rank departmental honours.
             </p>
           </div>
 
-          <!-- Column 4: Client Focus -->
+          <!-- Column 4: Career Direction -->
           <div class="about-col-item">
             <div class="about-seal-icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
-                <line x1="22" y1="12" x2="18" y2="12"></line>
-                <line x1="6" y1="12" x2="2" y2="12"></line>
-                <line x1="12" y1="6" x2="12" y2="2"></line>
-                <line x1="12" y1="22" x2="12" y2="18"></line>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
               </svg>
             </div>
-            <h3 class="about-col-title">CLIENT FOCUS</h3>
+            <h3 class="about-col-title">CAREER OBJECTIVE</h3>
             <p class="about-col-text">
-              Boutique hospitality resorts, commercial fabrication workshops, service businesses, and independent
-              founders seeking measurable digital returns.
+              Eager to begin a career in the Audio-Visual industry, expand practical field knowledge, and contribute
+              effectively within professional AV teams and environments.
             </p>
           </div>
         </div>
@@ -377,623 +321,290 @@
     </section>
 
     <!-- ==========================================================================
-         ZONE 3: SELECTED WORK SECTION (Burnt Orange / Coral Canvas)
+         ZONE 3: TECHNICAL SKILLS SECTION (Heather Grey / Stone Paper Magazine Style)
          ========================================================================== -->
-    <section id="work" class="projects-section" aria-labelledby="work-title">
-      <div class="container">
-        <!-- Section Header with White Bookmark Tag -->
-        <div class="section-title-wrap">
-          <span class="retro-bookmark-tag tag-light" aria-hidden="true"></span>
-          <h2 id="work-title" class="section-title-retro">PORTFOLIO</h2>
-        </div>
-
-        <p class="section-desc">
-          Explore production digital systems built to solve operational bottlenecks, capture direct customer bookings,
-          and generate verified sales inquiries.
-        </p>
-
-        <!-- Retro Dark Filter Pill Bar (As in reference) -->
-        <div class="filter-bar" role="toolbar" aria-label="Filter Projects">
-          <span class="filter-label">Filter By:</span>
-          <button type="button" class="filter-pill active" data-filter="all">All Projects</button>
-          <button type="button" class="filter-pill" data-filter="hospitality">Hospitality &amp; Dining</button>
-          <button type="button" class="filter-pill" data-filter="healthcare">Healthcare &amp; Clinic</button>
-          <button type="button" class="filter-pill" data-filter="industrial">Commercial &amp; Workshop</button>
-          <button type="button" class="filter-pill" data-filter="systems">Web &amp; Systems</button>
-        </div>
-
-        <!-- Projects Showcase List -->
-        <div class="projects-list">
-
-          <!-- PROJECT 1: DECCAN RESORT -->
-          <article class="project-card" data-category="hospitality" aria-labelledby="project-title-deccan">
-            <div class="project-media-col">
-              <div class="project-image-wrapper">
-                <img src="assets/images/projects/deccan-resort-preview.png"
-                  alt="Deccan Resort direct booking website and guest reservation experience" class="project-main-image"
-                  width="1448" height="1086" loading="lazy">
-                <div class="project-image-overlay">
-                  <span class="project-status-chip">
-                    <span class="status-dot status-dot-green"></span>
-                    <span>Direct Booking Engine</span>
-                  </span>
-                </div>
-                <!-- Stamped Seal Badge overlapping corner -->
-                <div class="card-stamp-badge" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-content-col">
-              <div class="project-content-body">
-                <div class="project-header-meta">
-                  <span class="project-tag-editorial">Hospitality &amp; Tourism</span>
-                  <span class="project-client-name">Boutique Eco-Resort</span>
-                </div>
-
-                <h3 id="project-title-deccan" class="project-title">Deccan Resort</h3>
-
-                <p class="project-tagline">
-                  Resort website + direct booking system + guest &amp; owner management experience
-                </p>
-
-                <p class="project-story">
-                  Custom guest booking platform featuring interactive room discovery, real-time reservation
-                  availability, and a private owner calendar that eliminates third-party travel agency fees.
-                </p>
-              </div>
-
-              <div class="project-footer-actions">
-                <button type="button" class="btn btn-primary btn-sm" data-open-project="deccan-resort">
-                  <span>View Case Study</span>
-                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                  </svg>
-                </button>
-                <a href="https://deccan-resort.vercel.app" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-secondary btn-sm">
-                  <span>View Live Site</span>
-                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" x2="21" y1="14" y2="3"></line>
-                  </svg>
-                </a>
-                <div class="project-pill-tags">
-                  <span class="pill-tag">Booking Engine</span>
-                  <span class="pill-tag">Admin Calendar</span>
-                  <span class="pill-tag">Zero Commissions</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 2: LEE GYM -->
-          <article class="project-card" data-category="systems" aria-labelledby="project-title-leegym">
-            <div class="project-media-col">
-              <div class="project-image-wrapper">
-                <img src="assets/images/projects/leegym-preview.png"
-                  alt="Lee Gym strength club website featuring membership management and membership plans" class="project-main-image"
-                  width="1448" height="1086" loading="lazy">
-                <div class="project-image-overlay">
-                  <span class="project-status-chip">
-                    <span class="status-dot status-dot-green"></span>
-                    <span>Membership Management</span>
-                  </span>
-                </div>
-                <!-- Stamped Seal Badge overlapping corner -->
-                <div class="card-stamp-badge" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                    <path d="M4 22h16"></path>
-                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-content-col">
-              <div class="project-content-body">
-                <div class="project-header-meta">
-                  <span class="project-tag-editorial">Fitness / Gym Website</span>
-                  <span class="project-client-name">Training &amp; Fitness</span>
-                </div>
-
-                <h3 id="project-title-leegym" class="project-title">Lee Gym</h3>
-
-                <p class="project-tagline">
-                  Gym website + membership management + membership plans
-                </p>
-
-                <p class="project-story">
-                  A gym website featuring membership management and membership plans, designed to present gym services and help members explore available plans.
-                </p>
-              </div>
-
-              <div class="project-footer-actions">
-                <a href="https://leegym.vercel.app" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-primary btn-sm">
-                  <span>View Live Site</span>
-                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" x2="21" y1="14" y2="3"></line>
-                  </svg>
-                </a>
-                <div class="project-pill-tags">
-                  <span class="pill-tag">Gym Website</span>
-                  <span class="pill-tag">Membership Management</span>
-                  <span class="pill-tag">Membership Plans</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 3: GOLDEN HOUR CAFE -->
-          <article class="project-card" data-category="hospitality" aria-labelledby="project-title-golden-hour">
-            <div class="project-media-col">
-              <div class="project-image-wrapper">
-                <img src="assets/images/projects/golden-hour-preview.png"
-                  alt="Golden Hour Cafe artisanal restaurant and digital menu website preview" class="project-main-image"
-                  width="1448" height="1086" loading="lazy">
-                <div class="project-image-overlay">
-                  <span class="project-status-chip">
-                    <span class="status-dot status-dot-green"></span>
-                    <span>Live Cafe Production</span>
-                  </span>
-                </div>
-                <!-- Stamped Seal Badge overlapping corner -->
-                <div class="card-stamp-badge" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
-                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
-                    <line x1="6" y1="1" x2="6" y2="4"></line>
-                    <line x1="10" y1="1" x2="10" y2="4"></line>
-                    <line x1="14" y1="1" x2="14" y2="4"></line>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-content-col">
-              <div class="project-content-body">
-                <div class="project-header-meta">
-                  <span class="project-tag-editorial">Cafe / Restaurant Website</span>
-                  <span class="project-client-name">Pollachi, Coimbatore</span>
-                </div>
-
-                <h3 id="project-title-golden-hour" class="project-title">Golden Hour Cafe</h3>
-
-                <p class="project-tagline">
-                  Cafe &amp; restaurant website + digital menu + table discovery &amp; visiting experience
-                </p>
-
-                <p class="project-story">
-                  Bespoke cafe web destination featuring interactive menu exploration, signature Seeraga Samba biryani showcase, authentic culinary storytelling, and direct 1-tap call and visit channels.
-                </p>
-              </div>
-
-              <div class="project-footer-actions">
-                <button type="button" class="btn btn-primary btn-sm" data-open-project="golden-hour-cafe">
-                  <span>View Case Study</span>
-                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                  </svg>
-                </button>
-                <a href="https://goldenhour-cafe.vercel.app/" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-secondary btn-sm">
-                  <span>View Live Site</span>
-                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" x2="21" y1="14" y2="3"></line>
-                  </svg>
-                </a>
-                <div class="project-pill-tags">
-                  <span class="pill-tag">Digital Menu</span>
-                  <span class="pill-tag">Local Discovery</span>
-                  <span class="pill-tag">Instant Contact</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 4: YK MEN'S FASHION -->
-          <article class="project-card" data-category="systems" aria-labelledby="project-title-ykfashion">
-            <div class="project-media-col">
-              <div class="project-image-wrapper">
-                <img src="assets/images/projects/ykmensfashion-preview.png"
-                  alt="YK Men's Fashion e-commerce website with product browsing and payment gateway" class="project-main-image"
-                  width="1448" height="1086" loading="lazy">
-                <div class="project-image-overlay">
-                  <span class="project-status-chip">
-                    <span class="status-dot status-dot-green"></span>
-                    <span>E-Commerce &amp; Payments</span>
-                  </span>
-                </div>
-                <!-- Stamped Seal Badge overlapping corner -->
-                <div class="card-stamp-badge" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
-                    <path d="M3 6h18"></path>
-                    <path d="M16 10a4 4 0 0 1-8 0"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-content-col">
-              <div class="project-content-body">
-                <div class="project-header-meta">
-                  <span class="project-tag-editorial">E-commerce / Fashion</span>
-                  <span class="project-client-name">Men's Apparel &amp; Retail</span>
-                </div>
-
-                <h3 id="project-title-ykfashion" class="project-title">YK Men's Fashion</h3>
-
-                <p class="project-tagline">
-                  Men's T-shirt fashion store + e-commerce product browsing + payment gateway
-                </p>
-
-                <p class="project-story">
-                  A men's T-shirt fashion e-commerce website featuring product browsing and an integrated payment gateway.
-                </p>
-              </div>
-
-              <div class="project-footer-actions">
-                <a href="https://www.ykmensfashion.in" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-primary btn-sm">
-                  <span>View Live Site</span>
-                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" x2="21" y1="14" y2="3"></line>
-                  </svg>
-                </a>
-                <div class="project-pill-tags">
-                  <span class="pill-tag">Men's T-Shirt Store</span>
-                  <span class="pill-tag">Product Browsing</span>
-                  <span class="pill-tag">Payment Gateway</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 5: DENTAL CLINIC -->
-          <article class="project-card" data-category="healthcare" aria-labelledby="project-title-dental">
-            <div class="project-media-col">
-              <div class="project-image-wrapper">
-                <img src="assets/images/projects/dental-clinic-preview.png"
-                  alt="Dental Clinic aesthetic restorative dentistry and consultation website preview" class="project-main-image"
-                  width="1448" height="1086" loading="lazy">
-                <div class="project-image-overlay">
-                  <span class="project-status-chip">
-                    <span class="status-dot status-dot-green"></span>
-                    <span>Live Clinic Platform</span>
-                  </span>
-                </div>
-                <!-- Stamped Seal Badge overlapping corner -->
-                <div class="card-stamp-badge" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-content-col">
-              <div class="project-content-body">
-                <div class="project-header-meta">
-                  <span class="project-tag-editorial">Dental Clinic Website</span>
-                  <span class="project-client-name">Aesthetic &amp; Restorative Care</span>
-                </div>
-
-                <h3 id="project-title-dental" class="project-title">Dental Clinic</h3>
-
-                <p class="project-tagline">
-                  Clinic website + Digital Smile Design showcase + appointment consultation intake
-                </p>
-
-                <p class="project-story">
-                  Tranquil clinical platform highlighting Digital Smile Design, custom porcelain veneers, sterile surgical suites, and an intuitive online consultation intake workflow designed to remove patient anxiety.
-                </p>
-              </div>
-
-              <div class="project-footer-actions">
-                <button type="button" class="btn btn-primary btn-sm" data-open-project="dental-clinic">
-                  <span>View Case Study</span>
-                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                  </svg>
-                </button>
-                <a href="https://dentalclinic-sample.vercel.app/" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-secondary btn-sm">
-                  <span>View Live Site</span>
-                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" x2="21" y1="14" y2="3"></line>
-                  </svg>
-                </a>
-                <div class="project-pill-tags">
-                  <span class="pill-tag">Digital Smile Design</span>
-                  <span class="pill-tag">Consultation Intake</span>
-                  <span class="pill-tag">Surgical Suites</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 6: DINESH FABRICATIONS -->
-          <article class="project-card" data-category="industrial" aria-labelledby="project-title-fabrications">
-            <div class="project-media-col">
-              <div class="project-image-wrapper">
-                <img src="assets/images/projects/fabrications-preview.png"
-                  alt="Dinesh Fabrications metalcraft and welding workshop website preview" class="project-main-image"
-                  width="1448" height="1086" loading="lazy">
-                <div class="project-image-overlay">
-                  <span class="project-status-chip">
-                    <span class="status-dot status-dot-green"></span>
-                    <span>Live Client Production</span>
-                  </span>
-                </div>
-                <!-- Stamped Seal Badge overlapping corner -->
-                <div class="card-stamp-badge" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-content-col">
-              <div class="project-content-body">
-                <div class="project-header-meta">
-                  <span class="project-tag-editorial">Industrial &amp; Manufacturing</span>
-                  <span class="project-client-name">Coimbatore, Tamil Nadu</span>
-                </div>
-
-                <h3 id="project-title-fabrications" class="project-title">Dinesh Fabrications</h3>
-
-                <p class="project-tagline">
-                  Business website + service catalog + instant quote &amp; WhatsApp pipeline
-                </p>
-
-                <p class="project-story">
-                  Commercial workshop web platform with architectural metalcraft catalog, 1-tap WhatsApp lead triggers,
-                  and a persistent quote request pipeline built for an established workshop.
-                </p>
-              </div>
-
-              <div class="project-footer-actions">
-                <button type="button" class="btn btn-primary btn-sm" data-open-project="dinesh-fabrications">
-                  <span>View Case Study</span>
-                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                  </svg>
-                </button>
-                <a href="https://dineshfabrications.vercel.app" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-secondary btn-sm">
-                  <span>View Live Site</span>
-                  <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" x2="21" y1="14" y2="3"></line>
-                  </svg>
-                </a>
-                <div class="project-pill-tags">
-                  <span class="pill-tag">Workshop Showcase</span>
-                  <span class="pill-tag">WhatsApp Conversion</span>
-                  <span class="pill-tag">Quote Pipeline</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         ZONE 4: WHAT I BUILD & HOW I WORK (Heather Grey / Stone Paper Magazine Style)
-         ========================================================================== -->
-    <section id="services" class="services-section" aria-labelledby="services-title">
+    <section id="skills" class="services-section" aria-labelledby="skills-title">
       <div class="container">
         <!-- Section Header with Hanging Bookmark Tag -->
         <div class="section-title-wrap">
           <span class="retro-bookmark-tag" aria-hidden="true"></span>
-          <h2 id="services-title" class="section-title-retro">WHAT I BUILD</h2>
+          <h2 id="skills-title" class="section-title-retro">TECHNICAL SKILLS</h2>
         </div>
 
         <p class="about-editorial-lead" style="margin-bottom: var(--space-8);">
-          No cookie-cutter site builders or recurring lock-in. Every digital system is engineered from the ground up
-          around your customers and daily operations.
+          Foundational technical, programming, and Audio-Visual knowledge developed through academic coursework,
+          internships, and HARMAN Professional Training.
         </p>
 
-        <div class="services-grid-2x2">
-          <!-- 01: Business Websites -->
+        <div class="services-grid-2x2 skills-grid">
+          <!-- Category 01: AV Knowledge -->
           <article class="service-card">
             <div class="service-card-top">
               <div class="service-header-row">
                 <span class="service-number">01</span>
-                <span class="pill-tag">Credibility &amp; Inquiries</span>
+                <span class="pill-tag">Foundational Knowledge</span>
               </div>
-              <h3 class="service-title">Business Websites</h3>
+              <h3 class="service-title">AV Knowledge</h3>
               <p class="service-desc">
-                Fast, custom multi-page business websites designed to establish commercial authority, showcase products
-                or services, and turn local visitors into qualified clients.
+                Foundational understanding of core Audio-Visual domains, signal flow concepts, system connectivity, and
+                installed AV fundamentals.
               </p>
 
-              <div class="service-deliverables">
-                <div class="deliverable-item">
+              <ul class="service-deliverables" aria-label="AV Knowledge Skills">
+                <li class="deliverable-item">
                   <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Structured service catalogs highlighting your core capabilities</span>
-                </div>
-                <div class="deliverable-item">
+                  <span>Audio Fundamentals</span>
+                </li>
+                <li class="deliverable-item">
                   <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Instant mobile WhatsApp &amp; telephone conversion triggers</span>
-                </div>
-              </div>
+                  <span>Video Fundamentals</span>
+                </li>
+                <li class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Lighting Fundamentals</span>
+                </li>
+                <li class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>AV Control Systems</span>
+                </li>
+                <li class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>AV Networking</span>
+                </li>
+                <li class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>AV Cabling Fundamentals</span>
+                </li>
+              </ul>
             </div>
             <div class="service-tech-tags">
-              <span class="tech-tag-subtle">Mobile-First</span>
-              <span class="tech-tag-subtle">SEO Semantics</span>
-              <span class="tech-tag-subtle">Fast Speeds</span>
+              <span class="tech-tag-subtle">Audio</span>
+              <span class="tech-tag-subtle">Video</span>
+              <span class="tech-tag-subtle">Lighting</span>
+              <span class="tech-tag-subtle">Control</span>
+              <span class="tech-tag-subtle">Networking</span>
+              <span class="tech-tag-subtle">Cabling</span>
             </div>
           </article>
 
-          <!-- 02: Booking Systems -->
+          <!-- Category 02: Technical Knowledge -->
           <article class="service-card">
             <div class="service-card-top">
               <div class="service-header-row">
                 <span class="service-number">02</span>
-                <span class="pill-tag">Direct Revenue</span>
+                <span class="pill-tag">Foundational Knowledge</span>
               </div>
-              <h3 class="service-title">Booking Systems</h3>
+              <h3 class="service-title">Technical Knowledge</h3>
               <p class="service-desc">
-                Direct reservation workflows for boutique resorts, hospitality destinations, and appointment-based
-                businesses to eliminate platform commission fees.
+                Core hardware-software interfacing concepts, logical analysis, and systematic troubleshooting
+                fundamentals.
               </p>
 
-              <div class="service-deliverables">
-                <div class="deliverable-item">
+              <ul class="service-deliverables" aria-label="Technical Knowledge Skills">
+                <li class="deliverable-item">
                   <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Interactive room discovery with transparent per-night rate cards</span>
-                </div>
-                <div class="deliverable-item">
+                  <span>Embedded Systems</span>
+                </li>
+                <li class="deliverable-item">
                   <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Real-time availability calendar to prevent double-booking errors</span>
-                </div>
-              </div>
+                  <span>Internet of Things (IoT)</span>
+                </li>
+                <li class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Programming Logic</span>
+                </li>
+                <li class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Technical Troubleshooting</span>
+                </li>
+              </ul>
             </div>
             <div class="service-tech-tags">
-              <span class="tech-tag-subtle">Date Picker</span>
-              <span class="tech-tag-subtle">Availability Engine</span>
-              <span class="tech-tag-subtle">Zero Commissions</span>
+              <span class="tech-tag-subtle">Embedded Systems</span>
+              <span class="tech-tag-subtle">IoT</span>
+              <span class="tech-tag-subtle">Logic</span>
+              <span class="tech-tag-subtle">Troubleshooting</span>
             </div>
           </article>
 
-          <!-- 03: Business Dashboards -->
+          <!-- Category 03: Programming -->
           <article class="service-card">
             <div class="service-card-top">
               <div class="service-header-row">
                 <span class="service-number">03</span>
-                <span class="pill-tag">Operations Control</span>
+                <span class="pill-tag">Foundational Knowledge</span>
               </div>
-              <h3 class="service-title">Business Dashboards</h3>
+              <h3 class="service-title">Programming</h3>
               <p class="service-desc">
-                Private administrative portals built for business owners to review reservation calendars, track incoming
-                customer leads, and update room or service inventory.
+                Foundational scripting and programming languages studied during B.Sc. Computer Technology and
+                internship training.
               </p>
 
-              <div class="service-deliverables">
-                <div class="deliverable-item">
+              <ul class="service-deliverables" aria-label="Programming Skills">
+                <li class="deliverable-item">
                   <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Centralized overview of pending inquiries, bookings, and records</span>
-                </div>
-                <div class="deliverable-item">
+                  <span>Python</span>
+                </li>
+                <li class="deliverable-item">
                   <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>1-click date blocking for maintenance or private reservations</span>
-                </div>
-              </div>
+                  <span>JavaScript</span>
+                </li>
+              </ul>
             </div>
             <div class="service-tech-tags">
-              <span class="tech-tag-subtle">Owner Admin</span>
-              <span class="tech-tag-subtle">Calendar Control</span>
-              <span class="tech-tag-subtle">Inquiry Storage</span>
+              <span class="tech-tag-subtle">Python</span>
+              <span class="tech-tag-subtle">JavaScript</span>
             </div>
           </article>
 
-          <!-- 04: Custom Digital Solutions -->
+          <!-- Category 04: Tools -->
           <article class="service-card">
             <div class="service-card-top">
               <div class="service-header-row">
                 <span class="service-number">04</span>
-                <span class="pill-tag">Bespoke Systems</span>
+                <span class="pill-tag">Development &amp; Version Control</span>
               </div>
-              <h3 class="service-title">Custom Digital Solutions</h3>
+              <h3 class="service-title">Tools</h3>
               <p class="service-desc">
-                Bespoke web applications built to resolve specific operational bottlenecks—such as custom quote intake
-                calculators, form-to-database pipelines, or API syncs.
+                Standard software environments and version control utilities used for code management and academic
+                projects.
               </p>
 
-              <div class="service-deliverables">
-                <div class="deliverable-item">
+              <ul class="service-deliverables" aria-label="Tools">
+                <li class="deliverable-item">
                   <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Online quote request pipelines with material specifications</span>
-                </div>
-                <div class="deliverable-item">
+                  <span>Git</span>
+                </li>
+                <li class="deliverable-item">
                   <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  <span>Zero vendor lock-in or recurring monthly platform licensing</span>
-                </div>
-              </div>
+                  <span>GitHub</span>
+                </li>
+                <li class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>VS Code</span>
+                </li>
+                <li class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Android Studio</span>
+                </li>
+              </ul>
             </div>
             <div class="service-tech-tags">
-              <span class="tech-tag-subtle">Quote Engines</span>
-              <span class="tech-tag-subtle">Database Backends</span>
-              <span class="tech-tag-subtle">Custom APIs</span>
+              <span class="tech-tag-subtle">Git</span>
+              <span class="tech-tag-subtle">GitHub</span>
+              <span class="tech-tag-subtle">VS Code</span>
+              <span class="tech-tag-subtle">Android Studio</span>
+            </div>
+          </article>
+
+          <!-- Category 05: Soft Skills -->
+          <article class="service-card skills-card-full">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">05</span>
+                <span class="pill-tag">Workplace &amp; Collaboration</span>
+              </div>
+              <h3 class="service-title">Soft Skills</h3>
+              <p class="service-desc">
+                Interpersonal and analytical skills cultivated through departmental leadership, academic teamwork, and
+                national hackathon participation.
+              </p>
+
+              <ul class="service-deliverables soft-skills-list" aria-label="Soft Skills">
+                <li class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Problem Solving</span>
+                </li>
+                <li class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Communication</span>
+                </li>
+                <li class="deliverable-item">
+                  <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Teamwork</span>
+                </li>
+              </ul>
+            </div>
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Problem Solving</span>
+              <span class="tech-tag-subtle">Communication</span>
+              <span class="tech-tag-subtle">Teamwork</span>
             </div>
           </article>
         </div>
@@ -1001,72 +612,515 @@
     </section>
 
     <!-- ==========================================================================
-         ZONE 5: CONTACT SECTION (Dark Ink Charcoal Canvas)
+         ZONE 4: HARMAN PROFESSIONAL TRAINING (Burnt Orange / Coral Canvas)
+         ========================================================================== -->
+    <section id="certifications" class="projects-section" aria-labelledby="certifications-title">
+      <div class="container">
+        <!-- Section Header with Light Bookmark Tag -->
+        <div class="section-title-wrap">
+          <span class="retro-bookmark-tag tag-light" aria-hidden="true"></span>
+          <h2 id="certifications-title" class="section-title-retro">HARMAN Professional Training</h2>
+        </div>
+
+        <p class="section-desc">
+          Completed all eight foundational training courses through HARMAN Professional Training, building core
+          knowledge across audio, video, lighting, control, networking, cabling, and PC systems for Audio-Visual
+          environments.
+        </p>
+
+        <div class="filter-bar" aria-label="Training Completion Status">
+          <span class="filter-label">Training Status:</span>
+          <span class="status-badge">
+            <span class="status-dot status-dot-green" aria-hidden="true"></span>
+            <span>All 8 Courses Completed</span>
+          </span>
+        </div>
+
+        <!-- 8 Completed Courses Grid (Reusing .process-grid & .process-card) -->
+        <div class="process-grid">
+          <!-- Course 1: Audio Essentials -->
+          <article class="process-card">
+            <div class="service-header-row">
+              <span class="process-step-badge">01</span>
+              <span class="status-badge">
+                <span class="status-dot status-dot-green" aria-hidden="true"></span>
+                <span>Completed</span>
+              </span>
+            </div>
+            <h3 class="process-title">Audio Essentials</h3>
+            <p class="process-desc">
+              Foundational audio principles, acoustics, sound propagation, signal flow, microphones, amplifiers, and
+              loudspeaker fundamentals.
+            </p>
+            <div class="process-role-list">
+              <div class="process-role-box">
+                <span class="process-role-label">Training Provider</span>
+                <span class="process-role-text">HARMAN Professional Training</span>
+              </div>
+              <div class="process-role-box">
+                <span class="process-role-label">Domain</span>
+                <span class="process-role-text">Audio Fundamentals</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 2: Video Essentials -->
+          <article class="process-card">
+            <div class="service-header-row">
+              <span class="process-step-badge">02</span>
+              <span class="status-badge">
+                <span class="status-dot status-dot-green" aria-hidden="true"></span>
+                <span>Completed</span>
+              </span>
+            </div>
+            <h3 class="process-title">Video Essentials</h3>
+            <p class="process-desc">
+              Core video signal types, resolution and aspect ratio standards, display technologies, and digital video
+              distribution concepts.
+            </p>
+            <div class="process-role-list">
+              <div class="process-role-box">
+                <span class="process-role-label">Training Provider</span>
+                <span class="process-role-text">HARMAN Professional Training</span>
+              </div>
+              <div class="process-role-box">
+                <span class="process-role-label">Domain</span>
+                <span class="process-role-text">Video Fundamentals</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 3: Control Essentials -->
+          <article class="process-card">
+            <div class="service-header-row">
+              <span class="process-step-badge">03</span>
+              <span class="status-badge">
+                <span class="status-dot status-dot-green" aria-hidden="true"></span>
+                <span>Completed</span>
+              </span>
+            </div>
+            <h3 class="process-title">Control Essentials</h3>
+            <p class="process-desc">
+              Fundamentals of AV control systems, control processors, serial/IP device communication, and system
+              automation logic.
+            </p>
+            <div class="process-role-list">
+              <div class="process-role-box">
+                <span class="process-role-label">Training Provider</span>
+                <span class="process-role-text">HARMAN Professional Training</span>
+              </div>
+              <div class="process-role-box">
+                <span class="process-role-label">Domain</span>
+                <span class="process-role-text">AV Control Systems</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 4: Networking Essentials -->
+          <article class="process-card">
+            <div class="service-header-row">
+              <span class="process-step-badge">04</span>
+              <span class="status-badge">
+                <span class="status-dot status-dot-green" aria-hidden="true"></span>
+                <span>Completed</span>
+              </span>
+            </div>
+            <h3 class="process-title">Networking Essentials</h3>
+            <p class="process-desc">
+              Foundational network architecture, OSI model layers, IP addressing, Ethernet switching, and networked AV
+              transport principles.
+            </p>
+            <div class="process-role-list">
+              <div class="process-role-box">
+                <span class="process-role-label">Training Provider</span>
+                <span class="process-role-text">HARMAN Professional Training</span>
+              </div>
+              <div class="process-role-box">
+                <span class="process-role-label">Domain</span>
+                <span class="process-role-text">AV Networking</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 5: Cabling Essentials -->
+          <article class="process-card">
+            <div class="service-header-row">
+              <span class="process-step-badge">05</span>
+              <span class="status-badge">
+                <span class="status-dot status-dot-green" aria-hidden="true"></span>
+                <span>Completed</span>
+              </span>
+            </div>
+            <h3 class="process-title">Cabling Essentials</h3>
+            <p class="process-desc">
+              Balanced and unbalanced audio cables, video and data cabling, connector types, signal integrity, and physical
+              wiring standards.
+            </p>
+            <div class="process-role-list">
+              <div class="process-role-box">
+                <span class="process-role-label">Training Provider</span>
+                <span class="process-role-text">HARMAN Professional Training</span>
+              </div>
+              <div class="process-role-box">
+                <span class="process-role-label">Domain</span>
+                <span class="process-role-text">AV Cabling Fundamentals</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 6: Installed Audio Basics -->
+          <article class="process-card">
+            <div class="service-header-row">
+              <span class="process-step-badge">06</span>
+              <span class="status-badge">
+                <span class="status-dot status-dot-green" aria-hidden="true"></span>
+                <span>Completed</span>
+              </span>
+            </div>
+            <h3 class="process-title">Installed Audio Basics</h3>
+            <p class="process-desc">
+              Principles of permanent audio installations, distributed speaker systems, low-impedance vs. constant-voltage
+              lines, and coverage basics.
+            </p>
+            <div class="process-role-list">
+              <div class="process-role-box">
+                <span class="process-role-label">Training Provider</span>
+                <span class="process-role-text">HARMAN Professional Training</span>
+              </div>
+              <div class="process-role-box">
+                <span class="process-role-label">Domain</span>
+                <span class="process-role-text">Installed Audio Systems</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 7: Lighting Essentials -->
+          <article class="process-card">
+            <div class="service-header-row">
+              <span class="process-step-badge">07</span>
+              <span class="status-badge">
+                <span class="status-dot status-dot-green" aria-hidden="true"></span>
+                <span>Completed</span>
+              </span>
+            </div>
+            <h3 class="process-title">Lighting Essentials</h3>
+            <p class="process-desc">
+              Foundational lighting technology, properties of light, LED and stage fixtures, colour mixing, dimming, and
+              DMX512 control basics.
+            </p>
+            <div class="process-role-list">
+              <div class="process-role-box">
+                <span class="process-role-label">Training Provider</span>
+                <span class="process-role-text">HARMAN Professional Training</span>
+              </div>
+              <div class="process-role-box">
+                <span class="process-role-label">Domain</span>
+                <span class="process-role-text">Lighting Fundamentals</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 8: PC Essentials -->
+          <article class="process-card">
+            <div class="service-header-row">
+              <span class="process-step-badge">08</span>
+              <span class="status-badge">
+                <span class="status-dot status-dot-green" aria-hidden="true"></span>
+                <span>Completed</span>
+              </span>
+            </div>
+            <h3 class="process-title">PC Essentials</h3>
+            <p class="process-desc">
+              Computer hardware architecture, operating system configuration, device drivers, interfaces, and system
+              diagnostics for AV setups.
+            </p>
+            <div class="process-role-list">
+              <div class="process-role-box">
+                <span class="process-role-label">Training Provider</span>
+                <span class="process-role-text">HARMAN Professional Training</span>
+              </div>
+              <div class="process-role-box">
+                <span class="process-role-label">Domain</span>
+                <span class="process-role-text">Technical &amp; PC Systems</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ZONE 5: EDUCATION SECTION (Warm Paper Cream Canvas)
+         ========================================================================== -->
+    <section id="education" class="about-section" aria-labelledby="education-title">
+      <div class="container">
+        <!-- Section Header with Hanging Bookmark Tag -->
+        <div class="section-title-wrap">
+          <span class="retro-bookmark-tag" aria-hidden="true"></span>
+          <h2 id="education-title" class="section-title-retro">EDUCATION</h2>
+        </div>
+
+        <article class="service-card education-card">
+          <div class="service-card-top">
+            <div class="service-header-row">
+              <span class="pill-tag">2023–2026</span>
+              <span class="status-badge">
+                <span class="status-dot status-dot-green" aria-hidden="true"></span>
+                <span>CGPA: 8.5</span>
+              </span>
+            </div>
+            <h3 class="service-title">B.Sc. Computer Technology</h3>
+            <p class="service-desc" style="font-weight: var(--font-weight-semibold); color: var(--retro-charcoal-dark);">
+              Sri Ramakrishna College of Arts &amp; Science, Coimbatore
+            </p>
+
+            <div class="service-deliverables">
+              <div class="deliverable-item">
+                <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Institution:</strong> Sri Ramakrishna College of Arts &amp; Science, Coimbatore</span>
+              </div>
+              <div class="deliverable-item">
+                <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Degree:</strong> B.Sc. Computer Technology</span>
+              </div>
+              <div class="deliverable-item">
+                <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Duration:</strong> 2023–2026</span>
+              </div>
+              <div class="deliverable-item">
+                <svg class="deliverable-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>CGPA:</strong> 8.5</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-tech-tags">
+            <span class="tech-tag-subtle">Computer Technology</span>
+            <span class="tech-tag-subtle">Programming Fundamentals</span>
+            <span class="tech-tag-subtle">Embedded Systems</span>
+            <span class="tech-tag-subtle">IoT</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ZONE 6: INTERNSHIP EXPERIENCE SECTION (Heather Grey / Stone Paper)
+         ========================================================================== -->
+    <section id="experience" class="services-section" aria-labelledby="experience-title">
+      <div class="container">
+        <!-- Section Header with Hanging Bookmark Tag -->
+        <div class="section-title-wrap">
+          <span class="retro-bookmark-tag" aria-hidden="true"></span>
+          <h2 id="experience-title" class="section-title-retro">INTERNSHIP EXPERIENCE</h2>
+        </div>
+
+        <p class="about-editorial-lead" style="margin-bottom: var(--space-8);">
+          Practical training internships focused on programming logic, Python fundamentals, embedded systems, and
+          Internet of Things (IoT) concepts.
+        </p>
+
+        <div class="services-grid-2x2">
+          <!-- Internship 01: Python Fundamentals Intern -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">01</span>
+                <span class="pill-tag">May 2024</span>
+              </div>
+              <h3 class="service-title">Python Fundamentals Intern</h3>
+              <p class="service-desc" style="font-weight: var(--font-weight-semibold); color: var(--retro-orange);">
+                Appin Technology, Coimbatore &nbsp;|&nbsp; May 2024
+              </p>
+              <p class="service-desc">
+                Completed a 15-day internship covering Python fundamentals, programming concepts and logical
+                problem-solving.
+              </p>
+            </div>
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Python Fundamentals</span>
+              <span class="tech-tag-subtle">Programming Concepts</span>
+              <span class="tech-tag-subtle">Logical Problem-Solving</span>
+            </div>
+          </article>
+
+          <!-- Internship 02: Embedded Systems and IoT Intern -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">02</span>
+                <span class="pill-tag">May 2025</span>
+              </div>
+              <h3 class="service-title">Embedded Systems and IoT Intern</h3>
+              <p class="service-desc" style="font-weight: var(--font-weight-semibold); color: var(--retro-orange);">
+                Gateway Software Solutions, Coimbatore &nbsp;|&nbsp; May 2025
+              </p>
+              <p class="service-desc">
+                Completed a 15-day internship focused on embedded systems and IoT concepts.
+              </p>
+            </div>
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Embedded Systems</span>
+              <span class="tech-tag-subtle">Internet of Things (IoT)</span>
+              <span class="tech-tag-subtle">Hardware-Software Concepts</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ZONE 7: ACHIEVEMENTS & EXTRA-CURRICULAR ACTIVITIES (Warm Paper Cream)
+         ========================================================================== -->
+    <section id="achievements" class="about-section" aria-labelledby="achievements-title">
+      <div class="container">
+        <!-- Section Header with Hanging Bookmark Tag -->
+        <div class="section-title-wrap">
+          <span class="retro-bookmark-tag" aria-hidden="true"></span>
+          <h2 id="achievements-title" class="section-title-retro">ACHIEVEMENTS &amp; EXTRA-CURRICULAR ACTIVITIES</h2>
+        </div>
+
+        <div class="achievements-grid-3col">
+          <!-- Achievement 1: Department Chairman -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">01</span>
+                <span class="pill-tag">2025–2026</span>
+              </div>
+              <h3 class="service-title">Department Chairman (2025–2026)</h3>
+              <p class="service-desc">
+                Selected as Chairman of the Department of Computer Technology at SRCAS, coordinating student activities
+                and departmental events.
+              </p>
+            </div>
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">Student Leadership</span>
+              <span class="tech-tag-subtle">Event Coordination</span>
+            </div>
+          </article>
+
+          <!-- Achievement 2: Academic Excellence -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">02</span>
+                <span class="pill-tag">1st Rank</span>
+              </div>
+              <h3 class="service-title">Academic Excellence</h3>
+              <p class="service-desc">
+                Secured 1st Rank in the Department of Computer Technology during both the 4th and 6th semesters.
+              </p>
+            </div>
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">4th Semester — 1st Rank</span>
+              <span class="tech-tag-subtle">6th Semester — 1st Rank</span>
+            </div>
+          </article>
+
+          <!-- Achievement 3: Hackathon Finalist -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-header-row">
+                <span class="service-number">03</span>
+                <span class="pill-tag">8–9 Feb 2025</span>
+              </div>
+              <h3 class="service-title">Hackathon Finalist (2025)</h3>
+              <p class="service-desc">
+                Reached the finals of the National-Level Road Safety Hackathon, organised by Coimbatore City Police and
+                UYIR (8–9 February 2025).
+              </p>
+            </div>
+            <div class="service-tech-tags">
+              <span class="tech-tag-subtle">National-Level Finalist</span>
+              <span class="tech-tag-subtle">Problem Solving</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ZONE 8: CONTACT SECTION (Dark Ink Charcoal Canvas)
          ========================================================================== -->
     <section id="contact" class="contact-section" aria-labelledby="contact-title">
       <div class="container">
         <!-- Section Header with Light Bookmark Tag -->
         <div class="section-title-wrap">
           <span class="retro-bookmark-tag tag-light" aria-hidden="true"></span>
-          <h2 id="contact-title" class="section-title-retro">CONTACT ME</h2>
+          <h2 id="contact-title" class="section-title-retro">CONTACT</h2>
         </div>
 
         <p class="section-desc" style="color: rgba(244, 239, 228, 0.85);">
-          Have a project in mind, need a direct booking system, or want to discuss modernizing your business website?
-          Reach out directly via WhatsApp or submit your project details below.
+          Seeking entry-level career opportunities and traineeships in the Audio-Visual industry. Feel free to reach out
+          regarding job opportunities, interviews, or professional networking.
         </p>
 
         <div class="contact-layout-grid">
-          <!-- Left Column: Direct Coordinates -->
+          <!-- Left Column: Direct Contact Details -->
           <div class="contact-info-panel">
             <div class="contact-card-box">
-              <h3 style="font-size: 1.25rem; color: #ffffff; margin-bottom: var(--space-2);">DIRECT CHANNELS</h3>
+              <h3 style="font-size: 1.25rem; color: #ffffff; margin-bottom: var(--space-2);">CONTACT DETAILS</h3>
 
-              <!-- WhatsApp -->
-              <a href="https://wa.me/918610951813" target="_blank" rel="noopener noreferrer"
-                class="contact-method-link">
+              <!-- Name -->
+              <div class="contact-method-link">
+                <div class="contact-method-icon-wrap" style="background-color: var(--retro-teal);">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label-text">Name</div>
+                  <div class="contact-val-text">Dinesh M</div>
+                </div>
+              </div>
+
+              <!-- Direct Email -->
+              <a href="mailto:dineshwork.dev@gmail.com" class="contact-method-link">
                 <div class="contact-method-icon-wrap">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label-text">Email</div>
+                  <div class="contact-val-text">dineshwork.dev@gmail.com</div>
+                </div>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:8610951813" class="contact-method-link">
+                <div class="contact-method-icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path
                       d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
                     </path>
                   </svg>
                 </div>
                 <div>
-                  <div class="contact-label-text">WhatsApp &amp; Phone</div>
-                  <div class="contact-val-text">+91 86109 51813</div>
-                </div>
-              </a>
-
-              <!-- Direct Email -->
-              <a href="mailto:dineshwork.dev@gmail.com" class="contact-method-link">
-                <div class="contact-method-icon-wrap">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                  </svg>
-                </div>
-                <div>
-                  <div class="contact-label-text">Direct Email</div>
-                  <div class="contact-val-text">dineshwork.dev@gmail.com</div>
-                </div>
-              </a>
-
-              <!-- GitHub Profile -->
-              <a href="https://github.com/dineshworkdev" target="_blank" rel="noopener noreferrer"
-                class="contact-method-link">
-                <div class="contact-method-icon-wrap">
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
-                    </path>
-                  </svg>
-                </div>
-                <div>
-                  <div class="contact-label-text">GitHub Code</div>
-                  <div class="contact-val-text">dineshworkdev</div>
+                  <div class="contact-label-text">Phone</div>
+                  <div class="contact-val-text">8610951813</div>
                 </div>
               </a>
 
@@ -1074,32 +1128,65 @@
               <div class="contact-method-link">
                 <div class="contact-method-icon-wrap" style="background-color: var(--retro-teal);">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
                 </div>
                 <div>
                   <div class="contact-label-text">Location</div>
-                  <div class="contact-val-text">Tamil Nadu, India</div>
+                  <div class="contact-val-text">Coimbatore, Tamil Nadu, India</div>
                 </div>
               </div>
+
+              <!-- GitHub Profile -->
+              <a href="https://github.com/dineshworkdev" target="_blank" rel="noopener noreferrer"
+                class="contact-method-link">
+                <div class="contact-method-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label-text">GitHub</div>
+                  <div class="contact-val-text">github.com/dineshworkdev</div>
+                </div>
+              </a>
+
+              <!-- LinkedIn Profile -->
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                class="contact-method-link">
+                <div class="contact-method-icon-wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label-text">LinkedIn</div>
+                  <div class="contact-val-text">LinkedIn Profile</div>
+                </div>
+              </a>
             </div>
 
-            <!-- Guarantee Note -->
+            <!-- Availability Note -->
             <div class="status-badge"
               style="background-color: var(--retro-charcoal-dark); border-color: rgba(255,255,255,0.2); color: var(--retro-cream);">
-              <span class="status-dot status-dot-green"></span>
-              <span>24h Response Guarantee on All Inquiries</span>
+              <span class="status-dot status-dot-green" aria-hidden="true"></span>
+              <span>Available for Entry-Level AV Roles &amp; Traineeships</span>
             </div>
           </div>
 
-          <!-- Right Column: Project Inquiry Form -->
+          <!-- Right Column: Career & Networking Contact Form -->
           <div class="contact-form-panel">
             <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="30014cea-8964-4fc7-bdc5-6a6061ed3fc7">
-              <input type="hidden" name="subject" value="New Project Enquiry — Dinesh M Portfolio">
-              <input type="hidden" name="from_name" value="Portfolio Contact Form">
+              <input type="hidden" name="subject" value="AV Career Opportunity / Contact — Dinesh M Portfolio">
+              <input type="hidden" name="from_name" value="Dinesh M AV Portfolio">
 
               <!-- Honeypot Anti-Spam Field -->
               <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off"
@@ -1111,8 +1198,8 @@
                   <label for="contact-name" class="form-label">
                     Your Name <span class="form-label-req">*</span>
                   </label>
-                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Ramesh Kumar"
-                    required autocomplete="name">
+                  <input type="text" id="contact-name" name="name" class="form-input"
+                    placeholder="e.g. Hiring Manager / Recruiter" required autocomplete="name">
                 </div>
 
                 <div class="form-group">
@@ -1120,50 +1207,48 @@
                     Email Address <span class="form-label-req">*</span>
                   </label>
                   <input type="email" id="contact-email" name="email" class="form-input"
-                    placeholder="e.g. ramesh@company.com" required autocomplete="email">
+                    placeholder="e.g. careers@company.com" required autocomplete="email">
                 </div>
               </div>
 
-              <!-- Company & Project Type (2-Column) -->
+              <!-- Organization & Inquiry Type (2-Column) -->
               <div class="form-grid-2col">
                 <div class="form-group">
                   <label for="contact-company" class="form-label">
-                    Company / Business
+                    Organization / Company
                   </label>
                   <input type="text" id="contact-company" name="company" class="form-input"
-                    placeholder="e.g. Heritage Resorts">
+                    placeholder="e.g. AV Integration / Systems Company" autocomplete="organization">
                 </div>
 
                 <div class="form-group">
                   <label for="contact-type" class="form-label">
-                    What Do You Need? <span class="form-label-req">*</span>
+                    Subject / Opportunity <span class="form-label-req">*</span>
                   </label>
-                  <select id="contact-type" name="project_type" class="form-select" required>
-                    <option value="" disabled selected>Select system needed...</option>
-                    <option value="Custom Business Website">Custom Business Website</option>
-                    <option value="Booking System & Reservation Engine">Booking System / Reservation Engine</option>
-                    <option value="Business Dashboard & Management Portal">Business Dashboard / Management Portal
-                    </option>
-                    <option value="Custom Digital Solution">Custom Digital Solution / Web App</option>
-                    <option value="Website Redesign & Modernization">Website Redesign &amp; Modernization</option>
-                    <option value="Other Project Enquiry">Other / General Consultation</option>
+                  <select id="contact-type" name="inquiry_type" class="form-select" required>
+                    <option value="" disabled selected>Select topic...</option>
+                    <option value="Entry-Level AV Opportunity">Entry-Level AV Role / Full-Time Opportunity</option>
+                    <option value="AV Trainee / Internship Role">AV Trainee / Graduate Program</option>
+                    <option value="Interview / Resume Discussion">Interview / Resume Discussion</option>
+                    <option value="Professional Networking">Professional Networking</option>
+                    <option value="General Message">General Message</option>
                   </select>
                 </div>
               </div>
 
-              <!-- Project Summary -->
+              <!-- Message -->
               <div class="form-group">
                 <label for="contact-message" class="form-label">
-                  Project Summary <span class="form-label-req">*</span>
+                  Message <span class="form-label-req">*</span>
                 </label>
                 <textarea id="contact-message" name="message" class="form-textarea"
-                  placeholder="Tell me briefly about your business, the problem you want to solve, and any specific deadlines..."
+                  placeholder="Share details regarding the AV career opportunity, role requirements, or how we can connect..."
                   required minlength="10"></textarea>
               </div>
 
               <!-- Submit Button -->
               <button type="submit" id="form-submit-btn" class="btn btn-primary btn-block btn-lg">
-                <span>Send Project Enquiry</span>
+                <span>Send Message</span>
                 <svg class="btn-icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   aria-hidden="true">
@@ -1183,37 +1268,16 @@
   </main>
 
   <!-- ==========================================================================
-       Project Detail Interactive Modal Dialog
-       ========================================================================== -->
-  <dialog id="project-modal" class="project-modal" aria-labelledby="modal-project-title" aria-modal="true">
-    <div class="modal-dialog-container">
-      <button type="button" class="modal-close-trigger" data-close-modal aria-label="Close project overview">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-      <div class="modal-scroll-area">
-        <div class="modal-body-content">
-          <!-- Dynamically populated by assets/js/projects.js -->
-        </div>
-      </div>
-    </div>
-  </dialog>
-
-  <!-- ==========================================================================
-       ZONE 5: Site Footer (Dark Charcoal with Row of Circular Seal Buttons)
+       Site Footer (Dark Charcoal with Row of Circular Seal Buttons)
        ========================================================================== -->
   <footer id="footer" class="site-footer" role="contentinfo">
     <div class="container">
-      <!-- Circular Social Seal Buttons (Directly mirroring the reference bottom icon row) -->
-      <div class="footer-social-row" aria-label="Direct Channels">
-        <!-- WhatsApp -->
-        <a href="https://wa.me/918610951813" target="_blank" rel="noopener noreferrer" class="footer-seal-btn"
-          aria-label="WhatsApp (+91 86109 51813)" title="WhatsApp">
+      <!-- Circular Social Seal Buttons -->
+      <div class="footer-social-row" aria-label="Direct Contact &amp; Profiles">
+        <!-- Phone -->
+        <a href="tel:8610951813" class="footer-seal-btn" aria-label="Phone (8610951813)" title="Phone">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path
               d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
             </path>
@@ -1224,7 +1288,7 @@
         <a href="mailto:dineshwork.dev@gmail.com" class="footer-seal-btn" aria-label="Email (dineshwork.dev@gmail.com)"
           title="Email">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
           </svg>
@@ -1233,28 +1297,28 @@
         <!-- GitHub -->
         <a href="https://github.com/dineshworkdev" target="_blank" rel="noopener noreferrer" class="footer-seal-btn"
           aria-label="GitHub (dineshworkdev)" title="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
             </path>
           </svg>
         </a>
 
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/dinnnnesh/" target="_blank" rel="noopener noreferrer" class="footer-seal-btn"
-          aria-label="Instagram (@dinnnnesh)" title="Instagram">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-seal-btn"
+          aria-label="LinkedIn Profile" title="LinkedIn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect width="4" height="12" x="2" y="9"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
           </svg>
         </a>
       </div>
 
       <!-- Footer Bottom Bar -->
       <div class="footer-bottom-row">
-        <span>&copy; 2026 Dinesh M. Independent Web Developer &amp; Business Systems Builder.</span>
+        <span>&copy; 2026 Dinesh M. Aspiring AV Professional | Audio-Visual Technology.</span>
         <a href="#hero" class="footer-back-link">
           <span>Back to top &uarr;</span>
         </a>

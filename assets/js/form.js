@@ -41,13 +41,13 @@ export function initContactForm() {
 
     // Minimum message length check (at least 10 characters)
     if (messageInput.value.trim().length < 10) {
-      showFormStatus('error', 'Please provide a brief project summary (at least 10 characters).');
+      showFormStatus('error', 'Please provide a brief message (at least 10 characters).');
       messageInput.focus();
       return;
     }
 
     // 3. UI State: Submitting
-    const clientName = nameInput.value.trim();
+    const senderName = nameInput.value.trim();
     const originalBtnText = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.innerHTML = `
@@ -55,7 +55,7 @@ export function initContactForm() {
         <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
         <path d="M12 2a10 10 0 0 1 10 10" stroke-opacity="0.95"></path>
       </svg>
-      <span>Sending enquiry...</span>
+      <span>Sending message...</span>
     `;
 
     // 4. Form Submission Handling
@@ -79,12 +79,12 @@ export function initContactForm() {
 
         if (response.ok && (result.success !== false)) {
           form.reset();
-          showFormStatus('success', `Thank you, ${escapeHtml(clientName)}! Your project enquiry has been sent. I'll review your enquiry and get back to you as soon as possible.`);
+          showFormStatus('success', `Thank you, ${escapeHtml(senderName)}! Your message has been sent. I appreciate you reaching out and will respond as soon as possible.`);
         } else {
-          showFormStatus('error', result.message || 'There was an issue sending your message. Please reach out directly via email at dineshwork.dev@gmail.com or WhatsApp.');
+          showFormStatus('error', result.message || 'There was an issue sending your message. Please reach out directly via email at dineshwork.dev@gmail.com or phone at 8610951813.');
         }
       } catch (error) {
-        showFormStatus('error', 'Network connection issue. Please reach out directly via email at dineshwork.dev@gmail.com or WhatsApp.');
+        showFormStatus('error', 'Network connection issue. Please reach out directly via email at dineshwork.dev@gmail.com or phone at 8610951813.');
       } finally {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnText;
@@ -95,7 +95,7 @@ export function initContactForm() {
         form.reset();
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnText;
-        showFormStatus('success', `Thank you, ${escapeHtml(clientName)}! Your project enquiry has been captured. I'll review your enquiry and get back to you as soon as possible.`);
+        showFormStatus('success', `Thank you, ${escapeHtml(senderName)}! Your message has been captured. I appreciate you reaching out and will respond as soon as possible.`);
       }, 500);
     }
   });
@@ -107,7 +107,7 @@ export function initContactForm() {
    */
   function showFormStatus(type, message) {
     if (!formStatus) return;
-    formStatus.className = `form-status-alert status-${type}`;
+    formStatus.className = `form-status-alert is-${type} status-${type}`;
     formStatus.innerHTML = `
       <div class="status-alert-content">
         <svg class="status-alert-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
